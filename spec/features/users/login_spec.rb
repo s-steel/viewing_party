@@ -5,17 +5,54 @@ describe 'Log In' do
     before :each do
       @user = User.create!(email: 'me@email.com',
                            password: 'password')
-      visit '/'
     end
 
     context 'with valid information' do 
-      it 'I am a regular user I log in and am redirected to my dashboard' do
+      before(:each) { visit '/' }
+
+      it 'I am a regular user, I log in and am redirected to my dashboard' do
         fill_in 'email', with: "#{@user.email}"
         fill_in 'password', with: "#{@user.password}"
         click_button 'Sign In'
 
         expect(current_path).to eq('/dashboard')
         expect(page).to have_content("Welcome #{@user.email}!")
+      end
+    end
+
+    context 'with invalid information' do
+      before(:each) { visit '/' }
+
+      it 'I enter invalid email' do
+        fill_in 'email', with: "you@email.com"
+        fill_in 'password', with: "#{@user.password}"
+        click_button 'Sign In'
+        expect(current_path).to eq(root_path)
+        expect(page).to have_content('Invalid email or password, please try again.')
+      end
+
+      it 'I enter invalid password' do
+        fill_in 'email', with: "#{@user.email}"
+        fill_in 'password', with: "other_password"
+        click_button 'Sign In'
+        expect(current_path).to eq(root_path)
+        expect(page).to have_content('Invalid email or password, please try again.')
+      end
+
+      it 'I leave the password field blank' do
+        fill_in 'email', with: "#{@user.email}"
+        fill_in 'password', with: ""
+        click_button 'Sign In'
+        expect(current_path).to eq(root_path)
+        expect(page).to have_content('Invalid email or password, please try again.')
+      end
+
+      it 'I leave the email field blank' do
+        fill_in 'email', with: ""
+        fill_in 'password', with: "#{@user.password}"
+        click_button 'Sign In'
+        expect(current_path).to eq(root_path)
+        expect(page).to have_content('Invalid email or password, please try again.')
       end
     end
   end
