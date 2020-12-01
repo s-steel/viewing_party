@@ -12,8 +12,10 @@ describe 'Welcome Page' do
       expect(page).to have_content('This app allows you to explore a library of movies and then create a viewing party event where you can invite all your friends to watch a movie together!')
     end
 
-    it 'has button to login' do
-      expect(page).to have_button('Log In')
+    it 'has fields and button to login' do
+      expect(page).to have_field('email')
+      expect(page).to have_field('password')
+      expect(page).to have_button('Sign In')
     end
 
     it 'has link to registration' do

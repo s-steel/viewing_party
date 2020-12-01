@@ -2,5 +2,14 @@
 
 <h3>This app allows you to explore a library of movies and then create a viewing party event where you can invite all your friends to watch a movie together!</h3>
 
-<%= button_to 'Log In', '/login', method: :get%>
+<%= form_with model: @user, local: true do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %><br>
+
+  <%= f.label :password %>
+  <%= f.text_field :password %><br>
+
+  <%= f.submit value: 'Sign In'%>
+<% end %>
+
 <%= link_to 'New to Viewing Party? Register Here', '/register', method: :get%>
