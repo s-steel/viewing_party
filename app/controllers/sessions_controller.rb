@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   def create
     if user = User.find_by(email: params[:email])
       session[:user_id] = user.id
-      flash[:success] = "Welcome #{user.email}!"
+      flash[:success] = "You have successfully logged in!"
       redirect_to '/dashboard'
     else
       flash[:error] = 'Invalid email or password, please try again.'
