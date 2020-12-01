@@ -2,7 +2,7 @@
 
 <h3>This app allows you to explore a library of movies and then create a viewing party event where you can invite all your friends to watch a movie together!</h3>
 
-<%= form_with model: @user, local: true do |f| %>
+<%= form_with url: login_path, local: true do |f| %>
   <%= f.label :email %>
   <%= f.text_field :email %><br>
 
