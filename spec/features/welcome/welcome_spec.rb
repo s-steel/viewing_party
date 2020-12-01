@@ -17,7 +17,7 @@ describe 'Welcome Page' do
     end
 
     it 'has link to registration' do
-      expect(page).to have_link('Registration')
+      expect(page).to have_link('New to Viewing Party? Register Here')
     end
   end
 end
