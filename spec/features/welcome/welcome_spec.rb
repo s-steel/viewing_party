@@ -17,7 +17,7 @@ describe 'Welcome Page' do
     end
 
     it 'has link to registration' do
-      expect(page).to have_button('Register')
+      expect(page).to have_link('Registration')
     end
   end
 end
