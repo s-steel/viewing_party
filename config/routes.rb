@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   resources :users, only: [:create]
   resource :registration, only: [:new], controller: 'users'
   resource :dashboard, only: [:show], controller: 'users'
+
+  root 'welcome#index'
+
+  post '/', to: 'sessions#create'
+
+  get '/dashboard', to: 'users#show'
 end

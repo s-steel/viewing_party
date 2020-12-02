@@ -17,7 +17,8 @@ class UsersController < ApplicationController
 
   def show
     #Refactor: this can be changed to current_user later
-    @user = User.find_by(id: session[:user_id])
+    @user = current_user
+    # @user = User.find_by(id: session[:user_id])
   end
 
   private 
