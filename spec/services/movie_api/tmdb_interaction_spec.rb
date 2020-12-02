@@ -11,4 +11,45 @@ describe TMDBInteraction do
       expect(TMDBInteraction.search_tmdb('adhfaosdjfaodihf;aldohfasdihfoidhfdj')).to eq([])
     end
   end
+
+  describe 'create_movie_data' do
+    it do
+      example_data = [
+        {
+          'vote_average' => 8,
+          'popularity' => 737.45,
+          'id' => 400_160,
+          'release_date' => '2020-08-14',
+          'adult' => false,
+          'backdrop_path' => '/wu1uilmhM4TdluKi2ytfz8gidHf.jpg',
+          'vote_count' => 1620,
+          'genre_ids' => [
+            16,
+            14,
+            12,
+            35,
+            10_751
+          ],
+          'title' => 'The SpongeBob Movie => Sponge on the Run',
+          'original_language' => 'en',
+          'original_title' => 'The SpongeBob Movie => Sponge on the Run',
+          'poster_path' => '/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg',
+          'overview' => 'When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.',
+          'video' => false
+        }
+      ]
+
+      result = TMDBInteraction.create_movie_data(example_data)
+
+      expect(result[0]).to be_a(MovieData)
+
+      expect(result[0].id).to eq(400_160)
+    end
+  end
+
+  # describe 'get 40 results' do
+  #   it do
+
+  #   end
+  # end
 end
