@@ -16,7 +16,7 @@ describe 'Log In' do
         click_button 'Sign In'
 
         expect(current_path).to eq('/dashboard')
-        expect(page).to have_content("Welcome #{@user.email}!")
+        expect(page).to have_content("Welcome me!")
       end
     end
 
