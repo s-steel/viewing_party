@@ -4,7 +4,8 @@ describe 'Log In' do
   describe 'A user visits the welcome page and attempts to log in' do
     before :each do
       @user = User.create!(email: 'me@email.com',
-                           password: 'password')
+                           password: 'password', 
+                           password_confirmation: 'password')
     end
 
     context 'with valid information' do 
