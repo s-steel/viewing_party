@@ -29,3 +29,9 @@ footer {
   align-self: baseline;
   flex-direction: row;
 }
+
+.welcome {
+  text-align: center;
+  background-color: black;
+  color: darkgoldenrod;
+}
