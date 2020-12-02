@@ -10,6 +10,20 @@ class TMDBInteraction
       req.params['query'] = query
     end
 
+    page1, page2 = get_40_results(conn)
+
+    results = JSON.parse(page1.body, symbolize_names: true)[:results].concat(JSON.parse(page2.body, symbolize_names: true)[:results])
+
+    create_movie_data(results)
+  end
+
+  def self.create_movie_data(results)
+    results.map do |result|
+      MovieData.new(result)
+    end
+  end
+
+  def self.get_40_results(conn)
     page1 = conn.get do |req|
       req.params['page'] = 1
     end
@@ -18,10 +32,6 @@ class TMDBInteraction
       req.params['page'] = 2
     end
 
-    results = JSON.parse(page1.body['results']).concat(JSON.parse(page2.body['results']))
-
-    results.map do |result|
-      MovieData.new(result)
-    end
+    [page1, page2]
   end
 end
