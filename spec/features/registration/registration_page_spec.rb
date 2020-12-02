@@ -14,7 +14,7 @@ RSpec.describe 'As a visitor' do
     describe 'when I click the register button' do 
       before :each do 
           @user = build(:user)
-          @user_name = @user.user_name
+          @user_2 = create(:user)
           visit new_registration_path 
       end 
 
@@ -24,7 +24,7 @@ RSpec.describe 'As a visitor' do
         fill_in 'user[password_confirmation]', with: @user.password_confirmation
         click_button 'Register'
         expect(current_path).to eq(dashboard_path)
-        expect(page).to have_content("Welcome #{@user_name}!")
+        expect(page).to have_content("Welcome #{@user.user_name}!")
       end
       
       it 'with one orq more incomplete fields, I see an error message on the registration form' do
@@ -36,16 +36,31 @@ RSpec.describe 'As a visitor' do
         
         fill_in 'user[password]', with: @user.password
         click_button 'Register'
+        expect(find_field('user[email]').value).to eq(@user.email)
         expect(find_field('user[password]').value).to eq(nil)
         expect(page).to have_content("Password confirmation doesn't match Password")
       end
 
       it 'if I try registering with an existing email, I see an error message and stay on the form' do
-        
+        fill_in 'user[email]', with: @user_2.email 
+        fill_in 'user[password]', with: @user.password
+        fill_in 'user[password_confirmation]', with: @user.password_confirmation
+        click_button 'Register'
+
+        expect(find_field('user[email]').value).to eq(@user_2.email)
+        expect(page).to have_content("Email has already been taken")
       end
 
       it 'if my passwords do not match, I receive a see an error message and stay on the form' do
-        
+        fill_in 'user[email]', with: @user.email 
+        fill_in 'user[password]', with: @user.password
+        fill_in 'user[password_confirmation]', with: 'password_2'
+        click_button 'Register'
+        expect(page).to have_content("Password confirmation doesn't match Password")
+        fill_in 'user[password]', with: @user.password
+        fill_in 'user[password_confirmation]', with: 'Password'
+        click_button 'Register'
+        expect(page).to have_content("Password confirmation doesn't match Password")
       end
     end
   end
