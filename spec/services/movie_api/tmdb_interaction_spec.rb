@@ -1,4 +1,5 @@
 require 'rails_helper'
+require './app/services/movie_api/tmdb_interaction'
 
 describe TMDBInteraction do
   describe 'search_tmdb' do
@@ -8,10 +9,6 @@ describe TMDBInteraction do
 
     it 'no results' do
       expect(TMDBInteraction.search_tmdb('adhfaosdjfaodihf;aldohfasdihfoidhfdj')).to eq([])
-    end
-
-    it 'bad query' do
-      expect(TMDBInteraction.search_tmdb).to eq('No query term given')
     end
   end
 end
