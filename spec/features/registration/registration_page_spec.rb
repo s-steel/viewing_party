@@ -3,7 +3,12 @@ require 'rails_helper'
 RSpec.describe 'As a visitor' do
   describe 'when I visit the registration form' do
     it 'I see fields for email, password, password confirmation, and a register button' do
-      
+      visit new_registration_path 
+
+      expect(page).to have_field('user[email]')
+      expect(page).to have_field('user[password]')
+      expect(page).to have_field('user[password_confirmation]')
+      expect(page).to have_button('Register')
     end
 
     describe 'when I click the register button' do 
