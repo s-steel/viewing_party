@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   post '/', to: 'sessions#create'
 
   get '/dashboard', to: 'users#show'
+
+  get '/movies/search', to: 'movies#search', as: :movie_search
 end
