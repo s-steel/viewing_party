@@ -19,6 +19,12 @@ describe 'I try to visit the movies page' do
       end
     end
   end
+
   describe 'While not logged in' do
+    it 'I see a 404 page' do
+      visit '/movies/search?&query=the'
+
+      expect(page).to have_content("The page you were looking for doesn't exist.")
+    end
   end
 end
