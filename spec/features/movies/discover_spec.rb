@@ -19,7 +19,9 @@ RSpec.describe 'As a registered user' do
 
     describe 'when I click on the Discover Top 40 Movies button' do
       before :each do 
-        click_button 'Discover Top 40 Movies'
+        VCR.use_cassette('top_movies') do
+          click_button 'Discover Top 40 Movies'
+        end
       end
 
       it 'I am taken to the movies page and see the top 40 movies' do

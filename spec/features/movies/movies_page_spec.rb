@@ -9,13 +9,15 @@ describe 'I try to visit the movies page' do
     end
 
     it 'I see the title and rating of the top 40 movies from my search' do
-      visit '/movies/search?&query=the'
-
-      expect(page).to have_css('.movie-block', count: 40)
-
-      within('#api-id-400160') do
-        expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
-        expect(page).to have_content('8')
+      VCR.use_cassette('movie_search') do
+        visit '/movies/search?&query=the'
+  
+        expect(page).to have_css('.movie-block', count: 40)
+  
+        within('#api-id-400160') do
+          expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
+          expect(page).to have_content('8')
+        end
       end
     end
 
