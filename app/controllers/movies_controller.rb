@@ -6,6 +6,10 @@ class MoviesController < ApplicationController
     @movies = TMDBInteraction.search_tmdb(@query)
   end
 
+  def discover 
+    
+  end
+
   private
 
   def authorize_user
