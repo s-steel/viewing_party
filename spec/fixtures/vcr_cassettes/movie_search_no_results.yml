@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=1&query=adhfaosdjfaodihf%3Baldohfasdihfoidhfdj
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Thu, 03 Dec 2020 21:41:24 GMT
+      Etag:
+      - a8d277d2d95f2ea20f792a48c43093dc
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 28d79637e27f11e3ab19a9515e273a5b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - qWQ153VQ_GnUioHTghdT4nfCaI4OIAdmKFipOqV3JEomHNF2O04IJg==
+      Age:
+      - '582'
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Thu, 03 Dec 2020 21:51:06 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=2&query=adhfaosdjfaodihf%3Baldohfasdihfoidhfdj
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '57'
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Date:
+      - Thu, 03 Dec 2020 21:41:24 GMT
+      Etag:
+      - daeb628883c68203dc276731d4722f32
+      Cache-Control:
+      - public, max-age=600
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 91f1c114eac2b00f07286bc49dddd7e5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - vddOePPjot71SxjyWZPDMNS9mi2MkrmTGzvm7k7em2Nrz0FGnPoIWg==
+      Age:
+      - '582'
+    body:
+      encoding: UTF-8
+      string: '{"page":2,"results":[],"total_pages":0,"total_results":0}'
+  recorded_at: Thu, 03 Dec 2020 21:51:06 GMT
+recorded_with: VCR 6.0.0

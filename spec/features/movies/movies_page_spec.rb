@@ -21,7 +21,6 @@ describe 'I try to visit the movies page' do
 
     it 'I see an error if I search using an empty query' do
       visit '/movies/search?&query='
-      save_and_open_page
 
       expect(page).to_not have_css('.movie-block')
       expect(page).to have_content('Must enter a movie title as search query')
