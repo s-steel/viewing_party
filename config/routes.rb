@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#show'
 
   get '/movies/search', to: 'movies#search', as: :movie_search
+
+  resources :movies, only: [:show]
 end
