@@ -25,6 +25,15 @@ RSpec.describe 'As an authenticated user' do
     it 'a viewing party section with all parties I am invited to' do
       expect(page).to have_css('.parties', count: 1)
     end
+
+    describe 'when I click on the Discover Movies button' do
+      it 'I am taken to the discover page' do
+        within '.discover' do
+          click_button('Discover Movies')
+          expect(current_path).to eq(discover_path)
+        end
+      end
+    end
     
   end
 end
