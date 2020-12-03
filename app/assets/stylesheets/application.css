@@ -44,3 +44,10 @@ footer {
 .movie-title {
   padding: 20px;
 }
+
+.movie-data {
+  background-color: rgb(197, 194, 194);
+  width: 100%;
+  text-align: center;
+  border-bottom: 5px solid black;
+}
