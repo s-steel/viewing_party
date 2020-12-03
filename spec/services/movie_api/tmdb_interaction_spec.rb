@@ -52,4 +52,32 @@ describe TMDBInteraction do
 
   #   end
   # end
+
+    describe 'top_movies' do
+      it do
+        sample_data = [
+          {
+              "adult" => false,
+              "backdrop_path" => "/fQq1FWp1rC89xDrRMuyFJdFUdMd.jpg",
+              "genre_ids" => [],
+              "id" => 761053,
+              "original_language" => "en",
+              "original_title" => "Gabriel's Inferno Part III",
+              "overview" => "The final part of the film adaption of the erotic romance novel Gabriel's Inferno written by an anonymous Canadian author under the pen name Sylvain Reynard.",
+              "popularity" => 37.015,
+              "poster_path" => "/qtX2Fg9MTmrbgN1UUvGoCsImTM8.jpg",
+              "release_date" => "2020-11-19",
+              "title" => "Gabriel's Inferno Part III",
+              "video" => false,
+              "vote_average" => 9.3,
+              "vote_count" => 445
+          }
+        ]
+        result = TMDBInteraction.top_movies
+        
+        expect(result.first).to be_a(MovieData)
+
+        expect(result.first.id).to eq(sample_data.first['id'])
+      end
+    end
 end
