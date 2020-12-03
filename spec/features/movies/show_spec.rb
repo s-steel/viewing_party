@@ -13,5 +13,17 @@ describe 'Movies show page' do
       click_button('Create Viewing Party for this Movie')
       expect(current_path).to eq('/viewing-party/new')
     end
+
+    it 'show all the info about the movie' do
+      expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
+      # Movie Title
+      # Vote Average of the movie
+      # Runtime in hours & minutes
+      # Genere(s) associated to movie
+      # Summary description
+      # List the first 10 cast members (characters&actress/actors)
+      # Count of total reviews
+      # Each review's author and information
+    end
   end
 end
