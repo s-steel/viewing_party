@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
   before_action :authorize_user
 
   def show
-    # require 'pry', binding.pry
+    @movie = TMDBInteraction.movie_by_id(params[:id])
   end
 
   def search
