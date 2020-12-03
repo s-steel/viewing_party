@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get '/movies/search', to: 'movies#search', as: :movie_search
 
   resources :movies, only: [:show]
+
+  post '/viewing-party/new', to: 'viewing_party#create'
 end
