@@ -35,3 +35,12 @@ footer {
   background-color: black;
   color: darkgoldenrod;
 }
+
+.new-viewing-button {
+  float: right;
+  padding: 40px;
+}
+
+.movie-title {
+  padding: 20px;
+}

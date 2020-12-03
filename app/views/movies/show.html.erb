@@ -2,6 +2,22 @@
   <%= button_to "Create Viewing Party for this Movie", "/viewing-party/new" %>
 </div>
 
-<div>
+<div class='movie-title'>
   <h1><%= @movie.title %></h1>
 </div>
+
+<table>
+  <tr>
+    <th>Vote Average:</th> 
+    <th>Runtime:</th>
+    <th>Genre(s):</th>
+  </tr>
+
+  <tr>
+    <td><p><%= @movie.vote_average %></p></td>
+    <th><p><%= @movie.runtime %></p></th>
+    <% @movie.genres.each do |genre| %>
+      <td><p><%= genre[:name] %></p></td>
+      <% end %>
+  </tr>
+</table>

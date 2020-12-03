@@ -16,7 +16,6 @@ describe 'Movies show page' do
 
     it 'show all the info about the movie' do
       expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
-      # Movie Title
       # Vote Average of the movie
       # Runtime in hours & minutes
       # Genere(s) associated to movie
