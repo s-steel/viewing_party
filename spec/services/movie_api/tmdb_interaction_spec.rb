@@ -16,7 +16,7 @@ describe TMDBInteraction do
         expect(TMDBInteraction.search_tmdb('adhfaosdjfaodihf;aldohfasdihfoidhfdj')).to be_empty
       end 
     end
-
+    
     it 'search results less than 40' do
       VCR.use_cassette('movie_search_less_than_40') do
         results = TMDBInteraction.search_tmdb('harry potter and the')
