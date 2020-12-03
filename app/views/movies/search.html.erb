@@ -6,7 +6,7 @@
 </tr>
   <% @movies.each do |movie| %>
     <tr id='api-id-<%= movie.id %>' class='movie-block'>
-      <td><%= movie.title %></td>
+      <td><%= link_to movie.title, "/movies/#{movie.id}" %></td>
       <td><%= movie.vote_average %></td>
     </tr>
   <% end %>
