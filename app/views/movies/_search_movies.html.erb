@@ -1,0 +1,8 @@
+<section><%= button_to 'Discover Top 40 Movies', movies_path, method: :get %></section>
+
+<section>
+  <%= form_with url: movie_search_path, local: true, method: :get do |f| %>
+    <%= f.text_field(:query, placeholder: 'Search by movie title') %>
+    <%= f.submit 'Find Movies' %>
+  <% end %>
+</section>
