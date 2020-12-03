@@ -4,7 +4,12 @@ class MoviesController < ApplicationController
   def search
     #we can refactor this into index using an if @query
     @query = params[:query]
-    @movies = TMDBInteraction.search_tmdb(@query)
+    if @query.empty? 
+      flash[:error] = 'Must enter a movie title as search query'
+      redirect_to discover_path
+    else 
+      @movies = TMDBInteraction.search_tmdb(@query)
+    end
   end
 
   def discover 
