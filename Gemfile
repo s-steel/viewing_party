@@ -20,6 +20,8 @@ gem 'bcrypt'
 group :development, :test do
   gem 'pry'
   gem 'travis'
+  gem 'figaro'
+  gem 'faraday'
   gem 'shoulda-matchers'
 end
 
