@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: 'users#show'
 
+  get '/discover', to: 'movies#discover', as: :discover
   get '/movies/search', to: 'movies#search', as: :movie_search
 
   resources :movies, only: [:show]
