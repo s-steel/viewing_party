@@ -47,6 +47,12 @@ describe TMDBInteraction do
     end
   end
 
+  describe 'movie_by_id' do
+    it 'finds movie by id' do
+      expect(TMDBInteraction.movie_by_id(400160).title).to eq('The SpongeBob Movie: Sponge on the Run')
+    end
+  end
+
   # describe 'get 40 results' do
   #   it do
 
