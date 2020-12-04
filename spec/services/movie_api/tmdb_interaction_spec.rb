@@ -4,11 +4,24 @@ require './app/services/movie_api/tmdb_interaction'
 describe TMDBInteraction do
   describe 'search_tmdb' do
     it 'good query' do
-      expect(TMDBInteraction.search_tmdb('the')[0].id).to eq(120)
+      VCR.use_cassette('movie_search') do
+        results = TMDBInteraction.search_tmdb('the')
+        expect(results.first.id).to eq(120)
+        expect(results.first).to be_a(MovieData)
+      end
     end
 
     it 'no results' do
-      expect(TMDBInteraction.search_tmdb('adhfaosdjfaodihf;aldohfasdihfoidhfdj')).to eq([])
+      VCR.use_cassette('movie_search_no_results') do
+        expect(TMDBInteraction.search_tmdb('adhfaosdjfaodihf;aldohfasdihfoidhfdj')).to be_empty
+      end 
+    end
+    
+    it 'search results less than 40' do
+      VCR.use_cassette('movie_search_less_than_40') do
+        results = TMDBInteraction.search_tmdb('harry potter and the')
+        expect(results.count).to be < 40
+      end
     end
   end
 
@@ -38,7 +51,6 @@ describe TMDBInteraction do
           'video' => false
         }
       ]
-
       result = TMDBInteraction.create_movie_data(example_data)
 
       expect(result[0]).to be_a(MovieData)
@@ -47,9 +59,25 @@ describe TMDBInteraction do
     end
   end
 
-  # describe 'get 40 results' do
-  #   it do
+    describe 'top_movies' do
+      before :each do 
+        VCR.use_cassette('top_movies') do 
+          @result = TMDBInteraction.top_movies 
+        end
+      end
 
-  #   end
-  # end
+      it 'returns top movies' do
+        expect(@result.first.id).to eq(761053)
+        expect(@result.last.id).to eq(12477)
+      end
+
+      it 'returns 40 results' do
+        expect(@result.count).to eq(40)
+      end
+
+      it 'returns MovieData objects' do 
+        expect(@result.first).to be_a(MovieData)
+        expect(@result.last).to be_a(MovieData)
+      end
+    end
 end

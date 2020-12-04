@@ -10,6 +10,18 @@ class TMDBInteraction
       req.params['query'] = query
     end
 
+    parse_and_instantiate(conn)
+  end
+
+  def self.top_movies 
+    conn = Faraday.new('https://api.themoviedb.org/3/movie/top_rated') do |req|
+      req.params['api_key'] = ENV['TMDB_API_KEY']
+    end
+
+    parse_and_instantiate(conn)
+  end
+
+  def self.parse_and_instantiate(conn)
     page1, page2 = get_40_results(conn)
 
     results = JSON.parse(page1.body, symbolize_names: true)[:results].concat(JSON.parse(page2.body, symbolize_names: true)[:results])
