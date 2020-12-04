@@ -60,15 +60,16 @@ class TMDBInteraction
     create_movie_data(results)
   end
 
-  def self.movie_cast(id)
+  def self.movie_cast(id, limit = 100)
     conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
       req.params['api_key'] = ENV['TMDB_API_KEY']
     end
-#need to limit this to first 10 results
+
     data = conn.get("movie/#{id}/credits")
 
     results = JSON.parse(data.body, symbolize_names: true)[:cast]
+    limited_results = results.take(limit)
 
-    create_movie_data(results)
+    create_movie_data(limited_results)
   end
 end
