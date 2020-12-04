@@ -31,9 +31,11 @@
 </section>
 
 <section class='movie-reviews'>
-  <h3> Reviews</h3>
-
-    <div id="review-id">
-
-    </div>
+  <h3><%= @reviews.length %> Reviews</h3>
+  <% @reviews.each do |review| %>
+  <div style='border:1px solid black' id="review-<%= review.id %>">
+    <h5>Author: <%= review.author %></h5>
+    <p><%= review.content %></p>
+  </div>
+  <% end %>
 </section>

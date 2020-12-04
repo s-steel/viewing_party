@@ -3,6 +3,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = TMDBInteraction.movie_by_id(params[:id])
+    @reviews = TMDBInteraction.movie_reviews(params[:id])
   end
 
   def search

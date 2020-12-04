@@ -21,13 +21,14 @@ describe 'Movies show page' do
       expect(page).to have_content('Genre(s):')
       expect(page).to have_content('Summary')
       expect(page).to have_content('Cast')
-      # expect(page).to have_content('3 Reviews')
+      expect(page).to have_content('1 Reviews')
       expect(page).to have_content('8.0')
       expect(page).to have_content('1 hr 35 min')
       expect(page).to have_content('Animation, Fantasy, Adventure, Comedy, Family')
       expect(page).to have_content('When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.')
       # List the first 10 cast members (characters&actress/actors)
-      # Each review's author and information
+      expect(page).to have_content('Author: SWITCH.')
+      expect(page).to have_content('Thanks to its meme resurgence, a surprisingly successful musical')
     end
   end
 end
