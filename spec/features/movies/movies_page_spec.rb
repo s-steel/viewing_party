@@ -9,14 +9,23 @@ describe 'I try to visit the movies page' do
     end
 
     it 'I see the title and rating of the top 40 movies from my search' do
-      visit '/movies/search?&query=the'
-
-      expect(page).to have_css('.movie-block', count: 40)
-
-      within('#api-id-400160') do
-        expect(page).to have_link('The SpongeBob Movie: Sponge on the Run')
-        expect(page).to have_content('8')
+      VCR.use_cassette('movie_search') do
+      visit '/movies?&query=the'
+  
+        expect(page).to have_css('.movie-block', count: 40)
+  
+        within('#api-id-400160') do
+          expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
+          expect(page).to have_content('8')
+        end
       end
+    end
+
+    it 'I see an error if I search using an empty query' do
+      visit '/movies?&query='
+
+      expect(page).to_not have_css('.movie-block')
+      expect(page).to have_content('Must enter a movie title as search query')
     end
 
     it 'can click movie title link and am taken to that movie show page' do
@@ -31,7 +40,7 @@ describe 'I try to visit the movies page' do
 
   describe 'While not logged in' do
     it 'I see a 404 page' do
-      visit '/movies/search?&query=the'
+      visit '/movies?&query=the'
 
       expect(page).to have_content("The page you were looking for doesn't exist.")
     end

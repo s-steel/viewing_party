@@ -1,4 +1,11 @@
-<h1>Search results for "<%= @query %>"</h1>
+<%= render partial: 'search_movies' %>
+
+<% if @query %>
+  <h1>Search results for "<%= @query %>"</h1>
+<% else %>
+  <h1>Top Movie Results</h1>
+<% end %>
+
 <table class='results'>
 <tr>
   <td>Title</td>
