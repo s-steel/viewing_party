@@ -53,6 +53,13 @@ describe TMDBInteraction do
     end
   end
 
+  describe 'movie_reviews' do
+    it 'finds all movie reviews' do
+      expect(TMDBInteraction.movie_reviews(343_611).length).to eq(3)
+      expect(TMDBInteraction.movie_reviews(343_611)[0].author).to eq('TopKek')
+    end
+  end
+
   # describe 'get 40 results' do
   #   it do
 

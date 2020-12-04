@@ -4,7 +4,7 @@ describe 'Movies show page' do
   describe 'As an authenticated user, when I visit the movies detail page' do
     before :each do
       @user = User.new(email: 'me@email.com',
-        password: 'password')
+                       password: 'password')
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
       visit '/movies/400160'
     end

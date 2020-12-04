@@ -42,9 +42,21 @@ class TMDBInteraction
 
     data = conn.get("movie/#{id}")
 
-    results = Array.new
+    results = []
     results << JSON.parse(data.body, symbolize_names: true)
 
     create_movie_data(results).first
+  end
+
+  def self.movie_reviews(id)
+    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
+      req.params['api_key'] = ENV['TMDB_API_KEY']
+    end
+
+    data = conn.get("movie/#{id}/reviews")
+
+    results = JSON.parse(data.body, symbolize_names: true)[:results]
+
+    create_movie_data(results)
   end
 end
