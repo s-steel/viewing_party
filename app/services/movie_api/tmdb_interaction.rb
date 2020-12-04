@@ -41,9 +41,9 @@ class TMDBInteraction
     end
 
     data = conn.get("movie/#{id}")
-
     results = []
     results << JSON.parse(data.body, symbolize_names: true)
+    #Created an array here because this returns one object and the create_movie_data method requires an array
 
     create_movie_data(results).first
   end
@@ -69,7 +69,7 @@ class TMDBInteraction
 
     results = JSON.parse(data.body, symbolize_names: true)[:cast]
     limited_results = results.take(limit)
-
+# ^^ Not sure if we should be using `take` within this call or refactor it out into a model method to be call at another time
     create_movie_data(limited_results)
   end
 end

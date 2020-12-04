@@ -15,7 +15,7 @@
 
   <tr>
     <td><p><%= @movie.vote_average %></p></td>
-    <th><p><%= @movie.format_run_time %></p></th>
+    <td><p><%= @movie.format_run_time %></p></td>
     <td><p><%= @movie.all_genres %></p></td>
   </tr>
 </table>
@@ -27,7 +27,9 @@
 
 <section class='movie-cast'>
   <h3>Cast</h3>
-
+  <% @cast.each do |c| %>
+    <p><%= c.name %> as <%= c.character %></p>
+  <% end %>
 </section>
 
 <section class='movie-reviews'>
