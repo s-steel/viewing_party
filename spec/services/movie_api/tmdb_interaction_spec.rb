@@ -60,6 +60,13 @@ describe TMDBInteraction do
     end
   end
 
+  describe 'movie_cast' do
+    it 'finds first 10 cast members' do
+      # expect(TMDBInteraction.movie_cast(343_611).length).to eq(10)
+      expect(TMDBInteraction.movie_cast(343_611)[0].name).to eq('Tom Cruise')
+    end
+  end
+
   # describe 'get 40 results' do
   #   it do
 
