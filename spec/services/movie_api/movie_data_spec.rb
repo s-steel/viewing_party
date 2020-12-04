@@ -57,6 +57,7 @@ describe 'Instance Methods' do
       'title' => 'The SpongeBob Movie => Sponge on the Run',
       'video' => false,
       'vote_average' => 8,
+      'runtime' => 95,
       'popularity' => 737.45,
       'overview' => 'When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.',
       'release_date' => '2020-08-14',
@@ -69,5 +70,9 @@ describe 'Instance Methods' do
 
   it 'movie_genres' do
     expect(@test_object.all_genres).to eq('Animation, Fantasy, Adventure, Comedy, Family')
+  end
+
+  it 'format_run_time' do
+    expect(@test_object.format_run_time).to eq('1 hr 35 min')
   end
 end

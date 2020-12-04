@@ -51,3 +51,18 @@ footer {
   text-align: center;
   border-bottom: 5px solid black;
 }
+
+.movie-summary {
+  padding: 20px;
+}
+
+.movie-reviews {
+  padding: 20px;
+}
+
+.movie-cast {
+  padding: 20px;
+  border-bottom: 5px solid black;
+}
+
+#review

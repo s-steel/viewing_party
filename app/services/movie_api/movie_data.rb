@@ -11,4 +11,11 @@ class MovieData
       g[:name]
     end.join(', ')
   end
+
+  def format_run_time
+    total_minutes = runtime
+    hours = total_minutes / 60
+    mins = total_minutes % 60
+    "#{hours} hr #{mins} min"
+  end
 end

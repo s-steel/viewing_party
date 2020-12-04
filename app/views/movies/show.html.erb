@@ -15,7 +15,25 @@
 
   <tr>
     <td><p><%= @movie.vote_average %></p></td>
-    <th><p><%= @movie.runtime %></p></th>
+    <th><p><%= @movie.format_run_time %></p></th>
     <td><p><%= @movie.all_genres %></p></td>
   </tr>
 </table>
+
+<section class='movie-summary'>
+  <h3>Summary</h3>
+  <p><%= @movie.overview %></p>
+</section>
+
+<section class='movie-cast'>
+  <h3>Cast</h3>
+
+</section>
+
+<section class='movie-reviews'>
+  <h3> Reviews</h3>
+
+    <div id="review-id">
+
+    </div>
+</section>
