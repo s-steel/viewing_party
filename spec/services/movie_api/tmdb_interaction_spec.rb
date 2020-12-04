@@ -49,7 +49,7 @@ describe TMDBInteraction do
 
   describe 'movie_by_id' do
     it 'finds movie by id' do
-      expect(TMDBInteraction.movie_by_id(400160).title).to eq('The SpongeBob Movie: Sponge on the Run')
+      expect(TMDBInteraction.movie_by_id(400_160).title).to eq('The SpongeBob Movie: Sponge on the Run')
     end
   end
 

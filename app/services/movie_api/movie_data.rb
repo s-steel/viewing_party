@@ -5,4 +5,10 @@ class MovieData
       self.class.send(:attr_reader, key)
     end
   end
+
+  def all_genres
+    genres.map do |g|
+      g[:name]
+    end.join(', ')
+  end
 end

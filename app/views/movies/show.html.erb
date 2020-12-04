@@ -16,8 +16,6 @@
   <tr>
     <td><p><%= @movie.vote_average %></p></td>
     <th><p><%= @movie.runtime %></p></th>
-    <% @movie.genres.each do |genre| %>
-      <td><p><%= genre[:name] %></p></td>
-      <% end %>
+    <td><p><%= @movie.all_genres %></p></td>
   </tr>
 </table>

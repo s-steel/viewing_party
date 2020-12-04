@@ -16,12 +16,17 @@ describe 'Movies show page' do
 
     it 'show all the info about the movie' do
       expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
-      # Vote Average of the movie
-      # Runtime in hours & minutes
-      # Genere(s) associated to movie
-      # Summary description
+      expect(page).to have_content('Vote Average:')
+      expect(page).to have_content('Runtime:')
+      expect(page).to have_content('Genre(s):')
+      expect(page).to have_content('Summary')
+      expect(page).to have_content('Cast')
+      expect(page).to have_content('3 Reviews')
+      expect(page).to have_content('8.0')
+      expect(page).to have_content('1 hr 35 min')
+      expect(page).to have_content('Animation, Fantasy, Adventure, Comedy, Family')
+      expect(page).to have_content('When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.')
       # List the first 10 cast members (characters&actress/actors)
-      # Count of total reviews
       # Each review's author and information
     end
   end

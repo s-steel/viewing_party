@@ -3,6 +3,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = TMDBInteraction.movie_by_id(params[:id])
+    # require 'pry', binding.pry
   end
 
   def search
@@ -10,9 +11,7 @@ class MoviesController < ApplicationController
     @movies = TMDBInteraction.search_tmdb(@query)
   end
 
-  def discover 
-    
-  end
+  def discover; end
 
   private
 
