@@ -13,22 +13,45 @@ describe 'Movies show page' do
       click_button('Create Viewing Party for this Movie')
       expect(current_path).to eq('/viewing-party/new')
     end
-
+    # Will have to edit below tests once VCR is implemented
     it 'show all the info about the movie' do
+      expect(page).to have_css('.new-viewing-button')
+      expect(page).to have_css('.movie-title', count: 1)
+      title = find('.movie-title').text
+      expect(title).to_not be_empty
       expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
+
+      expect(page).to have_css('.movie-data', count: 1)
+      data = find('.movie-data').text
+      expect(data).to_not be_empty
       expect(page).to have_content('Vote Average:')
       expect(page).to have_content('Runtime:')
       expect(page).to have_content('Genre(s):')
-      expect(page).to have_content('Summary')
-      expect(page).to have_content('Cast')
-      expect(page).to have_content('1 Reviews')
       expect(page).to have_content('8.0')
       expect(page).to have_content('1 hr 35 min')
       expect(page).to have_content('Animation, Fantasy, Adventure, Comedy, Family')
+
+      expect(page).to have_css('.movie-summary', count: 1)
+      summary = find('.movie-summary').text
+      expect(summary).to_not be_empty
+      expect(page).to have_content('Summary')
       expect(page).to have_content('When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.')
-      # List the first 10 cast members (characters&actress/actors)
-      expect(page).to have_content('Author: SWITCH.')
-      expect(page).to have_content('Thanks to its meme resurgence, a surprisingly successful musical')
+
+      expect(page).to have_css('.movie-cast', count: 1)
+      cast = find('.movie-cast').text
+      expect(cast).to_not be_empty
+      expect(page).to have_content('Cast')
+
+      expect(page).to have_css('.movie-reviews', count: 1)
+      reviews = find('.movie-reviews').text
+      expect(reviews).to_not be_empty
+      expect(page).to have_content('1 Reviews')
+      expect(page).to have_content('Author:')
+
+      within '#review-5fa63d658c7b0f003f785d60' do
+        expect(page).to have_content('SWITCH.')
+        expect(page).to have_content('Thanks to its meme resurgence, a surprisingly successful musical')
+      end
     end
   end
 end
