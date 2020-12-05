@@ -2,10 +2,10 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe 'relationships' do
-    it { should have_many :followers }
-    it { should have_many(:followed).through(:followers) }
-    # why does above ^ error but below passes???
-    # it { should have_many(:followed).class_name('Friendship').with_foreign_key('followed_id') }
+    it { should have_many :followers_ref }
+    it { should have_many(:followed).through(:followers_ref) }
+    it { should have_many :followed_ref }
+    it { should have_many(:followers).through(:followed_ref) }
   end
 
   describe 'validations' do
