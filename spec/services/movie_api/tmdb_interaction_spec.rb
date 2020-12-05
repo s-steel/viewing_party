@@ -14,9 +14,9 @@ describe TMDBInteraction do
     it 'no results' do
       VCR.use_cassette('movie_search_no_results') do
         expect(TMDBInteraction.search_tmdb('adhfaosdjfaodihf;aldohfasdihfoidhfdj')).to be_empty
-      end 
+      end
     end
-    
+
     it 'search results less than 40' do
       VCR.use_cassette('movie_search_less_than_40') do
         results = TMDBInteraction.search_tmdb('harry potter and the')
@@ -69,8 +69,8 @@ describe TMDBInteraction do
   end
 
   describe 'movie_reviews' do
-    before :each do 
-      VCR.use_cassette('movie_reviews') do 
+    before :each do
+      VCR.use_cassette('movie_reviews') do
         @result = TMDBInteraction.movie_reviews(343_611)
       end
     end
@@ -82,9 +82,9 @@ describe TMDBInteraction do
   end
 
   describe 'movie_cast' do
-    before :each do 
-      VCR.use_cassette('movie_cast') do 
-        @result = TMDBInteraction.movie_cast(343_611) 
+    before :each do
+      VCR.use_cassette('movie_cast') do
+        @result = TMDBInteraction.movie_cast(343_611)
       end
     end
 
@@ -93,31 +93,31 @@ describe TMDBInteraction do
       expect(@result.first.name).to eq('Tom Cruise')
     end
 
-    it 'can limit number of reviews' do 
-      VCR.use_cassette('movie_cast') do 
-        @result = TMDBInteraction.movie_cast(343_611, 10) 
+    it 'can limit number of reviews' do
+      VCR.use_cassette('movie_cast') do
+        @result = TMDBInteraction.movie_cast(343_611, 10)
       end
       expect(@result.length).to eq(10)
     end
   end
 
   describe 'top_movies' do
-    before :each do 
-      VCR.use_cassette('top_movies') do 
-        @result = TMDBInteraction.top_movies 
+    before :each do
+      VCR.use_cassette('top_movies') do
+        @result = TMDBInteraction.top_movies
       end
     end
 
     it 'returns top movies' do
-      expect(@result.first.id).to eq(761053)
-      expect(@result.last.id).to eq(12477)
+      expect(@result.first.id).to eq(761_053)
+      expect(@result.last.id).to eq(12_477)
     end
 
     it 'returns 40 results' do
       expect(@result.count).to eq(40)
     end
 
-    it 'returns MovieData objects' do 
+    it 'returns MovieData objects' do
       expect(@result.first).to be_a(MovieData)
       expect(@result.last).to be_a(MovieData)
     end
