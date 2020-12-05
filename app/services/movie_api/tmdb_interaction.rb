@@ -46,4 +46,42 @@ class TMDBInteraction
 
     [page1, page2]
   end
+
+  def self.movie_by_id(id)
+    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
+      req.params['api_key'] = ENV['TMDB_API_KEY']
+    end
+
+    data = conn.get("movie/#{id}")
+    results = []
+    results << JSON.parse(data.body, symbolize_names: true)
+    # Created an array here because this returns one object and the create_movie_data method requires an array
+
+    create_movie_data(results).first
+  end
+
+  def self.movie_reviews(id)
+    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
+      req.params['api_key'] = ENV['TMDB_API_KEY']
+    end
+
+    data = conn.get("movie/#{id}/reviews")
+
+    results = JSON.parse(data.body, symbolize_names: true)[:results]
+
+    create_movie_data(results)
+  end
+
+  def self.movie_cast(id, limit = 100)
+    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
+      req.params['api_key'] = ENV['TMDB_API_KEY']
+    end
+
+    data = conn.get("movie/#{id}/credits")
+
+    results = JSON.parse(data.body, symbolize_names: true)[:cast]
+    limited_results = results.take(limit)
+    # ^^ Not sure if we should be using `take` within this call or refactor it out into a model method to be call at another time
+    create_movie_data(limited_results)
+  end
 end

@@ -29,3 +29,39 @@ footer {
   align-self: baseline;
   flex-direction: row;
 }
+
+.welcome {
+  text-align: center;
+  background-color: black;
+  color: darkgoldenrod;
+}
+
+.new-viewing-button {
+  float: right;
+  padding: 40px;
+  width: 300px;
+}
+
+.movie-title {
+  padding: 20px;
+}
+
+.movie-data {
+  background-color: rgb(197, 194, 194);
+  width: 100%;
+  text-align: center;
+  border-bottom: 5px solid black;
+}
+
+.movie-summary {
+  padding: 20px;
+}
+
+.movie-reviews {
+  padding: 20px;
+}
+
+.movie-cast {
+  padding: 20px;
+  border-bottom: 5px solid black;
+}

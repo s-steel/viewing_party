@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 05 Dec 2020 00:20:57 GMT
+      - Sat, 05 Dec 2020 00:37:02 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -40,13 +40,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 2c861897aa9389c1f47299b6fea5b59d.cloudfront.net (CloudFront)
+      - 1.1 045f1e1f031241f3808c557a2b5d6b0a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - RnQd91QQ3nJDz1rl9zA-tSCLIOkO20s3yJZqN9lib-nB3GsvZqKQCg==
+      - 4JLFbrbs3UsxvCiS5ysXnMAoEnL8R6iVneKUvydqFnQsVfkIL_6bsA==
+      Age:
+      - '184'
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg","genre_ids":[12,14,28],"id":120,"original_language":"en","original_title":"The
@@ -55,8 +57,8 @@ http_interactions:
         his home in order to keep it from falling into the hands of its evil creator.
         Along the way, a fellowship is formed to protect the ringbearer and make sure
         that the ring arrives at its final destination: Mt. Doom, the only place where
-        it can be destroyed.","popularity":320.953,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
-        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.3,"vote_count":18095},{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","genre_ids":[16,14,12,35,10751],"id":400160,"original_language":"en","original_title":"The
+        it can be destroyed.","popularity":281.244,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
+        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.3,"vote_count":18105},{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","genre_ids":[16,14,12,35,10751],"id":400160,"original_language":"en","original_title":"The
         SpongeBob Movie: Sponge on the Run","overview":"When his best friend Gary
         is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far
         beyond Bikini Bottom to save their pink-shelled pal.","popularity":657.7,"poster_path":"/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg","release_date":"2020-08-14","title":"The
@@ -136,8 +138,8 @@ http_interactions:
         as the heir to the ancient kings as he, Gandalf and the other members of the
         broken fellowship struggle to save Gondor from Sauron''s forces. Meanwhile,
         Frodo and Sam take the ring closer to the heart of Mordor, the dark lord''s
-        realm.","popularity":87.161,"poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","release_date":"2003-12-01","title":"The
-        Lord of the Rings: The Return of the King","video":false,"vote_average":8.5,"vote_count":16653},{"adult":false,"backdrop_path":"/yFRpUmsreYO5Bc0HVBTsJsHIIox.jpg","genre_ids":[18,12,10751],"id":481848,"original_language":"en","original_title":"The
+        realm.","popularity":88.975,"poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","release_date":"2003-12-01","title":"The
+        Lord of the Rings: The Return of the King","video":false,"vote_average":8.5,"vote_count":16664},{"adult":false,"backdrop_path":"/yFRpUmsreYO5Bc0HVBTsJsHIIox.jpg","genre_ids":[18,12,10751],"id":481848,"original_language":"en","original_title":"The
         Call of the Wild","overview":"Buck is a big-hearted dog whose blissful domestic
         life is turned upside down when he is suddenly uprooted from his California
         home and transplanted to the exotic wilds of the Yukon during the Gold Rush
@@ -164,7 +166,7 @@ http_interactions:
         friend Sasuke, and requests to become... his apprentice!? The curtain on the
         story of the new generation written by Masashi Kishimoto rises!","popularity":136.873,"poster_path":"/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg","release_date":"2015-08-07","title":"Boruto:
         Naruto the Movie","video":false,"vote_average":7.8,"vote_count":640}],"total_pages":500,"total_results":10000}'
-  recorded_at: Sat, 05 Dec 2020 00:20:57 GMT
+  recorded_at: Sat, 05 Dec 2020 00:40:05 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=2&query=the
@@ -190,7 +192,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 05 Dec 2020 00:20:58 GMT
+      - Sat, 05 Dec 2020 00:37:02 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -205,13 +207,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 b7f0c5734a286f56595c1e1b456020a2.cloudfront.net (CloudFront)
+      - 1.1 e1b5abb53c407f0a057625c46693461d.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - dxFWS_rEa5AoAZwSM2CuQjx1GFh1-2w73EzNxdY49L9bA6atwBJMXg==
+      - YYh4cDX6uLj6r-zX3r8SBx23lNxiM4At_aTcZkHSMTvFmZ9IUEVdFw==
+      Age:
+      - '184'
     body:
       encoding: UTF-8
       string: '{"page":2,"results":[{"adult":false,"backdrop_path":"/m0ObOaJBerZ3Unc74l471ar8Iiy.jpg","genre_ids":[28,14],"id":547016,"original_language":"en","original_title":"The
@@ -223,8 +227,8 @@ http_interactions:
         safety and security, Nick Fury, director of the international peacekeeping
         agency known as S.H.I.E.L.D., finds himself in need of a team to pull the
         world back from the brink of disaster. Spanning the globe, a daring recruitment
-        effort begins!","popularity":105.751,"poster_path":"/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg","release_date":"2012-04-25","title":"The
-        Avengers","video":false,"vote_average":7.7,"vote_count":23536},{"adult":false,"backdrop_path":"/ovwN1JDPvllWZaH3xtKp7txRWDj.jpg","genre_ids":[27],"id":715658,"original_language":"en","original_title":"The
+        effort begins!","popularity":105.317,"poster_path":"/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg","release_date":"2012-04-25","title":"The
+        Avengers","video":false,"vote_average":7.7,"vote_count":23543},{"adult":false,"backdrop_path":"/ovwN1JDPvllWZaH3xtKp7txRWDj.jpg","genre_ids":[27],"id":715658,"original_language":"en","original_title":"The
         Scientist","overview":"An unconventional scientist, struggling to care for
         his terminally-ill wife, embarks on a journey to develop a cure for her. However,
         his methods of treatment and tampering with human DNA, could lead to the extinction
@@ -279,8 +283,8 @@ http_interactions:
         Lord of the Rings: The Two Towers","overview":"Frodo and Sam are trekking
         to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn
         search for the orc-captured Merry and Pippin. All along, nefarious wizard
-        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":77.9,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
-        Lord of the Rings: The Two Towers","video":false,"vote_average":8.3,"vote_count":15629},{"adult":false,"backdrop_path":"/rq9kv233eEKnYfe8r5fi8SP5T7e.jpg","genre_ids":[18,53],"id":671145,"original_language":"en","original_title":"Before
+        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":86.936,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
+        Lord of the Rings: The Two Towers","video":false,"vote_average":8.3,"vote_count":15640},{"adult":false,"backdrop_path":"/rq9kv233eEKnYfe8r5fi8SP5T7e.jpg","genre_ids":[18,53],"id":671145,"original_language":"en","original_title":"Before
         the Fire","overview":"Deep in the throes of a global pandemic, up and coming
         TV star, Ava Boone, is forced to flee the mounting chaos in Los Angeles and
         return to her rural hometown.  But as she struggles to acclimate to a way
@@ -316,7 +320,7 @@ http_interactions:
         a small town, Katherine arrives to prove that a supernatural force is not
         behind the occurrences, but soon finds that science cannot explain what is
         happening. Instead, she must regain her faith to combat the evil that waits
-        in a Louisiana swamp.","popularity":71.546,"poster_path":"/bDEYbxcaJvRC30xScThv1b7BqNw.jpg","release_date":"2007-04-05","title":"The
+        in a Louisiana swamp.","popularity":63.734,"poster_path":"/bDEYbxcaJvRC30xScThv1b7BqNw.jpg","release_date":"2007-04-05","title":"The
         Reaping","video":false,"vote_average":5.6,"vote_count":517},{"adult":false,"backdrop_path":"/xUUtcxWC6H48UCrpRwwSPQz69XC.jpg","genre_ids":[53,27,28],"id":659986,"original_language":"en","original_title":"The
         Owners","overview":"A group of friends think they found the perfect easy score
         - an empty house with a safe full of cash. But when the elderly couple that
@@ -324,5 +328,279 @@ http_interactions:
         game of cat and mouse ensues, the would-be thieves must fight to save themselves
         from a nightmare they could never have imagined.","popularity":56.913,"poster_path":"/gzFatNrw0lhKD5NxaU6zC7S2KjP.jpg","release_date":"2020-08-27","title":"The
         Owners","video":false,"vote_average":5.7,"vote_count":105}],"total_pages":500,"total_results":10000}'
-  recorded_at: Sat, 05 Dec 2020 00:20:58 GMT
+  recorded_at: Sat, 05 Dec 2020 00:40:06 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/400160?api_key=<DONT_EXPOSE_MY_DATA>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 04 Dec 2020 23:01:49 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 6fff8828783d3e8de7c4596339a2e33f9fb0d760
+      X-Memc-Age:
+      - '699'
+      X-Memc-Expires:
+      - '20901'
+      Etag:
+      - W/"54174a09c551b74a84e8509aade2edf2"
+      Last-Modified:
+      - Fri, 04 Dec 2020 23:01:49 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 91f1c114eac2b00f07286bc49dddd7e5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - Z5tMlzaMwxVMdl4AcwfO4lj0EZOgExu9Ehw9KY5unA4pfrHm_JSOyQ==
+      Age:
+      - '5897'
+    body:
+      encoding: UTF-8
+      string: '{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","belongs_to_collection":{"id":275402,"name":"SpongeBob
+        Collection","poster_path":"/bsCBgNIeqwUh0rWrEjojH7Xbqto.jpg","backdrop_path":"/uDbMvHRX0LMUxmsMyOOrPeLYHO5.jpg"},"budget":60000000,"genres":[{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"},{"id":12,"name":"Adventure"},{"id":35,"name":"Comedy"},{"id":10751,"name":"Family"}],"homepage":"https://www.spongebobmovie.com/","id":400160,"imdb_id":"tt4823776","original_language":"en","original_title":"The
+        SpongeBob Movie: Sponge on the Run","overview":"When his best friend Gary
+        is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far
+        beyond Bikini Bottom to save their pink-shelled pal.","popularity":657.7,"poster_path":"/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg","production_companies":[{"id":8921,"logo_path":null,"name":"United
+        Plankton Pictures","origin_country":"US"},{"id":2348,"logo_path":"/m31fQvZJuUvAgxoqTiCGYFBfZYe.png","name":"Nickelodeon
+        Movies","origin_country":"US"},{"id":24955,"logo_path":"/bX3cYCRWdddXTgIcDEfNiVa8U4j.png","name":"Paramount
+        Animation","origin_country":"US"},{"id":4,"logo_path":"/fycMZt242LVjagMByZOLUGbCvv3.png","name":"Paramount","origin_country":"US"},{"id":2531,"logo_path":"/pC2iDCDCvV85vOBP7a5Ukxuc0Du.png","name":"MRC","origin_country":"US"},{"id":8649,"logo_path":null,"name":"Mikros
+        Image","origin_country":"FR"}],"production_countries":[{"iso_3166_1":"KR","name":"South
+        Korea"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"2020-08-14","revenue":4700000,"runtime":95,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"They''re
+        Not in Bikini Bottom Anymore.","title":"The SpongeBob Movie: Sponge on the
+        Run","video":false,"vote_average":8.0,"vote_count":1652}'
+  recorded_at: Sat, 05 Dec 2020 00:40:06 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/400160/reviews?api_key=<DONT_EXPOSE_MY_DATA>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 134da500b7e1c91bd1c971a6566e639d059af9a9
+      X-Memc-Age:
+      - '2170'
+      X-Memc-Expires:
+      - '19430'
+      Last-Modified:
+      - Fri, 04 Dec 2020 14:16:06 GMT
+      Date:
+      - Fri, 04 Dec 2020 23:01:50 GMT
+      Cache-Control:
+      - public, max-age=21600
+      Etag:
+      - W/"5530321fc36409f62992c31d680ce313"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 f0b290c4e2273a7586bc6f080031d9bc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - zy7jHZu_0lEuYlHUYYoNMERvi3rz42M52h6QFSRNu_-WAX6V94Y_9A==
+      Age:
+      - '5896'
+    body:
+      encoding: UTF-8
+      string: '{"id":400160,"page":1,"results":[{"author":"SWITCH.","author_details":{"name":"SWITCH.","username":"maketheSWITCH","avatar_path":"/klZ9hebmc8biG1RC4WmzNFnciJN.jpg","rating":6.0},"content":"Thanks
+        to its meme resurgence, a surprisingly successful musical, three spinoff shows
+        in the works and the thirteenth season currently airing, there is no slowing
+        down Bikini Bottom''s finest. As a fan, it was nice to spend some time with
+        these characters who I haven''t seen in a while - but the original movie and
+        first few seasons are still superior in every way.\r\n- Chris dos Santos\r\n\r\nRead
+        Chris'' full article...\r\nhttps://www.maketheswitch.com.au/article/review-the-spongebob-movie-sponge-on-the-run-ravioli-ravioli-spongebobs-third-feature-is-okie-dokie","created_at":"2020-11-07T06:23:33.726Z","id":"5fa63d658c7b0f003f785d60","updated_at":"2020-11-10T17:11:45.490Z","url":"https://www.themoviedb.org/review/5fa63d658c7b0f003f785d60"}],"total_pages":1,"total_results":1}'
+  recorded_at: Sat, 05 Dec 2020 00:40:06 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/400160/credits?api_key=<DONT_EXPOSE_MY_DATA>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 752217269d334136984c3de547e78f48fdc063ca
+      X-Memc-Age:
+      - '11608'
+      X-Memc-Expires:
+      - '9992'
+      Last-Modified:
+      - Fri, 04 Dec 2020 14:17:16 GMT
+      Date:
+      - Fri, 04 Dec 2020 23:01:50 GMT
+      Cache-Control:
+      - public, max-age=21600
+      Etag:
+      - W/"8b849bb78d666bc8969f0e6e17ffd82a"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 e158a5cd644f102abc630a9f56b59d78.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - ap1sbLgIBO9PypEZq92ULb8eQvXdLvjKzu0RE9JbiSJuiuNdb6UwNw==
+      Age:
+      - '5896'
+    body:
+      encoding: UTF-8
+      string: '{"id":400160,"cast":[{"adult":false,"gender":2,"id":78798,"known_for_department":"Acting","name":"Tom
+        Kenny","original_name":"Tom Kenny","popularity":4.878,"profile_path":"/o6sC2IsjL7KncT4pZBOx4T0WKhM.jpg","cast_id":8,"character":"SpongeBob
+        SquarePants / Gary the Snail (voice)","credit_id":"58459f2692514169d9018de1","order":0},{"adult":false,"gender":2,"id":34398,"known_for_department":"Acting","name":"Bill
+        Fagerbakke","original_name":"Bill Fagerbakke","popularity":4.847,"profile_path":"/sx3LkX82tpdQfGi3ie3cFvrgCYg.jpg","cast_id":9,"character":"Patrick
+        Star (voice)","credit_id":"58459f39c3a3684664018b8a","order":1},{"adult":false,"gender":2,"id":70615,"known_for_department":"Acting","name":"Rodger
+        Bumpass","original_name":"Rodger Bumpass","popularity":3.442,"profile_path":"/9TEh5QJAHnXuM3fE1Uu40QzXJQC.jpg","cast_id":10,"character":"Squidward
+        Tentacles (voice)","credit_id":"58459f4dc3a36844df01944a","order":2},{"adult":false,"gender":2,"id":188229,"known_for_department":"Acting","name":"Mr.
+        Lawrence","original_name":"Mr. Lawrence","popularity":2.358,"profile_path":"/eLI17X32n91iMuLroXtpKUlMOQf.jpg","cast_id":11,"character":"Plankton
+        (voice)","credit_id":"58459f659251416a74017c5d","order":3},{"adult":false,"gender":2,"id":6384,"known_for_department":"Acting","name":"Keanu
+        Reeves","original_name":"Keanu Reeves","popularity":32.595,"profile_path":"/rRdru6REr9i3WIHv2mntpcgxnoY.jpg","cast_id":28,"character":"Sage","credit_id":"5dcd6ef579a1c3001047357d","order":4},{"adult":false,"gender":2,"id":6574,"known_for_department":"Acting","name":"Clancy
+        Brown","original_name":"Clancy Brown","popularity":8.225,"profile_path":"/xjg0ZIxP0tFcEQCTeRgKxNtLdpe.jpg","cast_id":7,"character":"Mr.
+        Krabs (voice)","credit_id":"58459f13c3a36844df019421","order":5},{"adult":false,"gender":1,"id":78799,"known_for_department":"Acting","name":"Carolyn
+        Lawrence","original_name":"Carolyn Lawrence","popularity":2.665,"profile_path":"/7Ehx4bEO8loovbmbntXl0sBNjtj.jpg","cast_id":12,"character":"Sandy
+        Cheeks (voice)","credit_id":"58459f76c3a36844df01946c","order":6},{"adult":false,"gender":2,"id":1488236,"known_for_department":"Acting","name":"Matt
+        Berry","original_name":"Matt Berry","popularity":1.286,"profile_path":"/m1Mg7Ey0j3UVIFPGwLI1ryfhRm6.jpg","cast_id":37,"character":"King
+        Poseidon (voice)","credit_id":"5f722574fea0d70036003e3e","order":7},{"adult":false,"gender":1,"id":17414,"known_for_department":"Acting","name":"Jill
+        Talley","original_name":"Jill Talley","popularity":1.033,"profile_path":null,"cast_id":27,"character":"Karen
+        (voice)","credit_id":"5dc82849ab1bc7001805e46c","order":8},{"adult":false,"gender":1,"id":80634,"known_for_department":"Acting","name":"Mary
+        Jo Catlett","original_name":"Mary Jo Catlett","popularity":1.423,"profile_path":"/rHwZNcqL8nTazzaqmhwkEzY8Sai.jpg","cast_id":26,"character":"Mrs.
+        Puff (voice)","credit_id":"5dc8282399259c001584296c","order":9},{"adult":false,"gender":1,"id":1625558,"known_for_department":"Acting","name":"Awkwafina","original_name":"Awkwafina","popularity":4.239,"profile_path":"/l5AKkg3H1QhMuXmTTmq1EyjyiRb.jpg","cast_id":24,"character":"Otto
+        (voice)","credit_id":"5dc827daab1bc700130536ef","order":11},{"adult":false,"gender":2,"id":19767,"known_for_department":"Acting","name":"Snoop
+        Dogg","original_name":"Snoop Dogg","popularity":2.236,"profile_path":"/xMNvAveE8gMxqhKa4zs2DPLgsas.jpg","cast_id":34,"character":"The
+        Gambler","credit_id":"5f722526d40d4c00385fb907","order":12},{"adult":false,"gender":2,"id":11160,"known_for_department":"Acting","name":"Danny
+        Trejo","original_name":"Danny Trejo","popularity":3.266,"profile_path":"/gCWJybpDGAuKZ0mG2uTBVfsLuZX.jpg","cast_id":29,"character":"El
+        Diablo","credit_id":"5f10ba722495ab0032394b3c","order":13},{"adult":false,"gender":1,"id":1230868,"known_for_department":"Acting","name":"Tiffany
+        Haddish","original_name":"Tiffany Haddish","popularity":1.927,"profile_path":"/ivLhcXp38OlPybsFe8gSCklcYxP.jpg","cast_id":35,"character":"Master
+        of Ceremonies (voice)","credit_id":"5f7225403dd126003868bf9e","order":14},{"adult":false,"gender":2,"id":223879,"known_for_department":"Acting","name":"Reggie
+        Watts","original_name":"Reggie Watts","popularity":2.22,"profile_path":"/4498ocedmBNnMIKtnMUGO8yIesx.jpg","cast_id":36,"character":"Chancellor
+        (voice)","credit_id":"5f722556e4b5760039f00e05","order":15},{"adult":false,"gender":2,"id":1710790,"known_for_department":"Acting","name":"Antonio
+        Raul Corbo","original_name":"Antonio Raul Corbo","popularity":0.618,"profile_path":"/slBvNn8bPsHKTFkVbyeEnfw7rmu.jpg","cast_id":38,"character":"Young
+        SpongeBob (voice)","credit_id":"5f72260e3dd126003868c187","order":16},{"adult":false,"gender":2,"id":1181345,"known_for_department":"Acting","name":"Jack
+        Gore","original_name":"Jack Gore","popularity":0.648,"profile_path":"/o2jZrgP7SlHYWLpj0h0SDkkJ0ni.jpg","cast_id":39,"character":"Young
+        Patrick (voice)","credit_id":"5f7226261f748b003727fb24","order":17},{"adult":false,"gender":2,"id":1827954,"known_for_department":"Acting","name":"Jason
+        Maybaum","original_name":"Jason Maybaum","popularity":1.22,"profile_path":"/vm7mCQdWiN7lDRkJbcLzIoiusOC.jpg","cast_id":40,"character":"Young
+        Squidward (voice)","credit_id":"5f72263ed55e4d0034774934","order":18},{"adult":false,"gender":0,"id":2795383,"known_for_department":"Acting","name":"Presley
+        Williams","original_name":"Presley Williams","popularity":0.6,"profile_path":null,"cast_id":41,"character":"Young
+        Sandy (voice)","credit_id":"5f722660d40d4c003a5dc13e","order":19},{"adult":false,"gender":2,"id":23680,"known_for_department":"Acting","name":"Dee
+        Bradley Baker","original_name":"Dee Bradley Baker","popularity":3.825,"profile_path":"/fpGmSNSkwTaixEGAwC14A88JYAH.jpg","cast_id":47,"character":"Perch
+        Perkins (voice)","credit_id":"5fada9affdc146003d6caf66","order":20}],"crew":[{"adult":false,"gender":2,"id":947,"known_for_department":"Sound","name":"Hans
+        Zimmer","original_name":"Hans Zimmer","popularity":1.163,"profile_path":"/tpQnDeHY15szIXvpnhlprufz4d.jpg","credit_id":"5f24956a1b70ae00349fc326","department":"Sound","job":"Original
+        Music Composer"},{"adult":false,"gender":0,"id":9776,"known_for_department":"Production","name":"Chantal
+        Feghali","original_name":"Chantal Feghali","popularity":0.6,"profile_path":null,"credit_id":"58459ffd9251416a74017cd1","department":"Production","job":"Executive
+        Producer"},{"adult":false,"gender":2,"id":15894,"known_for_department":"Sound","name":"Tom
+        Myers","original_name":"Tom Myers","popularity":0.84,"profile_path":null,"credit_id":"5f4ef92b0143250037c8d2bb","department":"Sound","job":"Supervising
+        Sound Editor"},{"adult":false,"gender":2,"id":49903,"known_for_department":"Directing","name":"Tim
+        Hill","original_name":"Tim Hill","popularity":2.008,"profile_path":"/jJ4UQBlQ71aJzU75ZxnO5gdTbnj.jpg","credit_id":"5f96a219c616ac00345f119f","department":"Writing","job":"Screenplay"},{"adult":false,"gender":2,"id":49903,"known_for_department":"Directing","name":"Tim
+        Hill","original_name":"Tim Hill","popularity":2.008,"profile_path":"/jJ4UQBlQ71aJzU75ZxnO5gdTbnj.jpg","credit_id":"5c2b62020e0a2655f238d898","department":"Directing","job":"Director"},{"adult":false,"gender":2,"id":49903,"known_for_department":"Directing","name":"Tim
+        Hill","original_name":"Tim Hill","popularity":2.008,"profile_path":"/jJ4UQBlQ71aJzU75ZxnO5gdTbnj.jpg","credit_id":"5f96a22800fb6b0034b83803","department":"Writing","job":"Story"},{"adult":false,"gender":2,"id":57743,"known_for_department":"Writing","name":"Glenn
+        Berger","original_name":"Glenn Berger","popularity":4.241,"profile_path":"/jMy1SnrYNScYpgHMiwj7crdWJNc.jpg","credit_id":"5f96a23d2fe2fa003ab021da","department":"Writing","job":"Story"},{"adult":false,"gender":2,"id":57744,"known_for_department":"Writing","name":"Jonathan
+        Aibel","original_name":"Jonathan Aibel","popularity":1.4,"profile_path":"/nKKXpwXrkZawLhrbyKBSCpEJzT7.jpg","credit_id":"5f96a2356c0b3600340ac2ec","department":"Writing","job":"Story"},{"adult":false,"gender":2,"id":61976,"known_for_department":"Editing","name":"Nick
+        Kenway","original_name":"Nick Kenway","popularity":0.98,"profile_path":null,"credit_id":"5845a02f925141042b004069","department":"Editing","job":"Editorial
+        Manager"},{"adult":false,"gender":2,"id":70651,"known_for_department":"Writing","name":"Stephen
+        Hillenburg","original_name":"Stephen Hillenburg","popularity":2.241,"profile_path":"/4whwgExGZj2cncT6ffgCjUR8X9f.jpg","credit_id":"5845a00fc3a36844df0194f9","department":"Production","job":"Executive
+        Producer"},{"adult":false,"gender":2,"id":70651,"known_for_department":"Writing","name":"Stephen
+        Hillenburg","original_name":"Stephen Hillenburg","popularity":2.241,"profile_path":"/4whwgExGZj2cncT6ffgCjUR8X9f.jpg","credit_id":"5f96a1f66c0b3600330b46a0","department":"Writing","job":"Characters"},{"adult":false,"gender":2,"id":1400906,"known_for_department":"Sound","name":"Christopher
+        Scarabosio","original_name":"Christopher Scarabosio","popularity":0.605,"profile_path":"/9lOLuw52TKHXbzOzzlOsTYS3UEu.jpg","credit_id":"5f4ef9ecc9dbf900316b74d3","department":"Sound","job":"Additional
+        Sound Re-Recording Mixer"},{"adult":false,"gender":0,"id":1422873,"known_for_department":"Editing","name":"Cecilia
+        Hyoun","original_name":"Cecilia Hyoun","popularity":0.6,"profile_path":null,"credit_id":"585c56c79251416e8c001523","department":"Editing","job":"First
+        Assistant Editor"},{"adult":false,"gender":0,"id":1425978,"known_for_department":"Sound","name":"Gary
+        Summers","original_name":"Gary Summers","popularity":1.188,"profile_path":null,"credit_id":"5f4efde80143250037c8e434","department":"Sound","job":"Sound
+        Re-Recording Mixer"},{"adult":false,"gender":1,"id":1450294,"known_for_department":"Production","name":"Kristen
+        Caplan","original_name":"Kristen Caplan","popularity":0.6,"profile_path":null,"credit_id":"5845a0b9c3a368478d019069","department":"Production","job":"Production
+        Manager"}]}'
+  recorded_at: Sat, 05 Dec 2020 00:40:06 GMT
 recorded_with: VCR 6.0.0
