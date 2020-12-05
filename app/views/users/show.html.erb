@@ -4,7 +4,21 @@
 </section>
 
 <section class='friends'>
-<h2>Friends</h2>
+  <h2>Friends</h2>
+  <div class='friend-search'>
+    <%= form_with url: friendships_path, local: true, method: :post do |f| %>
+      <%= f.text_field(:friend_search, placeholer: 'Search friend by username') %>
+      <%= f.submit 'Add Friend' %>
+    <% end %>
+  </div>
+
+  <div class='friend-list'>
+    <% if @user.followed.empty? %>
+      <p>You currently have no friends</p>
+    <% else %>
+    <% end %>
+
+  </div>
 </section>
 
 <section class='parties'>
