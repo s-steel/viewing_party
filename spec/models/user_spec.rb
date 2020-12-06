@@ -30,27 +30,27 @@ RSpec.describe User, type: :model do
       end
       
       it 'returns true if a user exists in the system with user_name' do
-        expect(User.user_exist?(@user.user_name)).to eq(true)
+        expect(User.find_user(@user.user_name)).to eq(@user)
       end
 
       it 'returns true if a user exists in the system with user.email' do
-        expect(User.user_exist?(@user.email)).to eq(true)
+        expect(User.find_user(@user.email)).to eq(@user)
       end
 
       it 'returns true if a user exists in the system with user_name upcased' do
-        expect(User.user_exist?(@user.user_name.upcase)).to eq(true)
+        expect(User.find_user(@user.user_name.upcase)).to eq(@user)
       end
 
       it 'returns true if a user exists in the system with user.email upcased' do
-        expect(User.user_exist?(@user.email.upcase)).to eq(true)
+        expect(User.find_user(@user.email.upcase)).to eq(@user)
       end
 
       it 'returns false if a user does not exist in the system with user_name' do
-        expect(User.user_exist?(@user_2.user_name)).to eq(false)
+        expect(User.find_user(@user_2.user_name)).to eq(nil)
       end
 
       it 'returns false if a user does not exist in the system with user.email' do
-        expect(User.user_exist?(@user_2.email)).to eq(false)
+        expect(User.find_user(@user_2.email)).to eq(nil)
       end
     end
   end
