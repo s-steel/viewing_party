@@ -54,6 +54,14 @@ RSpec.describe 'As an authenticated user' do
         within '.friends' do
           expect(page).to have_content('You currently have no friends')
         end
+      end 
+
+      it 'I cannot add a friend using an incorrect email' do
+        within '.friends' do 
+          fill_in :friend_search, with: (@user_2.user_name + '.com')
+          click_button 'Add Friend'
+        end
+        expect(page).to have_content('That user doesn\'t exist in the system')
       end
 
       it 'I cannot add myself as a friend' do
@@ -77,7 +85,25 @@ RSpec.describe 'As an authenticated user' do
           expect(page).to have_content('You currently have no friends')
         end
       end
+    end
 
+    describe 'If I do have friends' do
+      it 'I see my list of friends on my dashboard' do
+        @user = create(:user, :with_friends)
+        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+        @friend_1 = @user.followed.first
+        @friend_2 = @user.followed.second
+        @friend_3 = @user.followed.third
+
+        visit dashboard_path 
+
+        within '.friends' do
+          expect(page).to_not have_content('You currently have no friends')
+          expect(page).to have_content(@friend_1.user_name)
+          expect(page).to have_content(@friend_2.user_name)
+          expect(page).to have_content(@friend_3.user_name)
+        end
+      end
     end
 
   end
