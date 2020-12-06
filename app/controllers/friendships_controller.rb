@@ -3,9 +3,9 @@ class FriendshipsController < ApplicationController
   def create 
     if User.find_user(friend_params) && !friend_self?(friend_params)
       current_user.followed << User.find_user(friend_params)
-    elsif User.find_user(friend_params)
+    elsif User.find_user(friend_params) && !friend_params.empty?
       flash[:error] = 'You cannot add yourself as a friend'
-    else 
+    elsif !friend_params.empty? 
       flash[:error] = 'That user doesn\'t exist in the system'
     end
     redirect_to dashboard_path
