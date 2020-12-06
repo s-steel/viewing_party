@@ -28,7 +28,6 @@ RSpec.describe 'As an authenticated user' do
           fill_in :friend_search, with: @user_2.user_name 
           click_button 'Add Friend'
         end 
-        save_and_open_page
         within '.friends' do
           expect(page).to_not have_content('You currently have no friends')
           expect(page).to have_content(@user_2.user_name)
@@ -51,8 +50,8 @@ RSpec.describe 'As an authenticated user' do
           fill_in :friend_search, with: 'random_person'
           click_button 'Add Friend'
         end
+        expect(page).to have_content('That user doesn\'t exist in the system')
         within '.friends' do
-          expect(page).to have_content('That user doesn\'t exist in the system')
           expect(page).to have_content('You currently have no friends')
         end
       end
@@ -62,8 +61,8 @@ RSpec.describe 'As an authenticated user' do
           fill_in :friend_search, with: @user.user_name
           click_button 'Add Friend'
         end
+        expect(page).to have_content('You cannot add yourself as a friend')
         within '.friends' do
-          expect(page).to have_content('You cannot add yourself as a friend')
           expect(page).to have_content('You currently have no friends')
         end
       end

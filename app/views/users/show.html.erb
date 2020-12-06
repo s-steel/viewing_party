@@ -16,6 +16,11 @@
     <% if @user.followed.empty? %>
       <p>You currently have no friends</p>
     <% else %>
+      <ul>
+        <% @user.followed.each do |friend| %>
+          <li><%= friend.user_name %></li>
+        <% end %>
+      </ul>
     <% end %>
 
   </div>
