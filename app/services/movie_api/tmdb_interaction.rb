@@ -13,7 +13,7 @@ class TMDBInteraction
     parse_and_instantiate(conn)
   end
 
-  def self.top_movies 
+  def self.top_movies
     conn = Faraday.new('https://api.themoviedb.org/3/movie/top_rated') do |req|
       req.params['api_key'] = ENV['TMDB_API_KEY']
     end
@@ -54,10 +54,9 @@ class TMDBInteraction
 
     data = conn.get("movie/#{id}")
     results = []
-    results << JSON.parse(data.body, symbolize_names: true)
-    # Created an array here because this returns one object and the create_movie_data method requires an array
+    movie_hash = JSON.parse(data.body, symbolize_names: true)
 
-    create_movie_data(results).first
+    MovieData.new(movie_hash)
   end
 
   def self.movie_reviews(id)
