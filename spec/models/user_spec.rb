@@ -22,5 +22,36 @@ RSpec.describe User, type: :model do
         expect(user.user_name).to eq('jacobwest')
       end
     end
+
+    describe 'user_exist?(user)' do
+      before :each do
+        @user = create(:user)
+        @user_2 = build(:user)
+      end
+      
+      it 'returns true if a user exists in the system with user_name' do
+        expect(User.user_exist?(@user.user_name)).to eq(true)
+      end
+
+      it 'returns true if a user exists in the system with user.email' do
+        expect(User.user_exist?(@user.email)).to eq(true)
+      end
+
+      it 'returns true if a user exists in the system with user_name upcased' do
+        expect(User.user_exist?(@user.user_name.upcase)).to eq(true)
+      end
+
+      it 'returns true if a user exists in the system with user.email upcased' do
+        expect(User.user_exist?(@user.email.upcase)).to eq(true)
+      end
+
+      it 'returns false if a user does not exist in the system with user_name' do
+        expect(User.user_exist?(@user_2.user_name)).to eq(false)
+      end
+
+      it 'returns false if a user does not exist in the system with user.email' do
+        expect(User.user_exist?(@user_2.email)).to eq(false)
+      end
+    end
   end
 end

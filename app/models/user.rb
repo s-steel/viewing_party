@@ -12,4 +12,8 @@ class User < ApplicationRecord
   def user_name
     email.split('@').first
   end
+
+  def self.user_exist?(user)
+    User.where('lower(email) like ?', "%#{user.downcase}%").present?
+  end
 end
