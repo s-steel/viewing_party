@@ -6,7 +6,7 @@ describe TMDBInteraction do
     it 'good query' do
       VCR.use_cassette('movie_search') do
         results = TMDBInteraction.search_tmdb('the')
-        expect(results.first.id).to eq(120)
+        expect(results.first.id).to eq(729648)
         expect(results.first).to be_a(MovieData)
       end
     end

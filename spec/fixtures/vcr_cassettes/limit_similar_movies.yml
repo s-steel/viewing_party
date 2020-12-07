@@ -54,11 +54,13 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 6c02603f677dd5669f8ab3b41062340f.cloudfront.net (CloudFront)
+      - 1.1 b7f0c5734a286f56595c1e1b456020a2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - cdnGAm_nnpfPL_sHYimILWuROBElAwtZimbeOXW35noBlcrAu3eZbg==
+      - CO-78Z22-n2WYYfYJap2Z-O5I4kPSzGY-OEdlKhlLCDqVHQrNREWaw==
+      Age:
+      - '1539'
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/jArl1j9sL2mYjRW23EaZKWAr2E8.jpg","genre_ids":[18,36,53],"id":399121,"original_language":"fr","original_title":"J’accuse","overview":"In
@@ -178,5 +180,5 @@ http_interactions:
         Everdeen reluctantly becomes the symbol of a mass rebellion against the autocratic
         Capitol.","release_date":"2014-11-19","id":131631,"adult":false,"backdrop_path":"/rYsdoUqkltpKZQWwCWXf55csXvL.jpg","vote_count":12087,"genre_ids":[878,12,53],"title":"The
         Hunger Games: Mockingjay - Part 1","original_language":"en","popularity":75.704}],"total_pages":23,"total_results":452}'
-  recorded_at: Mon, 07 Dec 2020 22:06:19 GMT
+  recorded_at: Mon, 07 Dec 2020 22:31:58 GMT
 recorded_with: VCR 6.0.0
