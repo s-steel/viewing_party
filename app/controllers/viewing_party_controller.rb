@@ -1,5 +1,3 @@
 class ViewingPartyController < ApplicationController
- def create
-  
- end
+  def create; end
 end
