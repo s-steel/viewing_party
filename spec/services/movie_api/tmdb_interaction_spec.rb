@@ -93,7 +93,7 @@ describe TMDBInteraction do
       expect(@result.first.name).to eq('Tom Cruise')
     end
 
-    it 'can limit number of reviews' do
+    it 'can limit number of casts members returned' do
       VCR.use_cassette('movie_cast') do
         @result = TMDBInteraction.movie_cast(343_611, 10)
       end
@@ -120,6 +120,24 @@ describe TMDBInteraction do
     it 'returns MovieData objects' do
       expect(@result.first).to be_a(MovieData)
       expect(@result.last).to be_a(MovieData)
+    end
+  end
+
+  describe 'similar_movies' do
+    it 'returns a list of similar movies' do 
+      VCR.use_cassette('similar_movies') do
+        @result = TMDBInteraction.similar_movies(343_611)
+      end
+      expect(@result.count).to eq(20)
+      expect(@result.first).to be_a(MovieData)
+      expect(@result.last.id).to eq(131_631)
+    end
+    
+    it 'can limit the number returned' do
+      VCR.use_cassette('limit_similar_movies') do
+        @result = TMDBInteraction.similar_movies(343_611, 5)
+      end
+      expect(@result.count).to eq(5)
     end
   end
 end

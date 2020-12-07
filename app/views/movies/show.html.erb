@@ -41,3 +41,11 @@
   </div>
   <% end %>
 </section>
+
+<section class='similar-movies'>
+  <h3>Similar Movies:</h3>
+  <% @similar_movies.each do |movie|%>
+    <%= link_to movie.title, "/movies/#{movie.id}" %><br>
+  <% end %>
+</section>
+

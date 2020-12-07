@@ -5,6 +5,7 @@ class MoviesController < ApplicationController
     @movie = TMDBInteraction.movie_by_id(params[:id])
     @reviews = TMDBInteraction.movie_reviews(params[:id])
     @cast = TMDBInteraction.movie_cast(params[:id], 10)
+    @similar_movies = TMDBInteraction.similar_movies(params[:id], 5)
   end
 
   def search

@@ -59,9 +59,15 @@ footer {
 
 .movie-reviews {
   padding: 20px;
+  border-bottom: 5px solid black;
 }
 
 .movie-cast {
+  padding: 20px;
+  border-bottom: 5px solid black;
+}
+
+.similar-movies {
   padding: 20px;
   border-bottom: 5px solid black;
 }
