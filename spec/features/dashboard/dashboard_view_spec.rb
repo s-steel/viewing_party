@@ -4,6 +4,7 @@ RSpec.describe 'As an authenticated user' do
   describe "when I visit '/dashboard' I see" do
     before :each do
       @user = create(:user)
+      @user2 = create(:user)
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
       visit dashboard_path
     end
@@ -34,6 +35,24 @@ RSpec.describe 'As an authenticated user' do
         end
       end
     end
-    
+
+    describe 'I see all my viewing party details' do
+      before :each do
+        # need to create viewing parties
+      end
+      context 'viewing parties I have been invited to' do
+        it 'shows the movie title, date and time of event, and staus of Invited'
+        # Movie Title
+        # Date and Time of Event
+        # Status of Invited
+      end
+
+      context 'viewing parties that I have created' do
+        it 'shows the movie title, date and time of event, and staus of Host'
+        # Movie Title
+        # Date and Time of Event
+        # Status of Host
+      end
+    end
   end
 end
