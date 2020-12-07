@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   resources :movies, only: [:show]
 
   post '/viewing-party/new', to: 'viewing_party#create'
+
+  resources :friendships, only: [:create]
 end
