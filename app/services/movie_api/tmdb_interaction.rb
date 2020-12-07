@@ -13,7 +13,7 @@ class TMDBInteraction
     parse_and_instantiate(conn)
   end
 
-  def self.top_movies 
+  def self.top_movies
     conn = Faraday.new('https://api.themoviedb.org/3/movie/top_rated') do |req|
       req.params['api_key'] = ENV['TMDB_API_KEY']
     end
