@@ -47,12 +47,14 @@ class TMDBInteraction
     [page1, page2]
   end
 
-  def self.movie_by_id(id)
-    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
+  def self.api_connection
+    Faraday.new('https://api.themoviedb.org/3/') do |req|
       req.params['api_key'] = ENV['TMDB_API_KEY']
     end
+  end
 
-    data = conn.get("movie/#{id}")
+  def self.movie_by_id(id)
+    data = api_connection.get("movie/#{id}")
     results = []
     results << JSON.parse(data.body, symbolize_names: true)
     # Created an array here because this returns one object and the create_movie_data method requires an array
@@ -61,11 +63,7 @@ class TMDBInteraction
   end
 
   def self.movie_reviews(id)
-    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-    end
-
-    data = conn.get("movie/#{id}/reviews")
+    data = api_connection.get("movie/#{id}/reviews")
 
     results = JSON.parse(data.body, symbolize_names: true)[:results]
 
@@ -73,11 +71,7 @@ class TMDBInteraction
   end
 
   def self.movie_cast(id, limit = 100)
-    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-    end
-
-    data = conn.get("movie/#{id}/credits")
+    data = api_connection.get("movie/#{id}/credits")
 
     results = JSON.parse(data.body, symbolize_names: true)[:cast]
     limited_results = results.take(limit)

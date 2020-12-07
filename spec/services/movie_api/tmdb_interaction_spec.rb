@@ -61,7 +61,7 @@ describe TMDBInteraction do
 
   describe 'movie_by_id' do
     it 'finds movie by id' do
-      VCR.use_cassette('finds movie by id') do
+      VCR.use_cassette('find_movie_by_id') do
         results = TMDBInteraction.movie_by_id(400_160).title
         expect(results).to eq('The SpongeBob Movie: Sponge on the Run')
       end
