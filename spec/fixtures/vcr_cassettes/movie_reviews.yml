@@ -52,13 +52,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 9c7e5857d78c5dc89042979317de5843.cloudfront.net (CloudFront)
+      - 1.1 ce4b35590464ed34415a13badd946ebb.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - VvJgEHCSEBIasNNLmO19PSQ3iv6zKJUPVAtyWFjWYqZV8iWVioLPPA==
+      - RLkrV0zuCez592-eKdUHamu5Q1a_NYjcMKFE5Fzxed_RXgzy_U0VYQ==
+      Age:
+      - '311'
     body:
       encoding: UTF-8
       string: '{"id":343611,"page":1,"results":[{"author":"TopKek","author_details":{"name":"TopKek","username":"topkek327","avatar_path":"/cNDCv5yGLucVYgpwWXOWEIE3KaH.jpg","rating":null},"content":"I
@@ -104,5 +106,5 @@ http_interactions:
         Danika Yarosh (Samantha). Elsewhere, you have the underused duo of Aldis Hodge
         (Espin) and Robert Knepper (James).\r\n\r\nIn conclusion, this may not match
         2012''s effort but there is still fun to be had.","created_at":"2020-09-08T00:25:22.232Z","id":"5f56cf7290dde00034ee54e3","updated_at":"2020-09-08T19:09:36.916Z","url":"https://www.themoviedb.org/review/5f56cf7290dde00034ee54e3"}],"total_pages":1,"total_results":3}'
-  recorded_at: Mon, 07 Dec 2020 15:03:38 GMT
+  recorded_at: Mon, 07 Dec 2020 15:08:49 GMT
 recorded_with: VCR 6.0.0
