@@ -68,7 +68,7 @@ describe 'Movies show page' do
     end
   end
 
-  describe 'similar movie api call' do
+  xdescribe 'similar movie api call' do
     before :each do
       @user = User.new(email: 'me@email.com',
                        password: 'password')

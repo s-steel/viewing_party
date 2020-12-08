@@ -57,7 +57,7 @@ RSpec.describe 'As an authenticated user' do
       end 
 
       it 'I cannot add a friend using an incorrect email' do
-        within '.friends' do 
+        within '.friends' do
           fill_in :friend_search, with: (@user_2.user_name + '.com')
           click_button 'Add Friend'
         end
@@ -75,13 +75,13 @@ RSpec.describe 'As an authenticated user' do
         end
       end
 
-      it 'a blank search field doesn\'t return anything new' do 
+      it 'a blank search field doesn\'t return anything new' do
         within '.friends' do
           click_button 'Add Friend'
         end
         expect(page).to_not have_content('That user doesn\'t exist in the system')
         expect(page).to_not have_content('You cannot add yourself as a friend')
-        within '.friends' do 
+        within '.friends' do
           expect(page).to have_content('You currently have no friends')
         end
       end
