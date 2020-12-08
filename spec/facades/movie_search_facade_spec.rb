@@ -39,6 +39,10 @@ describe 'movie_search_facade' do
       expect(result.see_reviews).to be_a(Array)
       expect(result.see_reviews.first).to be_a(Review)
     end
+
+    it 'can limit the number of reviews' do
+      #refactor: come back to this test 
+    end
   end
 
 end

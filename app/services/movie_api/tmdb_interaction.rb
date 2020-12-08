@@ -46,14 +46,5 @@ class TMDBInteraction
       return JSON.parse(data.body, symbolize_names: true) if page2.nil? 
       JSON.parse(page1.body, symbolize_names: true)[:results].concat(JSON.parse(page2.body, symbolize_names: true)[:results])
     end 
-
-    #move to facade 
-    # def self.create_movie_data(results)
-    #   results.map do |result|
-    #     MovieData.new(result)
-    #   end
-    # end
-
-
     
 end
