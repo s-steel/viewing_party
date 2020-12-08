@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'As a user that is logged in' do 
+describe 'As a user that is logged in' do
   describe 'I can log out' do
     it 'I click logout and am returned to the welcome page' do
       user = create(:user)

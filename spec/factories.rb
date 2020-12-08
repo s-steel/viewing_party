@@ -1,10 +1,10 @@
 FactoryBot.define do
   factory :user do
-    email { Faker::Internet.email}
+    email { Faker::Internet.email }
     password { 'password' }
     password_confirmation { 'password' }
 
-    trait :with_friends do  
+    trait :with_friends do
       transient do
         friend_count { 3 }
       end
@@ -14,6 +14,6 @@ FactoryBot.define do
         user.followers << friends
         user.followed << friends
       end
-    end 
+    end
   end
 end
