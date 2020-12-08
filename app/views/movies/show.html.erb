@@ -27,14 +27,14 @@
 
 <section class='movie-cast'>
   <h3>Cast</h3>
-  <% @cast.each do |c| %>
+  <% @movie.cast.each do |c| %>
     <p><%= c.name %> as <%= c.character %></p>
   <% end %>
 </section>
 
 <section class='movie-reviews'>
-  <h3><%= @reviews.length %> Reviews</h3>
-  <% @reviews.each do |review| %>
+  <h3><%= @movie.see_reviews.length %> Reviews</h3>
+  <% @movie.see_reviews.each do |review| %>
   <div style='border:1px solid black' id="review-<%= review.id %>">
     <h5>Author: <%= review.author %></h5>
     <p><%= review.content %></p>

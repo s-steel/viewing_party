@@ -52,13 +52,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 91f1c114eac2b00f07286bc49dddd7e5.cloudfront.net (CloudFront)
+      - 1.1 c4fb40b7909e4dd897bba2e297b284e7.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - Y8ih9tQTC7Lc0VKkACLxmy2UXyqCEyOwZ3_VbfbxtsuxdGG7Wga4BA==
+      - PpUPK02r0aWR8ms1cpqi7vfgrOd1Z10mviU9DhcIMJ-NgyoODhqUEA==
+      Age:
+      - '7077'
     body:
       encoding: UTF-8
       string: '{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","belongs_to_collection":{"id":275402,"name":"SpongeBob
@@ -141,5 +143,5 @@ http_interactions:
         Re-Recording Mixer"},{"adult":false,"gender":1,"id":1450294,"known_for_department":"Production","name":"Kristen
         Caplan","original_name":"Kristen Caplan","popularity":0.6,"profile_path":null,"credit_id":"5845a0b9c3a368478d019069","department":"Production","job":"Production
         Manager"}]}}'
-  recorded_at: Tue, 08 Dec 2020 00:49:32 GMT
+  recorded_at: Tue, 08 Dec 2020 02:47:29 GMT
 recorded_with: VCR 6.0.0
