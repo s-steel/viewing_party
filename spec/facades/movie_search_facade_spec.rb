@@ -23,27 +23,27 @@ describe 'movie_search_facade' do
     it 'creates movie data object', :vcr do
       result = MovieSearchFacade.movie_details(121)
 
-      expect(result).to be_a(MovieData)
+      expect(result[:movie]).to be_a(MovieData)
     end
 
-    it 'creates nested actor objects', :vcr do
+    it 'creates actor objects', :vcr do
       result = MovieSearchFacade.movie_details(121)
       
-      expect(result.cast).to be_a(Array)
-      expect(result.cast.first).to be_a(Actor)
+      expect(result[:cast]).to be_a(Array)
+      expect(result[:cast].first).to be_a(Actor)
     end
 
-    it 'creates nested review objects', :vcr do
+    it 'creates review objects', :vcr do
       result = MovieSearchFacade.movie_details(121)
       
-      expect(result.see_reviews).to be_a(Array)
-      expect(result.see_reviews.first).to be_a(Review)
+      expect(result[:reviews]).to be_a(Array)
+      expect(result[:reviews].first).to be_a(Review)
     end
 
     it 'can limit the number of returned actors to 10', :vcr do
       result = MovieSearchFacade.movie_details(121)
 
-      expect(result.cast.count).to eq(10)
+      expect(result[:cast].count).to eq(10)
     end
   end
 
