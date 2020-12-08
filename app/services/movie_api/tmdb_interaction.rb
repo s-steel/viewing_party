@@ -22,12 +22,12 @@ class TMDBInteraction
     json = json_parse(result)
   end
 
-  # def self.similar_movies(id, limit = 100)
-  #   data = api_connection.get("movie/#{id}/similar")
-  #   results = parse_it(data)[:results]
-  #   limited_results = results.take(limit)
-  #   create_movie_data(limited_results)
-  # end
+  def self.similar_movies(id, limit = 100)
+    data = api_connection.get("movie/#{id}/similar")
+    results = parse_it(data)[:results]
+    limited_results = results.take(limit)
+    create_movie_data(limited_results)
+  end
 
   private 
     def self.create_connection(api_call, query = nil, append = nil)

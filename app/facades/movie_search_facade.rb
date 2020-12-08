@@ -12,6 +12,7 @@ class MovieSearchFacade
 
   def self.movie_details(movie_id)
     json_response = TMDBInteraction.movie_details(movie_id)
+    # have one response for each group ie cast, reviews, movie
     MovieData.new(json_response)
   end
 

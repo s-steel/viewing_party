@@ -28,5 +28,9 @@
 
 <section class='parties'>
 <h2>Viewing Parties</h2>
-<%= @parties %>
+<% @movies.each do |party, movie| %>
+  <%= movie.title %>
+  <%= party.start_date_time %>
+  <%= @user.status(party) %>
+<% end %>
 </section>

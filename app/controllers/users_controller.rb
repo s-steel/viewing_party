@@ -18,7 +18,10 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
-    require 'pry', binding.pry
+    @parties = @user.hosted_parties + @user.parties
+    @movies = @parties.each_with_object({}) do |party, output|
+      output[party] = MovieSearchFacade.movie_details(party.movie_id)
+    end
   end
 
   private
