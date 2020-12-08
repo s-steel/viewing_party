@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 08 Dec 2020 01:02:36 GMT
+      - Tue, 08 Dec 2020 17:14:58 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,26 +42,26 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 a47d45d25cc354507eae77aba89ca253.cloudfront.net (CloudFront)
+      - 1.1 b2e880ac67c1fba390623b9fc04bd63a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - 190_VT9XA4zU_TB1SJH2IrdaoMvTP673My3Y_qmt9MQVE7Eu9cGkCQ==
+      - tKWFrtTrjkFV4JxPNrhziaqh-d6YhjK5Hb8yA0Si7k-oZHevKAXLqA==
     body:
       encoding: UTF-8
-      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg","genre_ids":[12,14,28],"id":120,"original_language":"en","original_title":"The
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/7tNTPZMb13W0AhkcuoL6myRrNRr.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
+        Lord of the Rings: The Two Towers","overview":"Frodo and Sam are trekking
+        to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn
+        search for the orc-captured Merry and Pippin. All along, nefarious wizard
+        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":78.096,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
+        Lord of the Rings: The Two Towers","video":false,"vote_average":8.3,"vote_count":15652},{"adult":false,"backdrop_path":"/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg","genre_ids":[12,14,28],"id":120,"original_language":"en","original_title":"The
         Lord of the Rings: The Fellowship of the Ring","overview":"Young hobbit Frodo
         Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave
         his home in order to keep it from falling into the hands of its evil creator.
         Along the way, a fellowship is formed to protect the ringbearer and make sure
         that the ring arrives at its final destination: Mt. Doom, the only place where
         it can be destroyed.","popularity":139.226,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
-        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.3,"vote_count":18122},{"adult":false,"backdrop_path":"/7tNTPZMb13W0AhkcuoL6myRrNRr.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
-        Lord of the Rings: The Two Towers","overview":"Frodo and Sam are trekking
-        to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn
-        search for the orc-captured Merry and Pippin. All along, nefarious wizard
-        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":78.096,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
-        Lord of the Rings: The Two Towers","video":false,"vote_average":8.3,"vote_count":15652},{"adult":false,"backdrop_path":"/9DeGfFIqjph5CBFVQrD6wv9S7rR.jpg","genre_ids":[12,14,28],"id":122,"original_language":"en","original_title":"The
+        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.3,"vote_count":18122},{"adult":false,"backdrop_path":"/9DeGfFIqjph5CBFVQrD6wv9S7rR.jpg","genre_ids":[12,14,28],"id":122,"original_language":"en","original_title":"The
         Lord of the Rings: The Return of the King","overview":"Aragorn is revealed
         as the heir to the ancient kings as he, Gandalf and the other members of the
         broken fellowship struggle to save Gondor from Sauron''s forces. Meanwhile,
@@ -71,8 +71,20 @@ http_interactions:
         Lord of the Rings","overview":"The Fellowship of the Ring embark on a journey
         to destroy the One Ring and end Sauron''s reign over Middle-earth.","popularity":15.544,"poster_path":"/4O3s0IGZJirPBecqEnP9qsjlTQw.jpg","release_date":"1978-11-15","title":"The
         Lord of the Rings","video":false,"vote_average":6.5,"vote_count":491},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":573089,"original_language":"en","original_title":"The
-        Lord of the Rings: The Quest Fulfilled","overview":"","popularity":3.764,"poster_path":null,"release_date":"2003-12-26","title":"The
-        Lord of the Rings: The Quest Fulfilled","video":false,"vote_average":6,"vote_count":1},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":651342,"original_language":"en","original_title":"J.R.R.
+        Lord of the Rings: The Quest Fulfilled","overview":"","popularity":4.347,"poster_path":null,"release_date":"2003-12-26","title":"The
+        Lord of the Rings: The Quest Fulfilled","video":false,"vote_average":6,"vote_count":1},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":335612,"original_language":"en","original_title":"The
+        Making of ''The Lord of the Rings''","overview":"A collection of The Making
+        of ''The Fellowship of the Ring'', ''The Two Towers'' and ''The Return of
+        the King''. This documentary treats movie, special effect and fantasy fans
+        to a behnd-the-scenes look at the making of The Lord of the Rings, Peter Jackson''s
+        blockbuster three-film adaptation of J.R.R. Tolkien''s classic work of fiction
+        about the battle to save Middle Earth from the power of Sauron, and the quest
+        that must be undertaken by a single small hobbit. Includes interviews with
+        director Jackson, stars Ian McKellen and Elijah Wood, and the rest of the
+        cast and crew who share some of the experiences they had in making the film,
+        as well as discuss the massive effort that went into making the myths and
+        monsters of Middle Earth a reality.","popularity":1.799,"poster_path":"/yYDnhipd9eX3lNTOSjkXxb6WSFq.jpg","release_date":"2002-04-06","title":"The
+        Making of ''The Lord of the Rings''","video":false,"vote_average":7.3,"vote_count":4},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":651342,"original_language":"en","original_title":"J.R.R.
         Tolkien and the Birth Of \"The Lord of the Rings\" And \"The Hobbit\"","overview":"In
         a house in Oxford lived a remarkable man called J.R.R. Tolkien who told stories
         that thrilled the world. To this very day readers and film audiences are enjoying
@@ -86,20 +98,8 @@ http_interactions:
         of Industrial Birmingham, the dreaming spires of Oxford to the World War I
         trenches of the blood soaked Somme; this is the story of the quintessential
         English College Professor who made epic mythology and legend accessible to
-        one and all.","popularity":4.331,"poster_path":"/jp0NQtIQTwen5vHBNcCK2iLKoY7.jpg","release_date":"2013-11-19","title":"J.R.R.
-        Tolkien and the Birth Of \"The Lord of the Rings\" And \"The Hobbit\"","video":true,"vote_average":0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":335612,"original_language":"en","original_title":"The
-        Making of ''The Lord of the Rings''","overview":"A collection of The Making
-        of ''The Fellowship of the Ring'', ''The Two Towers'' and ''The Return of
-        the King''. This documentary treats movie, special effect and fantasy fans
-        to a behnd-the-scenes look at the making of The Lord of the Rings, Peter Jackson''s
-        blockbuster three-film adaptation of J.R.R. Tolkien''s classic work of fiction
-        about the battle to save Middle Earth from the power of Sauron, and the quest
-        that must be undertaken by a single small hobbit. Includes interviews with
-        director Jackson, stars Ian McKellen and Elijah Wood, and the rest of the
-        cast and crew who share some of the experiences they had in making the film,
-        as well as discuss the massive effort that went into making the myths and
-        monsters of Middle Earth a reality.","popularity":1.799,"poster_path":"/yYDnhipd9eX3lNTOSjkXxb6WSFq.jpg","release_date":"2002-04-06","title":"The
-        Making of ''The Lord of the Rings''","video":false,"vote_average":7.3,"vote_count":4},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":155586,"original_language":"en","original_title":"Creating
+        one and all.","popularity":5.406,"poster_path":"/jp0NQtIQTwen5vHBNcCK2iLKoY7.jpg","release_date":"2013-11-19","title":"J.R.R.
+        Tolkien and the Birth Of \"The Lord of the Rings\" And \"The Hobbit\"","video":true,"vote_average":0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":155586,"original_language":"en","original_title":"Creating
         the Lord of the Rings Symphony","overview":"Creating The Lord of the Rings
         Symphony includes excerpts of live concert footage from The Lord of the Rings
         Symphony: Six Movements for Orchestra, Chorus and Soloists, documentary commentary
@@ -126,7 +126,7 @@ http_interactions:
         riders (from \"The Two Towers\") are provided. Also, there are interviews
         with a range of the filmmakers.","popularity":4.013,"poster_path":"/knCJvfbr4LWNZBkTDlwRdM28PuR.jpg","release_date":"2001-12-23","title":"National
         Geographic - Beyond the Movie: The Fellowship of the Ring","video":false,"vote_average":5.8,"vote_count":6}],"total_pages":1,"total_results":11}'
-  recorded_at: Tue, 08 Dec 2020 01:02:36 GMT
+  recorded_at: Tue, 08 Dec 2020 17:14:58 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=2&query=the%20lord%20of%20the%20rings
@@ -151,6 +151,8 @@ http_interactions:
       - '58'
       Connection:
       - keep-alive
+      Date:
+      - Tue, 08 Dec 2020 17:14:58 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -160,22 +162,20 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
-      Date:
-      - Tue, 08 Dec 2020 01:02:36 GMT
       Etag:
       - 7d08b8b3bfa4ee53486bd9ed9a954b48
       Cache-Control:
       - public, max-age=600
       X-Cache:
-      - RefreshHit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 1e5c934b70471a41d2b61ae8c4abeb79.cloudfront.net (CloudFront)
+      - 1.1 7d885ba806a1846198f8b666005bec93.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - VQm3w3I0PLKFyoM5oNmLPmNTGC3WP8-aPw5dCrDuLzsSmeuGN3MBGQ==
+      - FqyTQl1yp5vAJ4YlJR2s2cRENdu-aCDyNxhxlPqMHauG-PjuiHSO0g==
     body:
       encoding: UTF-8
       string: '{"page":2,"results":[],"total_pages":1,"total_results":11}'
-  recorded_at: Tue, 08 Dec 2020 01:02:36 GMT
+  recorded_at: Tue, 08 Dec 2020 17:14:59 GMT
 recorded_with: VCR 6.0.0

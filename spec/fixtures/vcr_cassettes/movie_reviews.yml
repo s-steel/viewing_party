@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/343611/reviews?api_key=<DONT_EXPOSE_MY_DATA>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 08 Dec 2020 04:31:02 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 012fe072a97da3b0e90fc2aec4593c3ba3f67bd2
+      X-Memc-Age:
+      - '5365'
+      X-Memc-Expires:
+      - '16235'
+      Etag:
+      - W/"44cc4ca44b553079aa8e6d1e9c4efa8f"
+      Last-Modified:
+      - Tue, 08 Dec 2020 04:31:02 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f0b290c4e2273a7586bc6f080031d9bc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - u7CT3e6BGK5ZKcIU030y0evT2Eq0BEwpPdsWJVN44wnqP83A0QsJ3g==
+    body:
+      encoding: UTF-8
+      string: '{"id":343611,"page":1,"results":[{"author":"TopKek","author_details":{"name":"TopKek","username":"topkek327","avatar_path":"/cNDCv5yGLucVYgpwWXOWEIE3KaH.jpg","rating":null},"content":"I
+        was a supporter of the first Jack Reacher film, having never developed a literary
+        attachment to the eponymous hero and thus being perfectly happy to see him
+        misinterpreted (apparently) by the diminutive Tom Cruise.\r\n\r\nBut this
+        sequel, adapted from another of Lee Child''s bestselling books, has the misfortune
+        to bear a title which may provide its epitaph.\r\n\r\nReacher does come back,
+        on a similar mission to last time: that is, to clear someone''s name and run
+        around (he does a lot of running) dodging those who would rather see him hand-cuffed
+        and out of their ill-intentioned way.","created_at":"2016-10-25T06:47:41.839Z","id":"580f000d9251416c7d006717","updated_at":"2016-10-25T14:07:06.447Z","url":"https://www.themoviedb.org/review/580f000d9251416c7d006717"},{"author":"Reno","author_details":{"name":"Reno","username":"Rangan","avatar_path":"/6ZpVUJzqXMzH35VprEtnX0sNI3.jpg","rating":7.0},"content":"**...but
+        he did go back and got into a trouble!**\r\n\r\nThe original source is a long
+        book series, so they did not do it in order. Like the first film, which was
+        based on the ninth book, this one was on the eighteenth. It was a stylishly
+        made film. The actors were good, and their stunts were excellent. But not
+        the storyline. This is a very familiar theme. You know, someone framed you
+        and you go on to dig the truth while everyone trying to hunt you down. There
+        are lots of close encounter, which give great thrilling entertainment. So,
+        other than the story, everything looked fine.\r\n\r\nJack goes to meet one
+        of his ex colleagues at his old headquarters. But soon he discovers she''s
+        behind the bars and now he''s too for the crime they did not do. So escaping
+        from the prison and looking for clues, who framed them and why, all one by
+        one disclosed with some excellent running-chasing action sequences. The film
+        almost as good as any timepass action film. But like it was the new wine in
+        an old bottle. So it won''t work for everyone, especially those with greater
+        expectations.\r\n\r\nThe 55 year old Tom Cruise on the edge to become a veteran
+        actor, but still he got that action hero macho in him. Probably another 3-4
+        films, including the upcoming ''Mission: Impossible'' sequel. So this franchise
+        could replace his cast with younger one in the future. Because another 20
+        books to go. Though, I''m thinking about the television series. Cobie too
+        was awesome. The film justifies to its original, but not more than an above
+        average. So good for once watching it.\r\n\r\n_6.5/10_","created_at":"2017-09-08T00:54:51.406Z","id":"59b1ea5bc3a368244303734c","updated_at":"2017-09-08T01:24:26.997Z","url":"https://www.themoviedb.org/review/59b1ea5bc3a368244303734c"},{"author":"r96sk","author_details":{"name":"","username":"r96sk","avatar_path":"/https://secure.gravatar.com/avatar/96c2e0e4ac98450f9e8e3c0a0a40aad8.jpg","rating":7.0},"content":"A
+        suitably entertaining sequel, even if it is a downgrade on the very good original.\r\n\r\n<em>''Jack
+        Reacher: Never Go Back''</em> sees a whole new cast, with one obvious exception,
+        and that does affect my enjoyment - not a fan of major cast changes, myself.
+        Still, the newcomers all add a decent amount with their performances. The
+        premise, meanwhile, is less interesting than that of <em>''Jack Reacher''</em>,
+        but it still makes for solid action.\r\n\r\nTom Cruise (Jack) is, as you''d
+        predict, the clear best part of this follow-up. That man does a lot of productions
+        in this genre, in that regard his performance doesn''t feel majorly different
+        from his other work but the film is at its highest point when he is onscreen.
+        Cruise is joined by the pleasing Cobie Smulders (Turner) and satisfactory
+        Danika Yarosh (Samantha). Elsewhere, you have the underused duo of Aldis Hodge
+        (Espin) and Robert Knepper (James).\r\n\r\nIn conclusion, this may not match
+        2012''s effort but there is still fun to be had.","created_at":"2020-09-08T00:25:22.232Z","id":"5f56cf7290dde00034ee54e3","updated_at":"2020-09-08T19:09:36.916Z","url":"https://www.themoviedb.org/review/5f56cf7290dde00034ee54e3"}],"total_pages":1,"total_results":3}'
+  recorded_at: Tue, 08 Dec 2020 04:31:02 GMT
+recorded_with: VCR 6.0.0

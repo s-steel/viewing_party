@@ -1,5 +1,5 @@
 <div class='new-viewing-button'>
-  <%= button_to "Create Viewing Party for this Movie", "/viewing-party/new" %>
+  <%= button_to "Create Viewing Party for this Movie", "/viewing-party/new", method: :get, params: {movie_id: @movie.id} %>
 </div>
 
 <div class='movie-title'>
@@ -8,7 +8,7 @@
 
 <table class='movie-data'>
   <tr>
-    <th>Vote Average:</th> 
+    <th>Vote Average:</th>
     <th>Runtime:</th>
     <th>Genre(s):</th>
   </tr>
