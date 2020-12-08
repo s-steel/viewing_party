@@ -3,8 +3,11 @@ require 'rails_helper'
 RSpec.describe 'As an authenticated user' do
   describe "when I visit '/dashboard' I see" do
     before :each do
-      @user = create(:user, :with_friends)
+      @user = create(:user)
       @user2 = create(:user)
+      @user3 = create(:user)
+      @user4 = create(:user)
+      @user.followed << [@user2, @user3, @user4]
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
       visit dashboard_path
     end
@@ -36,9 +39,11 @@ RSpec.describe 'As an authenticated user' do
       end
     end
 
-    describe 'I see all my viewing party details' do
+    xdescribe 'I see all my viewing party details' do
       before :each do
-        # @party1 = Parties.create!(movie_id: 343_611, duration: 118, )
+        @party1 = Party.create!(movie_id: 343_611, duration: 118, host_id: @user.id, when: '2021-01-01T11:30')
+        @party1.guests << [@user3, @user4]
+        # require 'pry', binding.pry
       end
       context 'viewing parties I have been invited to' do
         it 'shows the movie title, date and time of event, and staus of Invited'
@@ -48,10 +53,12 @@ RSpec.describe 'As an authenticated user' do
       end
 
       context 'viewing parties that I have created' do
-        it 'shows the movie title, date and time of event, and staus of Host'
+        it 'shows the movie title, date and time of event, and staus of Host' do
+          # expect(page).to have_content('Jack Reacher')
         # Movie Title
         # Date and Time of Event
         # Status of Host
+        end
       end
     end
   end
