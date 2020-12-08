@@ -76,4 +76,78 @@ http_interactions:
         Not in Bikini Bottom Anymore.","title":"The SpongeBob Movie: Sponge on the
         Run","video":false,"vote_average":8.0,"vote_count":1673}'
   recorded_at: Tue, 08 Dec 2020 02:30:59 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/400160?api_key=<DONT_EXPOSE_MY_DATA>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 08 Dec 2020 04:35:44 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 6fff8828783d3e8de7c4596339a2e33f9fb0d760
+      X-Memc-Age:
+      - '20367'
+      X-Memc-Expires:
+      - '1233'
+      Etag:
+      - W/"4ca75bd8e847ae91008a42aecead89de"
+      Last-Modified:
+      - Tue, 08 Dec 2020 04:35:44 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 b7f0c5734a286f56595c1e1b456020a2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - z3EoftKtKinkV57dYB-qmxRbJ66HLT_oBPkz0TXrmQUFfXgSbiq_kw==
+    body:
+      encoding: UTF-8
+      string: '{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","belongs_to_collection":{"id":275402,"name":"SpongeBob
+        Collection","poster_path":"/bsCBgNIeqwUh0rWrEjojH7Xbqto.jpg","backdrop_path":"/uDbMvHRX0LMUxmsMyOOrPeLYHO5.jpg"},"budget":60000000,"genres":[{"id":16,"name":"Animation"},{"id":14,"name":"Fantasy"},{"id":12,"name":"Adventure"},{"id":35,"name":"Comedy"},{"id":10751,"name":"Family"}],"homepage":"https://www.spongebobmovie.com/","id":400160,"imdb_id":"tt4823776","original_language":"en","original_title":"The
+        SpongeBob Movie: Sponge on the Run","overview":"When his best friend Gary
+        is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far
+        beyond Bikini Bottom to save their pink-shelled pal.","popularity":716.962,"poster_path":"/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg","production_companies":[{"id":8921,"logo_path":null,"name":"United
+        Plankton Pictures","origin_country":"US"},{"id":2348,"logo_path":"/m31fQvZJuUvAgxoqTiCGYFBfZYe.png","name":"Nickelodeon
+        Movies","origin_country":"US"},{"id":24955,"logo_path":"/bX3cYCRWdddXTgIcDEfNiVa8U4j.png","name":"Paramount
+        Animation","origin_country":"US"},{"id":4,"logo_path":"/fycMZt242LVjagMByZOLUGbCvv3.png","name":"Paramount","origin_country":"US"},{"id":2531,"logo_path":"/pC2iDCDCvV85vOBP7a5Ukxuc0Du.png","name":"MRC","origin_country":"US"},{"id":8649,"logo_path":null,"name":"Mikros
+        Image","origin_country":"FR"}],"production_countries":[{"iso_3166_1":"KR","name":"South
+        Korea"},{"iso_3166_1":"US","name":"United States of America"}],"release_date":"2020-08-14","revenue":4700000,"runtime":95,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"They''re
+        Not in Bikini Bottom Anymore.","title":"The SpongeBob Movie: Sponge on the
+        Run","video":false,"vote_average":8.0,"vote_count":1675}'
+  recorded_at: Tue, 08 Dec 2020 04:35:44 GMT
 recorded_with: VCR 6.0.0
