@@ -21,11 +21,36 @@ class TMDBInteraction
     parse_and_instantiate(conn)
   end
 
+  def self.movie_by_id(id)
+    data = api_connection.get("movie/#{id}")
+    movie_hash = parse_it(data)
+    MovieData.new(movie_hash)
+  end
+
+  def self.movie_reviews(id)
+    data = api_connection.get("movie/#{id}/reviews")
+    results = parse_it(data)[:results]
+    create_movie_data(results)
+  end
+
+  def self.movie_cast(id, limit = 100)
+    data = api_connection.get("movie/#{id}/credits")
+    results = parse_it(data)[:cast]
+    limited_results = results.take(limit)
+    # ^^ Not sure if we should be using `take` within this call or refactor it out into a model method to be call at another time
+    create_movie_data(limited_results)
+  end
+
+  def self.similar_movies(id, limit = 100)
+    data = api_connection.get("movie/#{id}/similar")
+    results = parse_it(data)[:results]
+    limited_results = results.take(limit)
+    create_movie_data(limited_results)
+  end
+
   def self.parse_and_instantiate(conn)
     page1, page2 = get_40_results(conn)
-
     results = JSON.parse(page1.body, symbolize_names: true)[:results].concat(JSON.parse(page2.body, symbolize_names: true)[:results])
-
     create_movie_data(results)
   end
 
@@ -55,38 +80,5 @@ class TMDBInteraction
 
   def self.parse_it(data)
     JSON.parse(data.body, symbolize_names: true)
-  end
-
-  def self.movie_by_id(id)
-    data = api_connection.get("movie/#{id}")
-   
-    movie_hash = JSON.parse(data.body, symbolize_names: true)
-
-    MovieData.new(movie_hash)
-  end
-
-  def self.movie_reviews(id)
-    data = api_connection.get("movie/#{id}/reviews")
-
-    results = parse_it(data)[:results]
-
-    create_movie_data(results)
-  end
-
-  def self.movie_cast(id, limit = 100)
-    data = api_connection.get("movie/#{id}/credits")
-
-    results = parse_it(data)[:cast]
-    limited_results = results.take(limit)
-    # ^^ Not sure if we should be using `take` within this call or refactor it out into a model method to be call at another time
-    create_movie_data(limited_results)
-  end
-
-  def self.similar_movies(id, limit = 100)
-    data = api_connection.get("movie/#{id}/similar")
-
-    results = parse_it(data)[:results]
-    limited_results = results.take(limit)
-    create_movie_data(limited_results)
   end
 end

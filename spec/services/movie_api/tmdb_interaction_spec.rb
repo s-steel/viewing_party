@@ -6,7 +6,7 @@ describe TMDBInteraction do
     it 'good query' do
       VCR.use_cassette('movie_search') do
         results = TMDBInteraction.search_tmdb('the')
-        expect(results.first.id).to eq(729648)
+        expect(results.first.id).to eq(729_648)
         expect(results.first).to be_a(MovieData)
       end
     end
@@ -132,7 +132,7 @@ describe TMDBInteraction do
       expect(@result.first).to be_a(MovieData)
       expect(@result.last.id).to eq(131_631)
     end
-    
+
     it 'can limit the number returned' do
       VCR.use_cassette('limit_similar_movies') do
         @result = TMDBInteraction.similar_movies(343_611, 5)
