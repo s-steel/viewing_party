@@ -76,7 +76,7 @@ describe 'New viewing party' do
       end
     end
 
-    xit 'after clicking Create Party it redirects to the dashboard' do
+    it 'after clicking Create Party it redirects to the dashboard' do
       VCR.use_cassette('viewing-party/new_spec_good') do
         visit viewing_party_new_path(movie_id: 400_160)
 
@@ -88,7 +88,6 @@ describe 'New viewing party' do
 
         expect(current_path).to eq(dashboard_path)
         expect(page).to have_content('You created a new viewing party')
-        # expect(page).to have_content
       end
     end
   end

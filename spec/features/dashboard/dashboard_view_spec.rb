@@ -24,6 +24,12 @@ RSpec.describe 'As an authenticated user' do
 
     it 'a friends section with my listed friends' do
       expect(page).to have_css('.friends', count: 1)
+      expect(page).to have_css('.friend-list')
+      within('.friend-list') do
+        expect(page).to have_content(@user2.user_name)
+        expect(page).to have_content(@user3.user_name)
+        expect(page).to have_content(@user4.user_name)
+      end
     end
 
     it 'a viewing party section with all parties I am invited to' do
@@ -39,7 +45,7 @@ RSpec.describe 'As an authenticated user' do
       end
     end
 
-    xdescribe 'I see all my viewing party details' do
+    describe 'I see all my viewing party details' do
       before :each do
         @party1 = Party.create!(movie_id: 343_611, duration: 118, host_id: @user.id, when: '2021-01-01T11:30')
         @party1.guests << [@user3, @user4]
@@ -54,7 +60,9 @@ RSpec.describe 'As an authenticated user' do
 
       context 'viewing parties that I have created' do
         it 'shows the movie title, date and time of event, and staus of Host' do
-          # expect(page).to have_content('Jack Reacher')
+          within('.parties') do
+            # expect(page).to have_content()
+          end
         # Movie Title
         # Date and Time of Event
         # Status of Host
