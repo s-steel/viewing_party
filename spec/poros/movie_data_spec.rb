@@ -76,12 +76,15 @@ describe 'Instance Methods' do
     end
 
     #refactor: I am not sure how to best setup the below without using a fixture file 
-    it 'cast' do
+    # it 'cast' do
+    #   expect(@cast).to be_a(Array)
+    #   expect(@cast.count).to eq(10)
+    #   expect(@cast.first).to be_a(Actor)
+    # end
 
-    end
-
-    it 'see_reviews' do
-
-    end
+    # it 'see_reviews' do
+    #   expect(@review).to be_a(Array)
+    #   expect(@review.first).to be_a(Review)
+    # end
   end
 end

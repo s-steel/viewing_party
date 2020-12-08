@@ -40,8 +40,10 @@ describe 'movie_search_facade' do
       expect(result.see_reviews.first).to be_a(Review)
     end
 
-    it 'can limit the number of reviews' do
-      #refactor: come back to this test 
+    it 'can limit the number of returned actors to 10', :vcr do
+      result = MovieSearchFacade.movie_details(121)
+
+      expect(result.cast.count).to eq(10)
     end
   end
 
