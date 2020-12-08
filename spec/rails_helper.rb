@@ -78,5 +78,6 @@ VCR.configure do |config|
   config.before_record do |i|
     i.response.body.force_encoding('UTF-8')
   end
+  config.default_cassette_options = { record: :new_episodes }
   config.configure_rspec_metadata!
 end 
