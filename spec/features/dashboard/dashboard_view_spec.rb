@@ -38,7 +38,7 @@ RSpec.describe 'As an authenticated user' do
 
     describe 'I see all my viewing party details' do
       before :each do
-        # need to create viewing parties
+        # @party1 = Parties.create!(movie_id: 343_611, duration: 118, )
       end
       context 'viewing parties I have been invited to' do
         it 'shows the movie title, date and time of event, and staus of Invited'

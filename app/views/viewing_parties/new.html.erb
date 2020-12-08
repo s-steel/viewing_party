@@ -9,7 +9,7 @@
   </div>
   <h4>Invited friends:</h4>
   <% @user.followed.each do |followed| %>
-    <%= f.check_box "guests[#{followed.id}]" %>
+    <%= f.check_box "guests[#{followed.id}]" %><%= followed.email %><br>
   <% end %>
   <%= f.submit 'Create Party'%>
 <% end %>
