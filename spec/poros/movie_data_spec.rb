@@ -75,7 +75,7 @@ describe 'Instance Methods' do
       expect(@test_object.format_run_time).to eq('1 hr 35 min')
     end
 
-    #I am not sure how to best setup the below without using a fixture file 
+    #refactor: I am not sure how to best setup the below without using a fixture file 
     it 'cast' do
 
     end
