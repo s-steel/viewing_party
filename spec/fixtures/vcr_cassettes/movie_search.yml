@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 05 Dec 2020 00:20:57 GMT
+      - Tue, 08 Dec 2020 17:21:29 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,51 +42,39 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 2c861897aa9389c1f47299b6fea5b59d.cloudfront.net (CloudFront)
+      - 1.1 9c7e5857d78c5dc89042979317de5843.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - RnQd91QQ3nJDz1rl9zA-tSCLIOkO20s3yJZqN9lib-nB3GsvZqKQCg==
+      - vOzXC5f5284kB-SZKJPGSbOBhrWdVQamviBzAS3qI2oaDGabl0ydXQ==
     body:
       encoding: UTF-8
-      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg","genre_ids":[12,14,28],"id":120,"original_language":"en","original_title":"The
-        Lord of the Rings: The Fellowship of the Ring","overview":"Young hobbit Frodo
-        Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave
-        his home in order to keep it from falling into the hands of its evil creator.
-        Along the way, a fellowship is formed to protect the ringbearer and make sure
-        that the ring arrives at its final destination: Mt. Doom, the only place where
-        it can be destroyed.","popularity":320.953,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
-        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.3,"vote_count":18095},{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","genre_ids":[16,14,12,35,10751],"id":400160,"original_language":"en","original_title":"The
-        SpongeBob Movie: Sponge on the Run","overview":"When his best friend Gary
-        is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far
-        beyond Bikini Bottom to save their pink-shelled pal.","popularity":657.7,"poster_path":"/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg","release_date":"2020-08-14","title":"The
-        SpongeBob Movie: Sponge on the Run","video":false,"vote_average":8,"vote_count":1640},{"adult":false,"backdrop_path":"/zKv7KF0pH9ASv2uGgTvTylMlxQn.jpg","genre_ids":[37],"id":729648,"original_language":"en","original_title":"The
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/zKv7KF0pH9ASv2uGgTvTylMlxQn.jpg","genre_ids":[37],"id":729648,"original_language":"en","original_title":"The
         Dalton Gang","overview":"When their brother Frank is killed by an outlaw,
         brothers Bob Dalton, Emmett Dalton and Gray Dalton join their local sheriff''s
         department. When they are cheated by the law, they turn to crime, robbing
         trains and anything else they can steal from over the course of two years
         in the early 1890''s. Trying to out do Jesse James, they attempt to rob two
-        banks at once in October of 1892, and things get ugly","popularity":778.781,"poster_path":"/6OeGqp18oZucUGziMIRNhLouZ75.jpg","release_date":"2020-11-02","title":"The
-        Dalton Gang","video":false,"vote_average":4.2,"vote_count":6},{"adult":false,"backdrop_path":"/aSdp2uS0jWkqdhCeyhJuCoiLZji.jpg","genre_ids":[80,53,28],"id":603119,"original_language":"en","original_title":"The
+        banks at once in October of 1892, and things get ugly","popularity":1198.731,"poster_path":"/6OeGqp18oZucUGziMIRNhLouZ75.jpg","release_date":"2020-11-02","title":"The
+        Dalton Gang","video":false,"vote_average":5,"vote_count":15},{"adult":false,"backdrop_path":"/wu1uilmhM4TdluKi2ytfz8gidHf.jpg","genre_ids":[16,14,12,35,10751],"id":400160,"original_language":"en","original_title":"The
+        SpongeBob Movie: Sponge on the Run","overview":"When his best friend Gary
+        is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far
+        beyond Bikini Bottom to save their pink-shelled pal.","popularity":637.303,"poster_path":"/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg","release_date":"2020-08-14","title":"The
+        SpongeBob Movie: Sponge on the Run","video":false,"vote_average":8,"vote_count":1676},{"adult":false,"backdrop_path":"/aSdp2uS0jWkqdhCeyhJuCoiLZji.jpg","genre_ids":[28,80,53],"id":603119,"original_language":"en","original_title":"The
         Silencing","overview":"A reformed hunter becomes involved in a deadly game
         of cat and mouse when he and the local sheriff set out to track a vicious
-        killer who may have kidnapped his daughter years ago.","popularity":333.829,"poster_path":"/dnN1ncxEOO1TY0gYL2FWxJqlhlL.jpg","release_date":"2020-07-18","title":"The
-        Silencing","video":false,"vote_average":6.6,"vote_count":177},{"adult":false,"backdrop_path":"/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg","genre_ids":[14,10751,12,35,27],"id":531219,"original_language":"en","original_title":"Roald
+        killer who may have kidnapped his daughter years ago.","popularity":382.014,"poster_path":"/dnN1ncxEOO1TY0gYL2FWxJqlhlL.jpg","release_date":"2020-07-18","title":"The
+        Silencing","video":false,"vote_average":6.6,"vote_count":181},{"adult":false,"backdrop_path":"/8rIoyM6zYXJNjzGseT3MRusMPWl.jpg","genre_ids":[14,10751,12,35,27],"id":531219,"original_language":"en","original_title":"Roald
         Dahl''s The Witches","overview":"In late 1967, a young orphaned boy goes to
         live with his loving grandma in the rural Alabama town of Demopolis. As the
         boy and his grandmother encounter some deceptively glamorous but thoroughly
         diabolical witches, she wisely whisks him away to a seaside resort. Regrettably,
         they arrive at precisely the same time that the world''s Grand High Witch
-        has gathered.","popularity":761.652,"poster_path":"/betExZlgK0l7CZ9CsCBVcwO1OjL.jpg","release_date":"2020-10-26","title":"Roald
-        Dahl''s The Witches","video":false,"vote_average":6.9,"vote_count":845},{"adult":false,"backdrop_path":"/othE4LT9rN2jbGXilXmCdnamtex.jpg","genre_ids":[],"id":683535,"original_language":"en","original_title":"Before
-        The Wrath","overview":"While scholars debate the timing of the Rapture, the
-        world has lost why this event is prophesied to occur in the first place; knowledge
-        that was once understood by those in the first century. Today, researchers
-        in the Middle-East have rediscovered ancient anthropological evidence from
-        the time of Christ that reveals exactly how and why the Rapture must occur;
-        unveiling new biblical insight that will reignite hope for believers and prepare
-        the world for what''s coming.","popularity":561.169,"poster_path":"/onyAHZfK4ifKaLWthgqFrpNRoqZ.jpg","release_date":"2020-11-26","title":"Before
-        The Wrath","video":false,"vote_average":5,"vote_count":1},{"adult":false,"backdrop_path":"/l8ubUlfzlB5R2j9cJ3CN7tj0gmd.jpg","genre_ids":[28,16,10749],"id":317442,"original_language":"ja","original_title":"The
+        has gathered.","popularity":743.434,"poster_path":"/betExZlgK0l7CZ9CsCBVcwO1OjL.jpg","release_date":"2020-10-26","title":"Roald
+        Dahl''s The Witches","video":false,"vote_average":6.9,"vote_count":874},{"adult":false,"backdrop_path":"/juc9wt7Eh2IarLL5S1yQ1a21O1A.jpg","genre_ids":[16,10751,35,14],"id":360920,"original_language":"en","original_title":"The
+        Grinch","overview":"The Grinch hatches a scheme to ruin Christmas when the
+        residents of Whoville plan their annual holiday celebration.","popularity":310.778,"poster_path":"/stAu0oF6dYDhV5ssbmFUYkQPtCP.jpg","release_date":"2018-11-08","title":"The
+        Grinch","video":false,"vote_average":6.8,"vote_count":2268},{"adult":false,"backdrop_path":"/l8ubUlfzlB5R2j9cJ3CN7tj0gmd.jpg","genre_ids":[28,16,10749],"id":317442,"original_language":"ja","original_title":"The
         Last: Naruto the Movie","overview":"Two years after the events of the Fourth
         Great Ninja War, the moon that Hagoromo Otsutsuki created long ago to seal
         away the Gedo Statue begins to descend towards the world, threatening to become
@@ -94,77 +82,85 @@ http_interactions:
         descendant of Kaguya Otsutsuki named Toneri Otsutsuki attempts to kidnap Hinata
         Hyuga but ends up abducting her younger sister Hanabi. Naruto and his allies
         now mount a rescue mission before finding themselves embroiled in a final
-        battle to decide the fate of everything.","popularity":141.823,"poster_path":"/bAQ8O5Uw6FedtlCbJTutenzPVKd.jpg","release_date":"2014-12-06","title":"The
-        Last: Naruto the Movie","video":false,"vote_average":7.9,"vote_count":783},{"adult":false,"backdrop_path":"/juc9wt7Eh2IarLL5S1yQ1a21O1A.jpg","genre_ids":[16,10751,35,14],"id":360920,"original_language":"en","original_title":"The
-        Grinch","overview":"The Grinch hatches a scheme to ruin Christmas when the
-        residents of Whoville plan their annual holiday celebration.","popularity":237.732,"poster_path":"/stAu0oF6dYDhV5ssbmFUYkQPtCP.jpg","release_date":"2018-11-08","title":"The
-        Grinch","video":false,"vote_average":6.8,"vote_count":2238},{"adult":false,"backdrop_path":"/eCIvqa3QVCx6H09bdeOS8Al2Sqy.jpg","genre_ids":[28,27,878],"id":340102,"original_language":"en","original_title":"The
+        battle to decide the fate of everything.","popularity":159.099,"poster_path":"/bAQ8O5Uw6FedtlCbJTutenzPVKd.jpg","release_date":"2014-12-06","title":"The
+        Last: Naruto the Movie","video":false,"vote_average":7.9,"vote_count":787},{"adult":false,"backdrop_path":"/eCIvqa3QVCx6H09bdeOS8Al2Sqy.jpg","genre_ids":[28,27,878],"id":340102,"original_language":"en","original_title":"The
         New Mutants","overview":"Five young mutants, just discovering their abilities
         while held in a secret facility against their will, fight to escape their
-        past sins and save themselves.","popularity":378.178,"poster_path":"/xrI4EnZWftpo1B7tTvlMUXVOikd.jpg","release_date":"2020-08-26","title":"The
-        New Mutants","video":false,"vote_average":6.4,"vote_count":946},{"adult":false,"backdrop_path":"/htBUhLSS7FfHtydgYxUWjL3J1Q1.jpg","genre_ids":[16,12,10751,14],"id":560050,"original_language":"en","original_title":"Over
-        the Moon","overview":"In this animated musical, a girl builds a rocket ship
-        and blasts off, hoping to meet a mythical moon goddess.","popularity":373.851,"poster_path":"/lQfdytwN7eh0tXWjIiMceFdBBvD.jpg","release_date":"2020-10-16","title":"Over
-        the Moon","video":false,"vote_average":7.7,"vote_count":508},{"adult":false,"backdrop_path":"/n1RohH2VoK1CdVI2fXvcP19dSlm.jpg","genre_ids":[10752,18,36,28],"id":531876,"original_language":"en","original_title":"The
-        Outpost","overview":"A small unit of U.S. soldiers, alone at the remote Combat
-        Outpost Keating, located deep in the valley of three mountains in Afghanistan,
-        battles to defend against an overwhelming force of Taliban fighters in a coordinated
-        attack. The Battle of Kamdesh, as it was known, was the bloodiest American
-        engagement of the Afghan War in 2009 and Bravo Troop 3-61 CAV became one of
-        the most decorated units of the 19-year conflict.","popularity":133.772,"poster_path":"/hPkqY2EMqWUnFEoedukilIUieVG.jpg","release_date":"2020-06-24","title":"The
-        Outpost","video":false,"vote_average":6.8,"vote_count":452},{"adult":false,"backdrop_path":"/zogWnCSztU8xvabaepQnAwsOtOt.jpg","genre_ids":[28,80,18],"id":531499,"original_language":"en","original_title":"The
-        Tax Collector","overview":"David Cuevas is a family man who works as a gangland
-        tax collector for high ranking Los Angeles gang members. He makes collections
-        across the city with his partner Creeper making sure people pay up or will
-        see retaliation. An old threat returns to Los Angeles that puts everything
-        David loves in harm’s way.","popularity":247.302,"poster_path":"/3eg0kGC2Xh0vhydJHO37Sp4cmMt.jpg","release_date":"2020-08-07","title":"The
-        Tax Collector","video":false,"vote_average":5.9,"vote_count":196},{"adult":false,"backdrop_path":"/fgYP1XT9cQOR9h6VeG8UTBQYOs4.jpg","genre_ids":[878,12],"id":762690,"original_language":"es","original_title":"The
-        Mandalorian FanFilm","overview":"","popularity":177.149,"poster_path":"/c0uz2yrWJJIBckWfUTiQlfKDqIm.jpg","release_date":"","title":"The
-        Mandalorian FanFilm","video":false,"vote_average":9,"vote_count":5},{"adult":false,"backdrop_path":"/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg","genre_ids":[28,878,35,10751],"id":454626,"original_language":"en","original_title":"Sonic
-        the Hedgehog","overview":"Based on the global blockbuster videogame franchise
-        from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog
-        as he embraces his new home on Earth. In this live-action adventure comedy,
-        Sonic and his new best friend team up to defend the planet from the evil genius
-        Dr. Robotnik and his plans for world domination.","popularity":235.925,"poster_path":"/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg","release_date":"2020-02-12","title":"Sonic
-        the Hedgehog","video":false,"vote_average":7.5,"vote_count":6191},{"adult":false,"backdrop_path":"/5846jHODKbja38USbFcXgOnsfqb.jpg","genre_ids":[10751,14,12],"id":654028,"original_language":"en","original_title":"The
-        Christmas Chronicles: Part Two","overview":"Kate Pierce is reluctantly spending
-        Christmas with her mom’s new boyfriend and his son Jack. But when the North
-        Pole and Christmas are threatened to be destroyed, Kate and Jack are unexpectedly
-        pulled into a new adventure with Santa Claus.","popularity":703.919,"poster_path":"/6sG0kbEvAi3RRLcGGU5h8l3qAPa.jpg","release_date":"2020-11-18","title":"The
-        Christmas Chronicles: Part Two","video":false,"vote_average":7.4,"vote_count":156},{"adult":false,"backdrop_path":"/9DeGfFIqjph5CBFVQrD6wv9S7rR.jpg","genre_ids":[12,14,28],"id":122,"original_language":"en","original_title":"The
-        Lord of the Rings: The Return of the King","overview":"Aragorn is revealed
-        as the heir to the ancient kings as he, Gandalf and the other members of the
-        broken fellowship struggle to save Gondor from Sauron''s forces. Meanwhile,
-        Frodo and Sam take the ring closer to the heart of Mordor, the dark lord''s
-        realm.","popularity":87.161,"poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","release_date":"2003-12-01","title":"The
-        Lord of the Rings: The Return of the King","video":false,"vote_average":8.5,"vote_count":16653},{"adult":false,"backdrop_path":"/yFRpUmsreYO5Bc0HVBTsJsHIIox.jpg","genre_ids":[18,12,10751],"id":481848,"original_language":"en","original_title":"The
-        Call of the Wild","overview":"Buck is a big-hearted dog whose blissful domestic
-        life is turned upside down when he is suddenly uprooted from his California
-        home and transplanted to the exotic wilds of the Yukon during the Gold Rush
-        of the 1890s. As the newest rookie on a mail delivery dog sled team—and later
-        its leader—Buck experiences the adventure of a lifetime, ultimately finding
-        his true place in the world and becoming his own master.","popularity":102.573,"poster_path":"/33VdppGbeNxICrFUtW2WpGHvfYc.jpg","release_date":"2020-02-19","title":"The
-        Call of the Wild","video":false,"vote_average":7.6,"vote_count":2077},{"adult":false,"backdrop_path":"/bVmSXNgH1gpHYTDyF9Q826YwJT5.jpg","genre_ids":[28,12,14],"id":122917,"original_language":"en","original_title":"The
+        past sins and save themselves.","popularity":454.472,"poster_path":"/xrI4EnZWftpo1B7tTvlMUXVOikd.jpg","release_date":"2020-08-26","title":"The
+        New Mutants","video":false,"vote_average":6.4,"vote_count":999},{"adult":false,"backdrop_path":"/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg","genre_ids":[12,14,28],"id":120,"original_language":"en","original_title":"The
+        Lord of the Rings: The Fellowship of the Ring","overview":"Young hobbit Frodo
+        Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave
+        his home in order to keep it from falling into the hands of its evil creator.
+        Along the way, a fellowship is formed to protect the ringbearer and make sure
+        that the ring arrives at its final destination: Mt. Doom, the only place where
+        it can be destroyed.","popularity":139.226,"poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","release_date":"2001-12-18","title":"The
+        Lord of the Rings: The Fellowship of the Ring","video":false,"vote_average":8.3,"vote_count":18122},{"adult":false,"backdrop_path":"/bVmSXNgH1gpHYTDyF9Q826YwJT5.jpg","genre_ids":[28,12,14],"id":122917,"original_language":"en","original_title":"The
         Hobbit: The Battle of the Five Armies","overview":"Immediately after the events
         of The Desolation of Smaug, Bilbo and the dwarves try to defend Erebor''s
         mountain of treasure from others who claim it: the men of the ruined Laketown
         and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler
         is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves,
         elves and men must unite, and the hope for Middle-Earth falls into Bilbo''s
-        hands.","popularity":90.906,"poster_path":"/xT98tLqatZPQApyRmlPL12LtiWp.jpg","release_date":"2014-12-10","title":"The
-        Hobbit: The Battle of the Five Armies","video":false,"vote_average":7.3,"vote_count":10424},{"adult":false,"backdrop_path":"/a9jZrU7LJk6mAUjmkbEmTiC52l0.jpg","genre_ids":[35,10751,18],"id":425001,"original_language":"en","original_title":"The
-        War with Grandpa","overview":"Peter is thrilled that his Grandpa is coming
-        to live with his family. That is, until Grandpa moves into Peter''s room,
-        forcing him upstairs into the creepy attic. And though he loves his Grandpa,
-        he wants his room back - so he has no choice but to declare war.","popularity":328.437,"poster_path":"/yUFbPtWeDbVR3zmqshOaL5lScyo.jpg","release_date":"2020-08-27","title":"The
-        War with Grandpa","video":false,"vote_average":6.1,"vote_count":146},{"adult":false,"backdrop_path":"/zLTfRrrVXNW3OWUk6U1eFZhB18m.jpg","genre_ids":[28,35,16],"id":347201,"original_language":"ja","original_title":"BORUTO
+        hands.","popularity":139.84,"poster_path":"/xT98tLqatZPQApyRmlPL12LtiWp.jpg","release_date":"2014-12-10","title":"The
+        Hobbit: The Battle of the Five Armies","video":false,"vote_average":7.3,"vote_count":10433},{"adult":false,"backdrop_path":"/n1RohH2VoK1CdVI2fXvcP19dSlm.jpg","genre_ids":[10752,18,36,28],"id":531876,"original_language":"en","original_title":"The
+        Outpost","overview":"A small unit of U.S. soldiers, alone at the remote Combat
+        Outpost Keating, located deep in the valley of three mountains in Afghanistan,
+        battles to defend against an overwhelming force of Taliban fighters in a coordinated
+        attack. The Battle of Kamdesh, as it was known, was the bloodiest American
+        engagement of the Afghan War in 2009 and Bravo Troop 3-61 CAV became one of
+        the most decorated units of the 19-year conflict.","popularity":174.004,"poster_path":"/hPkqY2EMqWUnFEoedukilIUieVG.jpg","release_date":"2020-06-24","title":"The
+        Outpost","video":false,"vote_average":6.8,"vote_count":457},{"adult":false,"backdrop_path":"/htBUhLSS7FfHtydgYxUWjL3J1Q1.jpg","genre_ids":[16,12,10751,14],"id":560050,"original_language":"en","original_title":"Over
+        the Moon","overview":"In this animated musical, a girl builds a rocket ship
+        and blasts off, hoping to meet a mythical moon goddess.","popularity":332.433,"poster_path":"/lQfdytwN7eh0tXWjIiMceFdBBvD.jpg","release_date":"2020-10-16","title":"Over
+        the Moon","video":false,"vote_average":7.6,"vote_count":520},{"adult":false,"backdrop_path":"/fgYP1XT9cQOR9h6VeG8UTBQYOs4.jpg","genre_ids":[878,12],"id":762690,"original_language":"es","original_title":"The
+        Mandalorian FanFilm","overview":"","popularity":227.741,"poster_path":"/c0uz2yrWJJIBckWfUTiQlfKDqIm.jpg","release_date":"","title":"The
+        Mandalorian FanFilm","video":false,"vote_average":8.5,"vote_count":6},{"adult":false,"backdrop_path":"/5846jHODKbja38USbFcXgOnsfqb.jpg","genre_ids":[10751,14,12],"id":654028,"original_language":"en","original_title":"The
+        Christmas Chronicles: Part Two","overview":"Kate Pierce is reluctantly spending
+        Christmas with her mom’s new boyfriend and his son Jack. But when the North
+        Pole and Christmas are threatened to be destroyed, Kate and Jack are unexpectedly
+        pulled into a new adventure with Santa Claus.","popularity":859.391,"poster_path":"/6sG0kbEvAi3RRLcGGU5h8l3qAPa.jpg","release_date":"2020-11-18","title":"The
+        Christmas Chronicles: Part Two","video":false,"vote_average":7.2,"vote_count":211},{"adult":false,"backdrop_path":"/yFRpUmsreYO5Bc0HVBTsJsHIIox.jpg","genre_ids":[18,12,10751],"id":481848,"original_language":"en","original_title":"The
+        Call of the Wild","overview":"Buck is a big-hearted dog whose blissful domestic
+        life is turned upside down when he is suddenly uprooted from his California
+        home and transplanted to the exotic wilds of the Yukon during the Gold Rush
+        of the 1890s. As the newest rookie on a mail delivery dog sled team—and later
+        its leader—Buck experiences the adventure of a lifetime, ultimately finding
+        his true place in the world and becoming his own master.","popularity":122.912,"poster_path":"/33VdppGbeNxICrFUtW2WpGHvfYc.jpg","release_date":"2020-02-19","title":"The
+        Call of the Wild","video":false,"vote_average":7.6,"vote_count":2091},{"adult":false,"backdrop_path":"/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg","genre_ids":[28,878,35,10751],"id":454626,"original_language":"en","original_title":"Sonic
+        the Hedgehog","overview":"Based on the global blockbuster videogame franchise
+        from Sega, Sonic the Hedgehog tells the story of the world’s speediest hedgehog
+        as he embraces his new home on Earth. In this live-action adventure comedy,
+        Sonic and his new best friend team up to defend the planet from the evil genius
+        Dr. Robotnik and his plans for world domination.","popularity":260.638,"poster_path":"/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg","release_date":"2020-02-12","title":"Sonic
+        the Hedgehog","video":false,"vote_average":7.5,"vote_count":6209},{"adult":false,"backdrop_path":"/zogWnCSztU8xvabaepQnAwsOtOt.jpg","genre_ids":[28,80,18],"id":531499,"original_language":"en","original_title":"The
+        Tax Collector","overview":"David Cuevas is a family man who works as a gangland
+        tax collector for high ranking Los Angeles gang members. He makes collections
+        across the city with his partner Creeper making sure people pay up or will
+        see retaliation. An old threat returns to Los Angeles that puts everything
+        David loves in harm’s way.","popularity":265.07,"poster_path":"/3eg0kGC2Xh0vhydJHO37Sp4cmMt.jpg","release_date":"2020-08-07","title":"The
+        Tax Collector","video":false,"vote_average":5.9,"vote_count":202},{"adult":false,"backdrop_path":"/wFN8llYh215M8i2fqWAcPV8CSyL.jpg","genre_ids":[28,12,16,35,10751,14],"id":49519,"original_language":"en","original_title":"The
+        Croods","overview":"The prehistoric Croods family live in a particularly dangerous
+        moment in time. Patriarch Grug, his mate Ugga, teenage daughter Eep, son Thunk,
+        and feisty Gran gather food by day and huddle together in a cave at night.
+        When a more evolved caveman named Guy arrives on the scene, Grug is distrustful,
+        but it soon becomes apparent that Guy is correct about the impending destruction
+        of their world.","popularity":137.713,"poster_path":"/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg","release_date":"2013-03-20","title":"The
+        Croods","video":false,"vote_average":6.9,"vote_count":4986},{"adult":false,"backdrop_path":"/zLTfRrrVXNW3OWUk6U1eFZhB18m.jpg","genre_ids":[28,35,16],"id":347201,"original_language":"ja","original_title":"BORUTO
         -NARUTO THE MOVIE-","overview":"Boruto is the son of the 7th Hokage Naruto
         who completely rejects his father. Behind this, he has feelings of wanting
         to surpass Naruto, who is respected as a hero. He ends up meeting his father''s
         friend Sasuke, and requests to become... his apprentice!? The curtain on the
-        story of the new generation written by Masashi Kishimoto rises!","popularity":136.873,"poster_path":"/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg","release_date":"2015-08-07","title":"Boruto:
-        Naruto the Movie","video":false,"vote_average":7.8,"vote_count":640}],"total_pages":500,"total_results":10000}'
-  recorded_at: Sat, 05 Dec 2020 00:20:57 GMT
+        story of the new generation written by Masashi Kishimoto rises!","popularity":149.731,"poster_path":"/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg","release_date":"2015-08-07","title":"Boruto:
+        Naruto the Movie","video":false,"vote_average":7.8,"vote_count":643},{"adult":false,"backdrop_path":"/lIE7kfdLBRd0KENNtOaIqPPWNqh.jpg","genre_ids":[27,18,14],"id":590995,"original_language":"en","original_title":"The
+        Craft: Legacy","overview":"An eclectic foursome of aspiring teenage witches
+        get more than they bargained for as they lean into their newfound powers.","popularity":219.422,"poster_path":"/lhMIra0pqWNuD6CIXoTmGwZ0EBS.jpg","release_date":"2020-10-28","title":"The
+        Craft: Legacy","video":false,"vote_average":6.3,"vote_count":139},{"adult":false,"backdrop_path":"/ovwN1JDPvllWZaH3xtKp7txRWDj.jpg","genre_ids":[27],"id":715658,"original_language":"en","original_title":"The
+        Scientist","overview":"An unconventional scientist, struggling to care for
+        his terminally-ill wife, embarks on a journey to develop a cure for her. However,
+        his methods of treatment and tampering with human DNA, could lead to the extinction
+        of humanity.","popularity":136.5,"poster_path":"/hIkKM1nlzk8DThFT4vxgW1KoofL.jpg","release_date":"2020-09-21","title":"The
+        Scientist","video":false,"vote_average":6.3,"vote_count":62}],"total_pages":500,"total_results":10000}'
+  recorded_at: Tue, 08 Dec 2020 17:21:30 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=2&query=the
@@ -190,7 +186,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 05 Dec 2020 00:20:58 GMT
+      - Tue, 08 Dec 2020 17:21:30 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -207,122 +203,123 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 b7f0c5734a286f56595c1e1b456020a2.cloudfront.net (CloudFront)
+      - 1.1 6c02603f677dd5669f8ab3b41062340f.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - dxFWS_rEa5AoAZwSM2CuQjx1GFh1-2w73EzNxdY49L9bA6atwBJMXg==
+      - y_StAySnShX2QkEb4dFqwUam21XF3PzalzvFEHMNHc-1RVELDKGE9A==
     body:
       encoding: UTF-8
-      string: '{"page":2,"results":[{"adult":false,"backdrop_path":"/m0ObOaJBerZ3Unc74l471ar8Iiy.jpg","genre_ids":[28,14],"id":547016,"original_language":"en","original_title":"The
-        Old Guard","overview":"Four undying warriors who''ve secretly protected humanity
-        for centuries become targeted for their mysterious powers just as they discover
-        a new immortal.","popularity":225.81,"poster_path":"/cjr4NWURcVN3gW5FlHeabgBHLrY.jpg","release_date":"2020-07-10","title":"The
-        Old Guard","video":false,"vote_average":7.3,"vote_count":2366},{"adult":false,"backdrop_path":"/kwUQFeFXOOpgloMgZaadhzkbTI4.jpg","genre_ids":[878,28,12],"id":24428,"original_language":"en","original_title":"The
+      string: '{"page":2,"results":[{"adult":false,"backdrop_path":"/9DeGfFIqjph5CBFVQrD6wv9S7rR.jpg","genre_ids":[12,14,28],"id":122,"original_language":"en","original_title":"The
+        Lord of the Rings: The Return of the King","overview":"Aragorn is revealed
+        as the heir to the ancient kings as he, Gandalf and the other members of the
+        broken fellowship struggle to save Gondor from Sauron''s forces. Meanwhile,
+        Frodo and Sam take the ring closer to the heart of Mordor, the dark lord''s
+        realm.","popularity":79.693,"poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","release_date":"2003-12-01","title":"The
+        Lord of the Rings: The Return of the King","video":false,"vote_average":8.5,"vote_count":16677},{"adult":false,"backdrop_path":"/jzdnhRhG0dsuYorwvSqPqqnM1cV.jpg","genre_ids":[28,80,53],"id":337339,"original_language":"en","original_title":"The
+        Fate of the Furious","overview":"When a mysterious woman seduces Dom into
+        the world of crime and a betrayal of those closest to him, the crew face trials
+        that will test them as never before.","popularity":88.747,"poster_path":"/dImWM7GJqryWJO9LHa3XQ8DD5NH.jpg","release_date":"2017-04-12","title":"The
+        Fate of the Furious","video":false,"vote_average":6.9,"vote_count":7804},{"adult":false,"backdrop_path":"/kwUQFeFXOOpgloMgZaadhzkbTI4.jpg","genre_ids":[878,28,12],"id":24428,"original_language":"en","original_title":"The
         Avengers","overview":"When an unexpected enemy emerges and threatens global
         safety and security, Nick Fury, director of the international peacekeeping
         agency known as S.H.I.E.L.D., finds himself in need of a team to pull the
         world back from the brink of disaster. Spanning the globe, a daring recruitment
-        effort begins!","popularity":105.751,"poster_path":"/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg","release_date":"2012-04-25","title":"The
-        Avengers","video":false,"vote_average":7.7,"vote_count":23536},{"adult":false,"backdrop_path":"/ovwN1JDPvllWZaH3xtKp7txRWDj.jpg","genre_ids":[27],"id":715658,"original_language":"en","original_title":"The
-        Scientist","overview":"An unconventional scientist, struggling to care for
-        his terminally-ill wife, embarks on a journey to develop a cure for her. However,
-        his methods of treatment and tampering with human DNA, could lead to the extinction
-        of humanity.","popularity":128.541,"poster_path":"/hIkKM1nlzk8DThFT4vxgW1KoofL.jpg","release_date":"2020-09-21","title":"The
-        Scientist","video":false,"vote_average":6.3,"vote_count":62},{"adult":false,"backdrop_path":"/jzdnhRhG0dsuYorwvSqPqqnM1cV.jpg","genre_ids":[28,80,53],"id":337339,"original_language":"en","original_title":"The
-        Fate of the Furious","overview":"When a mysterious woman seduces Dom into
-        the world of crime and a betrayal of those closest to him, the crew face trials
-        that will test them as never before.","popularity":80.322,"poster_path":"/dImWM7GJqryWJO9LHa3XQ8DD5NH.jpg","release_date":"2017-04-12","title":"The
-        Fate of the Furious","video":false,"vote_average":6.9,"vote_count":7790},{"adult":false,"backdrop_path":"/lkeBhXGJFRlhI7cBWn8LQQAdZqK.jpg","genre_ids":[16,878,35,10402,10751,12],"id":594328,"original_language":"en","original_title":"Phineas
+        effort begins!","popularity":107.693,"poster_path":"/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg","release_date":"2012-04-25","title":"The
+        Avengers","video":false,"vote_average":7.7,"vote_count":23567},{"adult":false,"backdrop_path":"/m0ObOaJBerZ3Unc74l471ar8Iiy.jpg","genre_ids":[28,14],"id":547016,"original_language":"en","original_title":"The
+        Old Guard","overview":"Four undying warriors who''ve secretly protected humanity
+        for centuries become targeted for their mysterious powers just as they discover
+        a new immortal.","popularity":225.269,"poster_path":"/cjr4NWURcVN3gW5FlHeabgBHLrY.jpg","release_date":"2020-07-10","title":"The
+        Old Guard","video":false,"vote_average":7.3,"vote_count":2382},{"adult":false,"backdrop_path":"/73curw674iTzTX81AGaj5dyZUX5.jpg","genre_ids":[10749,35,10751],"id":512895,"original_language":"en","original_title":"Lady
+        and the Tramp","overview":"The love story between a pampered Cocker Spaniel
+        named Lady and a streetwise mongrel named Tramp. Lady finds herself out on
+        the street after her owners have a baby and is saved from a pack by Tramp,
+        who tries to show her to live her life footloose and collar-free.","popularity":179.586,"poster_path":"/8wBEye516IKul9sW7JKGcFXVGfV.jpg","release_date":"2019-11-12","title":"Lady
+        and the Tramp","video":false,"vote_average":7.3,"vote_count":950},{"adult":false,"backdrop_path":"/lkeBhXGJFRlhI7cBWn8LQQAdZqK.jpg","genre_ids":[16,878,35,10402,10751,12],"id":594328,"original_language":"en","original_title":"Phineas
         and Ferb The Movie: Candace Against the Universe","overview":"Phineas and
         Ferb travel across the galaxy to rescue their older sister Candace, who has
         been abducted by aliens and taken to a utopia in a far-off planet, free of
-        her pesky little brothers.","popularity":225.232,"poster_path":"/n6hptKS7Y0ZjkYwbqKOK3jz9XAC.jpg","release_date":"2020-08-28","title":"Phineas
-        and Ferb The Movie: Candace Against the Universe","video":false,"vote_average":7.4,"vote_count":148},{"adult":false,"backdrop_path":"/tsGSTBl5H8DBLnHc24Teny0Ppc5.jpg","genre_ids":[14,27],"id":524216,"original_language":"en","original_title":"The
-        Mortuary Collection","overview":"In the phantasmagorical town of Raven''s
-        End, a misguided young girl takes refuge in a decrepit old mortuary. The eccentric
-        undertaker chronicles the strange history of the town through a series of
-        twisted tales, each more terrifying than the last, but the young girl''s world
-        is unhinged when she discovers that the final story... is her own.","popularity":164.443,"poster_path":"/5WXeYnezavNI6hXH74aQYv6yFzj.jpg","release_date":"2020-10-08","title":"The
-        Mortuary Collection","video":false,"vote_average":6.7,"vote_count":62},{"adult":false,"backdrop_path":"/rH79sB6Nkx4cMW3JzsUy7wK0rhX.jpg","genre_ids":[28,878,27],"id":345940,"original_language":"en","original_title":"The
+        her pesky little brothers.","popularity":247.723,"poster_path":"/n6hptKS7Y0ZjkYwbqKOK3jz9XAC.jpg","release_date":"2020-08-28","title":"Phineas
+        and Ferb The Movie: Candace Against the Universe","video":false,"vote_average":7.4,"vote_count":151},{"adult":false,"backdrop_path":"/rH79sB6Nkx4cMW3JzsUy7wK0rhX.jpg","genre_ids":[28,878,27],"id":345940,"original_language":"en","original_title":"The
         Meg","overview":"A deep sea submersible pilot revisits his past fears in the
         Mariana Trench, and accidentally unleashes the seventy foot ancestor of the
-        Great White Shark believed to be extinct.","popularity":106.877,"poster_path":"/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg","release_date":"2018-08-09","title":"The
-        Meg","video":false,"vote_average":6.1,"vote_count":4680},{"adult":false,"backdrop_path":"/nRXO2SnOA75OsWhNhXstHB8ZmI3.jpg","genre_ids":[12,10751,10402],"id":420818,"original_language":"en","original_title":"The
+        Great White Shark believed to be extinct.","popularity":117.023,"poster_path":"/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg","release_date":"2018-08-09","title":"The
+        Meg","video":false,"vote_average":6.1,"vote_count":4703},{"adult":false,"backdrop_path":"/nRXO2SnOA75OsWhNhXstHB8ZmI3.jpg","genre_ids":[12,10751,10402],"id":420818,"original_language":"en","original_title":"The
         Lion King","overview":"Simba idolizes his father, King Mufasa, and takes to
         heart his own royal destiny. But not everyone in the kingdom celebrates the
         new cub''s arrival. Scar, Mufasa''s brother—and former heir to the throne—has
         plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy
         and drama, ultimately resulting in Simba''s exile. With help from a curious
         pair of newfound friends, Simba will have to figure out how to grow up and
-        take back what is rightfully his.","popularity":181.983,"poster_path":"/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg","release_date":"2019-07-12","title":"The
-        Lion King","video":false,"vote_average":7.2,"vote_count":7121},{"adult":false,"backdrop_path":"/ne4QPHn56Z1vxk6iKJKvDnmNI9Y.jpg","genre_ids":[28,80,18,53],"id":611914,"original_language":"en","original_title":"The
+        take back what is rightfully his.","popularity":200.533,"poster_path":"/dzBtMocZuJbjLOXvrl4zGYigDzh.jpg","release_date":"2019-07-12","title":"The
+        Lion King","video":false,"vote_average":7.2,"vote_count":7135},{"adult":false,"backdrop_path":"/ne4QPHn56Z1vxk6iKJKvDnmNI9Y.jpg","genre_ids":[28,80,18,53],"id":611914,"original_language":"en","original_title":"The
         Courier","overview":"This intense action-thriller unfolds in real time as
         two embattled souls fight for their lives. Gary Oldman stars as a vicious
         crime boss out to kill Nick, the lone witness set to testify against him.
         He hires a mysterious female motorcycle courier to unknowingly deliver a poison-gas
         bomb to slay Nick, but after she rescues Nick from certain death, the duo
-        must confront an army of ruthless hired killers in order to survive the night.","popularity":95.142,"poster_path":"/cmC7bJZ5sCzx9ZsrlXOrYJfYtLc.jpg","release_date":"2019-11-22","title":"The
-        Courier","video":false,"vote_average":6.5,"vote_count":296},{"adult":false,"backdrop_path":"/73curw674iTzTX81AGaj5dyZUX5.jpg","genre_ids":[10749,35,10751],"id":512895,"original_language":"en","original_title":"Lady
-        and the Tramp","overview":"The love story between a pampered Cocker Spaniel
-        named Lady and a streetwise mongrel named Tramp. Lady finds herself out on
-        the street after her owners have a baby and is saved from a pack by Tramp,
-        who tries to show her to live her life footloose and collar-free.","popularity":150.337,"poster_path":"/8wBEye516IKul9sW7JKGcFXVGfV.jpg","release_date":"2019-11-12","title":"Lady
-        and the Tramp","video":false,"vote_average":7.4,"vote_count":938},{"adult":false,"backdrop_path":"/wFN8llYh215M8i2fqWAcPV8CSyL.jpg","genre_ids":[28,12,16,35,10751,14],"id":49519,"original_language":"en","original_title":"The
-        Croods","overview":"Prehistoric family the Croods live in a particularly dangerous
-        moment in time. Patriarch Grug, his mate, Ugga , teenage daughter Eep, son
-        Thunk and feisty Gran gather food by day and huddle together in a cave at
-        night. When a more evolved caveman named Guy arrives on the scene, Grug is
-        distrustful, but it soon becomes apparent that Guy is correct about the impending
-        destruction of their world.","popularity":101.244,"poster_path":"/27zvjVOtOi5ped1HSlJKNsKXkFH.jpg","release_date":"2013-03-20","title":"The
-        Croods","video":false,"vote_average":6.9,"vote_count":4974},{"adult":false,"backdrop_path":"/7tNTPZMb13W0AhkcuoL6myRrNRr.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
-        Lord of the Rings: The Two Towers","overview":"Frodo and Sam are trekking
-        to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn
-        search for the orc-captured Merry and Pippin. All along, nefarious wizard
-        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":77.9,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
-        Lord of the Rings: The Two Towers","video":false,"vote_average":8.3,"vote_count":15629},{"adult":false,"backdrop_path":"/rq9kv233eEKnYfe8r5fi8SP5T7e.jpg","genre_ids":[18,53],"id":671145,"original_language":"en","original_title":"Before
+        must confront an army of ruthless hired killers in order to survive the night.","popularity":99.11,"poster_path":"/cmC7bJZ5sCzx9ZsrlXOrYJfYtLc.jpg","release_date":"2019-11-22","title":"The
+        Courier","video":false,"vote_average":6.5,"vote_count":297},{"adult":false,"backdrop_path":"/rq9kv233eEKnYfe8r5fi8SP5T7e.jpg","genre_ids":[18,53],"id":671145,"original_language":"en","original_title":"Before
         the Fire","overview":"Deep in the throes of a global pandemic, up and coming
         TV star, Ava Boone, is forced to flee the mounting chaos in Los Angeles and
         return to her rural hometown.  But as she struggles to acclimate to a way
         of life she left behind long ago, her homecoming attracts a dangerous figure
         from her past – threatening both her and the family that serves as her only
-        sanctuary.","popularity":175.706,"poster_path":"/bAwtbmCzhFwKf2wN6QQH301ylbO.jpg","release_date":"2020-03-14","title":"Before
-        the Fire","video":false,"vote_average":6.5,"vote_count":23},{"adult":false,"backdrop_path":"/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg","genre_ids":[28,35,80],"id":522627,"original_language":"en","original_title":"The
-        Gentlemen","overview":"American expat Mickey Pearson has built a highly profitable
-        marijuana empire in London. When word gets out that he’s looking to cash out
-        of the business forever it triggers plots, schemes, bribery and blackmail
-        in an attempt to steal his domain out from under him.","popularity":82.942,"poster_path":"/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg","release_date":"2020-01-01","title":"The
-        Gentlemen","video":false,"vote_average":7.7,"vote_count":2202},{"adult":false,"backdrop_path":"/kU7ZiyeUwcpTkYj3UcxSqGdZmxY.jpg","genre_ids":[16,28],"id":618353,"original_language":"en","original_title":"Batman:
-        Death in the Family","overview":"Tragedy strikes the Batman''s life again
-        when Robin Jason Todd tracks down his birth mother only to run afoul of the
-        Joker. An adaptation of the 1988 comic book storyline of the same name.","popularity":362.688,"poster_path":"/k8Q9ulyRE8fkvZMkAM9LPYMKctb.jpg","release_date":"2020-10-13","title":"Batman:
-        Death in the Family","video":false,"vote_average":7.3,"vote_count":99},{"adult":false,"backdrop_path":"/sxI7nxy18fapiE1XNBuiQaIQhlS.jpg","genre_ids":[18,36,28],"id":468816,"original_language":"en","original_title":"The
+        sanctuary.","popularity":197.71,"poster_path":"/bAwtbmCzhFwKf2wN6QQH301ylbO.jpg","release_date":"2020-03-14","title":"Before
+        the Fire","video":false,"vote_average":6.5,"vote_count":23},{"adult":false,"backdrop_path":"/tsGSTBl5H8DBLnHc24Teny0Ppc5.jpg","genre_ids":[14,27],"id":524216,"original_language":"en","original_title":"The
+        Mortuary Collection","overview":"In the phantasmagorical town of Raven''s
+        End, a misguided young girl takes refuge in a decrepit old mortuary. The eccentric
+        undertaker chronicles the strange history of the town through a series of
+        twisted tales, each more terrifying than the last, but the young girl''s world
+        is unhinged when she discovers that the final story... is her own.","popularity":154.776,"poster_path":"/5WXeYnezavNI6hXH74aQYv6yFzj.jpg","release_date":"2020-10-08","title":"The
+        Mortuary Collection","video":false,"vote_average":6.7,"vote_count":63},{"adult":false,"backdrop_path":"/a9jZrU7LJk6mAUjmkbEmTiC52l0.jpg","genre_ids":[35,10751,18],"id":425001,"original_language":"en","original_title":"The
+        War with Grandpa","overview":"Peter is thrilled that his Grandpa is coming
+        to live with his family. That is, until Grandpa moves into Peter''s room,
+        forcing him upstairs into the creepy attic. And though he loves his Grandpa,
+        he wants his room back - so he has no choice but to declare war.","popularity":254.57,"poster_path":"/yUFbPtWeDbVR3zmqshOaL5lScyo.jpg","release_date":"2020-08-27","title":"The
+        War with Grandpa","video":false,"vote_average":6,"vote_count":153},{"adult":false,"backdrop_path":"/7tNTPZMb13W0AhkcuoL6myRrNRr.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
+        Lord of the Rings: The Two Towers","overview":"Frodo and Sam are trekking
+        to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn
+        search for the orc-captured Merry and Pippin. All along, nefarious wizard
+        Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.","popularity":78.096,"poster_path":"/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg","release_date":"2002-12-18","title":"The
+        Lord of the Rings: The Two Towers","video":false,"vote_average":8.3,"vote_count":15652},{"adult":false,"backdrop_path":"/sxI7nxy18fapiE1XNBuiQaIQhlS.jpg","genre_ids":[18,36,28],"id":468816,"original_language":"en","original_title":"The
         Rising Hawk","overview":"The Mongol Empire had grown to the largest the world
         had ever known. It''s armies now laid siege to much of Eastern Europe. A small
-        village fights for freedom in the frontier landscape of the Carpathian Mountains.","popularity":122.513,"poster_path":"/qmLNbyXKpuEKXjmaEWIEAoiS0OB.jpg","release_date":"2019-10-10","title":"The
-        Rising Hawk","video":false,"vote_average":6.1,"vote_count":43},{"adult":false,"backdrop_path":"/x0VXCWSTny5JRvpgDnw5ptwQyhA.jpg","genre_ids":[878,28,53,12,27,35],"id":346910,"original_language":"en","original_title":"The
-        Predator","overview":"When a kid accidentally triggers the universe''s most
-        lethal hunters'' return to Earth, only a ragtag crew of ex-soldiers and a
-        disgruntled female scientist can prevent the end of the human race.","popularity":77.493,"poster_path":"/wMq9kQXTeQCHUZOG4fAe5cAxyUA.jpg","release_date":"2018-09-05","title":"The
-        Predator","video":false,"vote_average":5.5,"vote_count":3106},{"adult":false,"backdrop_path":"/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg","genre_ids":[12,35,14],"id":512200,"original_language":"en","original_title":"Jumanji:
+        village fights for freedom in the frontier landscape of the Carpathian Mountains.","popularity":142.727,"poster_path":"/qmLNbyXKpuEKXjmaEWIEAoiS0OB.jpg","release_date":"2019-10-10","title":"The
+        Rising Hawk","video":false,"vote_average":6.1,"vote_count":44},{"adult":false,"backdrop_path":"/npCPnwDyWfQltGfIZKN6WqeUXGI.jpg","genre_ids":[12,14,28],"id":57158,"original_language":"en","original_title":"The
+        Hobbit: The Desolation of Smaug","overview":"The Dwarves, Bilbo and Gandalf
+        have successfully escaped the Misty Mountains, and Bilbo has gained the One
+        Ring. They all continue their journey to get their gold back from the Dragon,
+        Smaug.","popularity":92.876,"poster_path":"/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg","release_date":"2013-12-11","title":"The
+        Hobbit: The Desolation of Smaug","video":false,"vote_average":7.6,"vote_count":9484},{"adult":false,"backdrop_path":"/s0UqxDhHFMvt6IAzTszykMaPSXe.jpg","genre_ids":[10749,35],"id":734280,"original_language":"en","original_title":"Midnight
+        at the Magnolia","overview":"Maggie and Jack are childhood family friends
+        and now as adults give dating advice together on their popular local radio
+        show. When they find out their show is being shopped around for national syndication,
+        their boss encourages them to introduce their significant others to their
+        families for a live, on-air New Year’s Eve special. Knowing their fathers’
+        local jazz club, The Magnolia, is struggling financially, Maggie and Jack
+        agree to the special as long as it’s hosted at the club. But when Maggie and
+        Jack are both dumped before the big event, Jack suggests they pretend to be
+        a couple and surprise their listeners with the news during a midnight kiss
+        on New Year’s Eve!","popularity":287.089,"poster_path":"/fxMdefiLKvapV58pdXYEH6CIBti.jpg","release_date":"2020-11-05","title":"Midnight
+        at the Magnolia","video":false,"vote_average":6.3,"vote_count":61},{"adult":false,"backdrop_path":"/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg","genre_ids":[12,35,14],"id":512200,"original_language":"en","original_title":"Jumanji:
         The Next Level","overview":"As the gang return to Jumanji to rescue one of
         their own, they discover that nothing is as they expect. The players will
         have to brave parts unknown and unexplored in order to escape the world’s
-        most dangerous game.","popularity":194.997,"poster_path":"/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg","release_date":"2019-12-04","title":"Jumanji:
-        The Next Level","video":false,"vote_average":7,"vote_count":5076},{"adult":false,"backdrop_path":"/4eakTJuJD3sRGfv1qVWW46iPq82.jpg","genre_ids":[27],"id":1683,"original_language":"en","original_title":"The
-        Reaping","overview":"Katherine Morrissey, a former Christian missionary, lost
-        her faith after the tragic deaths of her family. Now she applies her expertise
-        to debunking religious phenomena. When a series of biblical plagues overrun
-        a small town, Katherine arrives to prove that a supernatural force is not
-        behind the occurrences, but soon finds that science cannot explain what is
-        happening. Instead, she must regain her faith to combat the evil that waits
-        in a Louisiana swamp.","popularity":71.546,"poster_path":"/bDEYbxcaJvRC30xScThv1b7BqNw.jpg","release_date":"2007-04-05","title":"The
-        Reaping","video":false,"vote_average":5.6,"vote_count":517},{"adult":false,"backdrop_path":"/xUUtcxWC6H48UCrpRwwSPQz69XC.jpg","genre_ids":[53,27,28],"id":659986,"original_language":"en","original_title":"The
-        Owners","overview":"A group of friends think they found the perfect easy score
-        - an empty house with a safe full of cash. But when the elderly couple that
-        lives there comes home early, the tables are suddenly turned. As a deadly
-        game of cat and mouse ensues, the would-be thieves must fight to save themselves
-        from a nightmare they could never have imagined.","popularity":56.913,"poster_path":"/gzFatNrw0lhKD5NxaU6zC7S2KjP.jpg","release_date":"2020-08-27","title":"The
-        Owners","video":false,"vote_average":5.7,"vote_count":105}],"total_pages":500,"total_results":10000}'
-  recorded_at: Sat, 05 Dec 2020 00:20:58 GMT
+        most dangerous game.","popularity":243.671,"poster_path":"/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg","release_date":"2019-12-04","title":"Jumanji:
+        The Next Level","video":false,"vote_average":7,"vote_count":5097},{"adult":false,"backdrop_path":"/kU7ZiyeUwcpTkYj3UcxSqGdZmxY.jpg","genre_ids":[16,28],"id":618353,"original_language":"en","original_title":"Batman:
+        Death in the Family","overview":"Tragedy strikes the Batman''s life again
+        when Robin Jason Todd tracks down his birth mother only to run afoul of the
+        Joker. An adaptation of the 1988 comic book storyline of the same name.","popularity":378.854,"poster_path":"/k8Q9ulyRE8fkvZMkAM9LPYMKctb.jpg","release_date":"2020-10-13","title":"Batman:
+        Death in the Family","video":false,"vote_average":7.2,"vote_count":109},{"adult":false,"backdrop_path":"/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg","genre_ids":[28,80,35],"id":522627,"original_language":"en","original_title":"The
+        Gentlemen","overview":"American expat Mickey Pearson has built a highly profitable
+        marijuana empire in London. When word gets out that he’s looking to cash out
+        of the business forever it triggers plots, schemes, bribery and blackmail
+        in an attempt to steal his domain out from under him.","popularity":79.653,"poster_path":"/jtrhTYB7xSrJxR1vusu99nvnZ1g.jpg","release_date":"2020-01-01","title":"The
+        Gentlemen","video":false,"vote_average":7.7,"vote_count":2284},{"adult":false,"backdrop_path":"/x0VXCWSTny5JRvpgDnw5ptwQyhA.jpg","genre_ids":[878,28,53,12,27,35],"id":346910,"original_language":"en","original_title":"The
+        Predator","overview":"When a kid accidentally triggers the universe''s most
+        lethal hunters'' return to Earth, only a ragtag crew of ex-soldiers and a
+        disgruntled female scientist can prevent the end of the human race.","popularity":78.485,"poster_path":"/wMq9kQXTeQCHUZOG4fAe5cAxyUA.jpg","release_date":"2018-09-05","title":"The
+        Predator","video":false,"vote_average":5.5,"vote_count":3109}],"total_pages":500,"total_results":10000}'
+  recorded_at: Tue, 08 Dec 2020 17:21:30 GMT
 recorded_with: VCR 6.0.0
