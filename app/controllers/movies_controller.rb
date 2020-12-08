@@ -2,7 +2,10 @@ class MoviesController < ApplicationController
   before_action :authorize_user
 
   def show
-    @movie = MovieSearchFacade.movie_details(params[:id])
+    movie_details = MovieSearchFacade.movie_details(params[:id])
+    @movie = movie_details[:movie]
+    @cast = movie_details[:cast]
+    @reviews = movie_details[:reviews]
   end
 
   def discover; end

@@ -2,13 +2,13 @@ class ViewingPartiesController < ApplicationController
   before_action :authorize_user
 
   def new
-    @movie = MovieSearchFacade.movie_details(params[:movie_id])
+    @movie = MovieSearchFacade.movie_details(params[:movie_id])[:movie]
     @party = Party.new
     @user = current_user
   end
 
   def create
-    @movie = MovieSearchFacade.movie_details(params[:party][:movie_id])
+    @movie = MovieSearchFacade.movie_details(params[:party][:movie_id])[:movie]
 
     begin
       @party = Party.create!(party_data)

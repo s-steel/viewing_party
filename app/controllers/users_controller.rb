@@ -20,7 +20,7 @@ class UsersController < ApplicationController
     @user = current_user
     @parties = @user.hosted_parties + @user.parties
     @movies = @parties.each_with_object({}) do |party, output|
-      output[party] = MovieSearchFacade.movie_details(party.movie_id)
+      output[party] = MovieSearchFacade.movie_details(party.movie_id)[:movie]
     end
   end
 
