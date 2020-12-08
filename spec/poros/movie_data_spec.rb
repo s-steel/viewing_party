@@ -74,17 +74,5 @@ describe 'Instance Methods' do
     it 'format_run_time' do
       expect(@test_object.format_run_time).to eq('1 hr 35 min')
     end
-
-    #refactor: I am not sure how to best setup the below without using a fixture file 
-    # it 'cast' do
-    #   expect(@cast).to be_a(Array)
-    #   expect(@cast.count).to eq(10)
-    #   expect(@cast.first).to be_a(Actor)
-    # end
-
-    # it 'see_reviews' do
-    #   expect(@review).to be_a(Array)
-    #   expect(@review.first).to be_a(Review)
-    # end
   end
 end

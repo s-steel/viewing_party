@@ -6,17 +6,17 @@ class MovieData
     end
   end
 
-  def cast 
-    credits[:cast].map do |actor|
-      Actor.new(actor)
-    end.first(10)
-  end
+  # def cast 
+  #   credits[:cast].map do |actor|
+  #     Actor.new(actor)
+  #   end.first(10)
+  # end
 
-  def see_reviews 
-    reviews[:results].map do |review|
-      Review.new(review)
-    end
-  end
+  # def see_reviews 
+  #   reviews[:results].map do |review|
+  #     Review.new(review)
+  #   end
+  # end
 
   def all_genres
     genres.map do |g|
