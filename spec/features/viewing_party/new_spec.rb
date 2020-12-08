@@ -14,17 +14,40 @@ describe 'New viewing party' do
         visit viewing_party_new_path(movie_id: 400_160)
 
         expect(page).to have_content('The SpongeBob Movie')
-        fill_in('viewing_party[date_time]', with: '01/01/2021 11:30')
+        fill_in('party[when]', with: '2021-01-01T11:30')
 
-        check(@user2.user_name)
+        check("party[guests[#{@user2.id}]]")
 
         click_button('Create Party')
 
-        party = Parties.last
+        party = Party.last
 
         expect(party.movie_id).to eq(400_160)
         expect(party.duration).to eq(95)
-        expect(party.start_date_time).to eq('Friday January 1st, 2021 at 11:30 AM')
+        expect(party.start_date_time).to eq('Friday January 1, 2021 at 11:30 AM')
+        expect(party.guests[0]).to eq(@user2)
+      end
+    end
+
+    it 'good path with custom duration' do
+      VCR.use_cassette('viewing-party/new_spec_good') do
+        visit viewing_party_new_path(movie_id: 400_160)
+
+        expect(page).to have_content('The SpongeBob Movie')
+        fill_in('party[when]', with: '2021-01-01T11:30')
+        fill_in('party[end_time]', with: '2021-01-01T16:00')
+
+        check("party[guests[#{@user2.id}]]")
+
+        click_button('Create Party')
+
+        party = Party.last
+
+        expect(party.movie_id).to eq(400_160)
+        expect(party.duration).to eq(270)
+        expect(party.start_date_time).to eq('Friday January 1, 2021 at 11:30 AM')
+                expect(party.guests[0]).to eq(@user2)
+
       end
     end
 
@@ -33,7 +56,7 @@ describe 'New viewing party' do
         visit viewing_party_new_path(movie_id: 400_160)
 
         expect(page).to have_content('The SpongeBob Movie')
-        fill_in('viewing_party[date_time]', with: 'sdflkadsjflkjaf')
+        fill_in('party[when]', with: 'sdflkadsjflkjaf')
 
         click_button('Create Party')
 
