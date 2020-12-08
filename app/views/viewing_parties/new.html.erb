@@ -1,10 +1,15 @@
 <h1>New viewing party for <%= @movie.title %></h1>
 
 <%= form_with model: @party do |f| %>
-  <%= f.datetime_field 'viewing_party[date_time]' %>
+  <%= f.hidden_field 'movie_id', value: @movie.id %>
+  <%= f.datetime_field 'when' %> <br><br>
+  <div class='tooltip'>
+  <%= f.datetime_field :end_time %>
+    <span class='tooltiptext'>Leave blank for end of movie</span>
+  </div>
   <h4>Invited friends:</h4>
   <% @user.followed.each do |followed| %>
-    <%= f.check_box followed.user_name %>
+    <%= f.check_box "guests[#{followed.id}]" %>
   <% end %>
   <%= f.submit 'Create Party'%>
 <% end %>
