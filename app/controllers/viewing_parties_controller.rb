@@ -1,0 +1,50 @@
+class ViewingPartiesController < ApplicationController
+  before_action :authorize_user
+
+  def new
+    @movie = TMDBInteraction.movie_by_id(params[:movie_id])
+    @party = Party.new
+    @user = current_user
+  end
+
+  def create
+    @movie = TMDBInteraction.movie_by_id(params[:party][:movie_id])
+
+    begin
+      @party = Party.create!(party_data)
+
+      params[:party][:guests].keys.each do |guest_id|
+        @party.guests << User.find(guest_id)
+      end
+    rescue ActiveRecord::RecordInvalid
+      flash.now[:error] = 'Please fill out all fields with proper information'
+      @user = current_user
+      render :new
+    end
+
+    # require 'pry'; binding.pry
+  end
+
+  private
+
+  def authorize_user
+    render file: 'public/404' unless current_user
+  end
+
+  def party_data
+    output = params.require(:party).permit(
+      :when,
+      :movie_id
+    )
+    # require 'pry'; binding.pry
+    output[:host] = current_user
+    output[:duration] = if params[:party][:end_time].empty?
+                          @movie.runtime
+                        else
+                          # require 'pry'; binding.pry
+                          (DateTime.new(*params[:party][:end_time].split(/[^0-9]/).map(&:to_i)) - DateTime.new(*params[:party][:when].split(/[^0-9]/).map(&:to_i))) * 1440
+                        end
+
+    output
+  end
+end
