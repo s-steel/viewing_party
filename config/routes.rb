@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   resources :movies, only: [:show]
 
   get '/viewing-party/new', to: 'viewing_parties#new'
-  post '/viewing-party/new', to: 'viewing_parties#create'
+  post '/viewing-party/new', to: 'viewing_parties#create', as: :parties
 
   resources :friendships, only: [:create]
 end
