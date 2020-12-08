@@ -1,9 +1,9 @@
 require 'rails_helper'
-require './spec/fixtures/poros_fixtures/movie_details.rb'
+# require 'spec/fixtures/poros_fixtures/details.json'
 
 describe MovieData do
   before :each do
-    example = {
+    @example = {
         'id' => 400_160,
         'backdrop_path' => '/wu1uilmhM4TdluKi2ytfz8gidHf.jpg',
         'genre_ids' => [
@@ -25,16 +25,16 @@ describe MovieData do
         'vote_count' => 1620,
         'adult' => false
     }
-    @test_object = MovieData.new(example)
+    @test_object = MovieData.new(@example)
   end
 
   describe 'get attributes from search/top_rated call' do
     it 'title' do
-      expect(@test_object.title).to eq(example['original_title'])
+      expect(@test_object.title).to eq(@example['original_title'])
     end
 
     it 'id' do
-      expect(@test_object.id).to eq(example['id'])
+      expect(@test_object.id).to eq(@example['id'])
     end
   end
 end
@@ -63,7 +63,6 @@ describe 'Instance Methods' do
       'vote_count' => 1620,
       'adult' => false
     }
-    require 'pry'; binding.pry
     @test_object = MovieData.new(data)
   end
 
@@ -74,6 +73,15 @@ describe 'Instance Methods' do
 
     it 'format_run_time' do
       expect(@test_object.format_run_time).to eq('1 hr 35 min')
+    end
+
+    #I am not sure how to best setup the below without using a fixture file 
+    it 'cast' do
+
+    end
+
+    it 'see_reviews' do
+
     end
   end
 end
