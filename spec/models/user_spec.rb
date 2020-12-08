@@ -6,6 +6,8 @@ RSpec.describe User, type: :model do
     it { should have_many(:followed).through(:followers_ref) }
     it { should have_many :followed_ref }
     it { should have_many(:followers).through(:followed_ref) }
+    it { should have_many(:party_guests)}
+    it { should have_many(:parties).through(:party_guests)}
   end
 
   describe 'validations' do
@@ -28,7 +30,7 @@ RSpec.describe User, type: :model do
         @user = create(:user)
         @user_2 = build(:user)
       end
-      
+
       it 'returns true if a user exists in the system with user_name' do
         expect(User.find_user(@user.user_name)).to eq(@user)
       end

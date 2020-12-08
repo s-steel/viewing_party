@@ -59,11 +59,10 @@ class TMDBInteraction
 
   def self.movie_by_id(id)
     data = api_connection.get("movie/#{id}")
-    results = []
-    results << parse_it(data)
-    # Created an array here because this returns one object and the create_movie_data method requires an array
+   
+    movie_hash = JSON.parse(data.body, symbolize_names: true)
 
-    create_movie_data(results).first
+    MovieData.new(movie_hash)
   end
 
   def self.movie_reviews(id)

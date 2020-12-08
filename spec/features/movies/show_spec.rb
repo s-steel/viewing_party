@@ -9,7 +9,7 @@ describe 'Movies show page' do
     end
 
     it 'has a button to create a viewing party' do
-      VCR.use_cassette('movie_by_id') do
+      VCR.use_cassette('movie_by_id_viewing_party_button') do
         visit '/movies/400160'
         click_button('Create Viewing Party for this Movie')
         expect(current_path).to eq('/viewing-party/new')
