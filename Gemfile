@@ -36,7 +36,6 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
-  gem 'shoulda-matchers'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'webmock'

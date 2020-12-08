@@ -1,86 +1,50 @@
 require 'faraday'
 require 'json'
-require_relative 'movie_data'
 
 class TMDBInteraction
   # Returns an array of MovieData objects from TMDB related to the search term
   def self.search_tmdb(query)
-    conn = Faraday.new('https://api.themoviedb.org/3/search/movie') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-      req.params['query'] = query
-    end
-
-    parse_and_instantiate(conn)
+    conn = create_connection('search/movie', query)
+    results = get_40_results(conn)
+    json_parse(results)
   end
 
-  def self.top_movies
-    conn = Faraday.new('https://api.themoviedb.org/3/movie/top_rated') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-    end
-
-    parse_and_instantiate(conn)
+  def self.top_movies 
+    conn = create_connection('movie/top_rated')
+    results = get_40_results(conn)
+    json_parse(results)
   end
 
-  def self.parse_and_instantiate(conn)
-    page1, page2 = get_40_results(conn)
 
-    results = JSON.parse(page1.body, symbolize_names: true)[:results].concat(JSON.parse(page2.body, symbolize_names: true)[:results])
-
-    create_movie_data(results)
+  def self.movie_details(id)
+    conn = create_connection("movie/#{id}", nil, 'reviews,credits')
+    result = conn.get('')
+    json = json_parse(result)
   end
 
-  def self.create_movie_data(results)
-    results.map do |result|
-      MovieData.new(result)
-    end
-  end
-
-  def self.get_40_results(conn)
-    page1 = conn.get do |req|
-      req.params['page'] = 1
+  private 
+    def self.create_connection(api_call, query = nil, append = nil)
+      Faraday.new("https://api.themoviedb.org/3/#{api_call}") do |req|
+        req.params['api_key'] = ENV['TMDB_API_KEY']
+        req.params['query'] = query if query  
+        req.params['append_to_response'] = append if append 
+      end
     end
 
-    page2 = conn.get do |req|
-      req.params['page'] = 2
+    def self.get_40_results(conn)
+      page1 = conn.get do |req|
+        req.params['page'] = 1
+      end
+      page2 = conn.get do |req|
+        req.params['page'] = 2
+      end
+      return [page1, page2]
     end
 
-    [page1, page2]
-  end
-
-  def self.movie_by_id(id)
-    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-    end
-
-    data = conn.get("movie/#{id}")
-    results = []
-    movie_hash = JSON.parse(data.body, symbolize_names: true)
-
-    MovieData.new(movie_hash)
-  end
-
-  def self.movie_reviews(id)
-    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-    end
-
-    data = conn.get("movie/#{id}/reviews")
-
-    results = JSON.parse(data.body, symbolize_names: true)[:results]
-
-    create_movie_data(results)
-  end
-
-  def self.movie_cast(id, limit = 100)
-    conn = Faraday.new('https://api.themoviedb.org/3/') do |req|
-      req.params['api_key'] = ENV['TMDB_API_KEY']
-    end
-
-    data = conn.get("movie/#{id}/credits")
-
-    results = JSON.parse(data.body, symbolize_names: true)[:cast]
-    limited_results = results.take(limit)
-    # ^^ Not sure if we should be using `take` within this call or refactor it out into a model method to be call at another time
-    create_movie_data(limited_results)
-  end
+    def self.json_parse(data)
+      page1, page2 = data 
+      return JSON.parse(data.body, symbolize_names: true) if page2.nil? 
+      JSON.parse(page1.body, symbolize_names: true)[:results].concat(JSON.parse(page2.body, symbolize_names: true)[:results])
+    end 
+    
 end
