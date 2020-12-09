@@ -60,10 +60,4 @@ class ViewingPartiesController < ApplicationController
 
     output
   end
-
-  def get_guest_emails
-    params['party']['guests'].map do |id, rsvp|
-      require 'pry'; binding.pry
-    end
-  end
 end

@@ -10,7 +10,7 @@ class PartyNotifierMailer < ApplicationMailer
     mail(
       reply_to: @user.email, 
       to: @friend_email, 
-      subject: "#{@user.user_name} has sent you a viewing party invite"
+      subject: "#{@user.user_name} has sent you a viewing party invitation"
     )
   end
 end
