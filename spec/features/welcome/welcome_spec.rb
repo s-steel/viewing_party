@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'Welcome Page' do 
-  describe 'When a user visits the root path they will be on the welcome page' do 
+describe 'Welcome Page' do
+  describe 'When a user visits the root path they will be on the welcome page' do
     before(:each) { visit '/' }
 
     it 'includes a welcome message' do

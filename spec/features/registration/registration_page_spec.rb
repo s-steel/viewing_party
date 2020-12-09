@@ -26,14 +26,14 @@ RSpec.describe 'As a visitor' do
         expect(current_path).to eq(dashboard_path)
         expect(page).to have_content("Welcome #{@user.user_name}!")
       end
-      
+
       it 'with one orq more incomplete fields, I see an error message on the registration form' do
         fill_in 'user[email]', with: @user.email 
         click_button 'Register'
         expect(find_field('user[email]').value).to eq(@user.email)
         expect(find_field('user[password]').value).to eq(nil)
         expect(page).to have_content("Password confirmation can't be blank and Password can't be blank")
-        
+
         fill_in 'user[password]', with: @user.password
         click_button 'Register'
         expect(find_field('user[email]').value).to eq(@user.email)

@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.0.1
+      - Faraday v1.1.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Tue, 08 Dec 2020 03:10:02 GMT
+      - Tue, 08 Dec 2020 21:15:31 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,11 +42,11 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 dc50b0effd72a7b2c19bcb0909cfae82.cloudfront.net (CloudFront)
+      - 1.1 48a6ccbb0ddb052ab512a3422295bd39.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - sBz3Px0hpg9rRpLrkUe3fPhbi-s_vbCy4EyGb79VVJB36qnl_oBiTA==
+      - imSKiWnAdJ54wYL68dkNCdfaS_z4VNNnBGtV2hi8GHAhi83XMlsoIA==
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/7tNTPZMb13W0AhkcuoL6myRrNRr.jpg","genre_ids":[12,14,28],"id":121,"original_language":"en","original_title":"The
@@ -126,7 +126,7 @@ http_interactions:
         riders (from \"The Two Towers\") are provided. Also, there are interviews
         with a range of the filmmakers.","popularity":4.013,"poster_path":"/knCJvfbr4LWNZBkTDlwRdM28PuR.jpg","release_date":"2001-12-23","title":"National
         Geographic - Beyond the Movie: The Fellowship of the Ring","video":false,"vote_average":5.8,"vote_count":6}],"total_pages":1,"total_results":11}'
-  recorded_at: Tue, 08 Dec 2020 03:10:02 GMT
+  recorded_at: Tue, 08 Dec 2020 21:15:31 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=2&query=the%20lord%20of%20the%20rings
@@ -135,7 +135,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.0.1
+      - Faraday v1.1.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -161,7 +161,7 @@ http_interactions:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
       Date:
-      - Tue, 08 Dec 2020 03:10:02 GMT
+      - Tue, 08 Dec 2020 21:15:31 GMT
       Etag:
       - 7d08b8b3bfa4ee53486bd9ed9a954b48
       Cache-Control:
@@ -169,13 +169,13 @@ http_interactions:
       X-Cache:
       - RefreshHit from cloudfront
       Via:
-      - 1.1 2c861897aa9389c1f47299b6fea5b59d.cloudfront.net (CloudFront)
+      - 1.1 91f1c114eac2b00f07286bc49dddd7e5.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - Eob9uT7nA_4WO87sadUkEcDxj_k4AWH0N0zXRlGPzZHm-uV4sCJ52w==
+      - qACX3_9kgXEXWt4hS6sN-3Uu55lMxFIIbwt-WvP_vVGvGFPhV-qSYw==
     body:
       encoding: UTF-8
       string: '{"page":2,"results":[],"total_pages":1,"total_results":11}'
-  recorded_at: Tue, 08 Dec 2020 03:10:02 GMT
+  recorded_at: Tue, 08 Dec 2020 21:15:31 GMT
 recorded_with: VCR 6.0.0

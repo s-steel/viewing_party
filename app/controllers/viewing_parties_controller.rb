@@ -16,6 +16,8 @@ class ViewingPartiesController < ApplicationController
       params[:party][:guests].keys.each do |guest_id|
         @party.guests << User.find(guest_id)
       end
+      flash[:success] = 'You created a new viewing party!'
+      redirect_to dashboard_path
     rescue ActiveRecord::RecordInvalid
       flash.now[:error] = 'Please fill out all fields with proper information'
       @user = current_user
@@ -34,12 +36,10 @@ class ViewingPartiesController < ApplicationController
       :when,
       :movie_id
     )
-    # require 'pry'; binding.pry
     output[:host] = current_user
     output[:duration] = if params[:party][:end_time].empty?
                           @movie.runtime
                         else
-                          # require 'pry'; binding.pry
                           (DateTime.new(*params[:party][:end_time].split(/[^0-9]/).map(&:to_i)) - DateTime.new(*params[:party][:when].split(/[^0-9]/).map(&:to_i))) * 1440
                         end
 

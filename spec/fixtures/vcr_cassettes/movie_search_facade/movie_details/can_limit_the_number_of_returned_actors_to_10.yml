@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.0.1
+      - Faraday v1.1.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -52,13 +52,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 0e018abb74f4918cb6e427c3e0a7ee33.cloudfront.net (CloudFront)
+      - 1.1 38059ba65876500c040fb73e2cbaebf5.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - bqOr_ef89hPu9oE51qmDW7_U72I4TmdRfIViVCNdydWRIe_Y_N8klQ==
+      - _58Gw8x-7jzW7KZQKIzvvaOcA-tfPEudi4qefqv1vXBrTAMjYz2YEw==
+      Age:
+      - '10722'
     body:
       encoding: UTF-8
       string: '{"adult":false,"backdrop_path":"/7tNTPZMb13W0AhkcuoL6myRrNRr.jpg","belongs_to_collection":{"id":119,"name":"The
@@ -527,5 +529,5 @@ http_interactions:
         Effects","name":"Robyn Isaacs","original_name":"Robyn Isaacs","popularity":0.6,"profile_path":null,"credit_id":"5b5548359251416dc200cf87","department":"Visual
         Effects","job":"Visual Effects Producer"},{"adult":false,"gender":0,"id":2152323,"known_for_department":"Art","name":"Jamie
         Beswarick","original_name":"Jamie Beswarick","popularity":0.6,"profile_path":null,"credit_id":"5f2403b0c3514c00373193bf","department":"Art","job":"Sculptor"}]}}'
-  recorded_at: Tue, 08 Dec 2020 18:16:50 GMT
+  recorded_at: Tue, 08 Dec 2020 21:15:32 GMT
 recorded_with: VCR 6.0.0
