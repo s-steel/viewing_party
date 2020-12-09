@@ -68,20 +68,22 @@ describe 'Movies show page' do
     end
   end
 
-  # describe 'similar movie api call' do
-  #   before :each do
-  #     @user = User.new(email: 'me@email.com',
-  #                      password: 'password')
-  #     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
-  #   end
+  describe 'similar movies' do
+    before :each do
+      @user = User.new(email: 'me@email.com',
+                       password: 'password')
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+    end
 
-  #   it 'show similar movies' do
-  #     VCR.use_cassette('similar_movies') do
-  #       visit '/movies/343611'
-  #       expect(page).to have_css('.similar-movies', count: 1)
-  #       similar_movies = find('.similar-movies').text
-  #       expect(similar_movies).to_not be_empty
-  #     end
-  #   end
-  # end
+    it 'show similar movies' do
+      VCR.use_cassette('can_limit_the_number_of_objects_returned') do
+        visit '/movies/121'
+        expect(page).to have_css('.similar-movies', count: 1)
+        expect(page).to have_content('5 Similar Movies')
+        similar_movies = find('.similar-movies').text
+        expect(similar_movies).to_not be_empty
+        expect(page).to have_css('.individual-similar-movies', count: 5)
+      end
+    end
+  end
 end
