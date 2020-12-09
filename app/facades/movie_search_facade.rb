@@ -17,6 +17,11 @@ class MovieSearchFacade
     { movie: movie, cast: actors, reviews: reviews }
   end
 
+  def self.similar_movies(movie_id, limit = 100)
+    json_response = TMDBInteraction.similar_movies(movie_id)
+    require 'pry', binding.pry
+  end
+
   private 
     def self.create_movie_data(movies)
       movies.map do |movie|

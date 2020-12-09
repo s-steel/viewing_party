@@ -48,21 +48,15 @@ describe TMDBInteraction do
     end
   end
 
-  # describe 'similar_movies' do
-  #   it 'returns a list of similar movies' do 
-  #     VCR.use_cassette('similar_movies') do
-  #       @result = TMDBInteraction.similar_movies(343_611)
-  #     end
-  #     expect(@result.count).to eq(20)
-  #     expect(@result.first).to be_a(MovieData)
-  #     expect(@result.last.id).to eq(131_631)
-  #   end
-
-  #   it 'can limit the number returned' do
-  #     VCR.use_cassette('limit_similar_movies') do
-  #       @result = TMDBInteraction.similar_movies(343_611, 5)
-  #     end
-  #     expect(@result.count).to eq(5)
-  #   end
-  # end
+  describe 'similar_movies' do
+    it 'returns a list of similar movies' do
+      VCR.use_cassette('similar_movies') do
+        @result = TMDBInteraction.similar_movies(343_611)
+      end
+      expect(@result[:results].count).to eq(20)
+      expect(@result[:results].first).to have_key(:title)
+      expect(@result[:results].first).to have_key(:overview)
+      expect(@result[:results].last).to have_key(:popularity)
+    end
+  end
 end
