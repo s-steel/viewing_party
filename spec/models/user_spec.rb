@@ -61,6 +61,7 @@ RSpec.describe User, type: :model do
       before :each do
         @user = create(:user, :with_friends)
         @friend1 = @user.followed[0]
+        @friend2 = @user.followed[1]
         @party1 = Party.create!(movie_id: 400_160, duration: 118, host_id: @user.id, when: '2021-01-01T11:30')
         @party1.guests << [@friend1]
       end
@@ -71,6 +72,10 @@ RSpec.describe User, type: :model do
 
       it 'shows invited' do
         expect(@friend1.status(@party1)).to eq('Invited')
+      end
+
+      it 'shows you are not invited for uninvited guests' do
+        expect(@friend2.status(@party1)).to eq('You are not invited')
       end
     end
   end
