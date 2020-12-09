@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/121/similar?api_key=<DONT_EXPOSE_MY_DATA>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 09 Dec 2020 03:34:39 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=21600
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - b2710a08226441a35ab1b3637b756cd277bac6ab
+      X-Memc-Age:
+      - '18299'
+      X-Memc-Expires:
+      - '3301'
+      Etag:
+      - W/"71b2079ae98e7b6c0ad0cef1bef42d27"
+      Last-Modified:
+      - Wed, 09 Dec 2020 03:34:39 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 9cefde3a3c84cc779d3c26a39c2e4430.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - 47cMPRma4-zMtGDikpRb_cDZfKq7EOyXeS8KXH_7vBTPnN_uqVajvQ==
+      Age:
+      - '60'
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[{"id":120,"vote_average":8.3,"overview":"Young
+        hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo,
+        must leave his home in order to keep it from falling into the hands of its
+        evil creator. Along the way, a fellowship is formed to protect the ringbearer
+        and make sure that the ring arrives at its final destination: Mt. Doom, the
+        only place where it can be destroyed.","release_date":"2001-12-18","title":"The
+        Lord of the Rings: The Fellowship of the Ring","adult":false,"backdrop_path":"/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg","vote_count":18122,"genre_ids":[12,14,28],"video":false,"original_language":"en","original_title":"The
+        Lord of the Rings: The Fellowship of the Ring","poster_path":"/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg","popularity":139.226},{"id":122,"vote_average":8.5,"overview":"Aragorn
+        is revealed as the heir to the ancient kings as he, Gandalf and the other
+        members of the broken fellowship struggle to save Gondor from Sauron''s forces.
+        Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the
+        dark lord''s realm.","release_date":"2003-12-01","title":"The Lord of the
+        Rings: The Return of the King","adult":false,"backdrop_path":"/9DeGfFIqjph5CBFVQrD6wv9S7rR.jpg","vote_count":16677,"genre_ids":[12,14,28],"video":false,"original_language":"en","original_title":"The
+        Lord of the Rings: The Return of the King","poster_path":"/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg","popularity":79.693},{"adult":false,"backdrop_path":"/vY3JxJp260Ypwebk4bS22OjrXHN.jpg","genre_ids":[28,12,53],"id":49021,"original_language":"en","original_title":"Killer
+        Elite","overview":"Based on a shocking true story, Killer Elite pits two of
+        the world’s most elite operatives—Danny, an ex-special ops agent and Hunter,
+        his longtime mentor—against the cunning leader of a secret military society.
+        Covering the globe from Australia to Paris, London and the Middle East, Danny
+        and Hunter are plunged into a highly dangerous game of cat and mouse—where
+        the predators become the prey.","poster_path":"/7O2U0WPFPSvNSUYZlhbnV081lBF.jpg","release_date":"2011-09-23","title":"Killer
+        Elite","video":false,"vote_average":6.3,"vote_count":1456,"popularity":15.391},{"adult":false,"backdrop_path":"/qRKSgLYF5ePWK5aYShwpED3Aquv.jpg","genre_ids":[12,36,28],"id":1911,"original_language":"en","original_title":"The
+        13th Warrior","overview":"A Muslim ambassador exiled from his homeland, Ahmad
+        ibn Fadlan finds himself in the company of Vikings. While the behavior of
+        the Norsemen initially offends ibn Fadlan, the more cultured outsider grows
+        to respect the tough, if uncouth, warriors. During their travels together,
+        ibn Fadlan and the Vikings get word of an evil presence closing in, and they
+        must fight the frightening and formidable force, which was previously thought
+        to exist only in legend.","poster_path":"/7pyhR5K1iv67daYw0DfsmsersKA.jpg","release_date":"1999-08-13","title":"The
+        13th Warrior","video":false,"vote_average":6.6,"vote_count":1176,"popularity":15.625},{"id":300671,"vote_average":7.2,"overview":"An
+        American Ambassador is killed during an attack at a U.S. compound in Libya
+        as a security team struggles to make sense out of the chaos.","release_date":"2016-01-13","title":"13
+        Hours: The Secret Soldiers of Benghazi","adult":false,"backdrop_path":"/ayDMYGUNVvXS76wQgFwTiUIDNb5.jpg","vote_count":2211,"genre_ids":[28,36,53,10752,18],"video":false,"original_language":"en","original_title":"13
+        Hours: The Secret Soldiers of Benghazi","poster_path":"/4qnEeVPM8Yn5dIVC4k4yyjrUXeR.jpg","popularity":37.494},{"adult":false,"backdrop_path":"/jRLquZKTbFwCv43HUZ3iffJTYBR.jpg","genre_ids":[28,80,18,53],"id":11835,"original_language":"en","original_title":"Death
+        Sentence","overview":"Nick Hume is a mild-mannered executive with a perfect
+        life, until one gruesome night he witnesses something that changes him forever.
+        Transformed by grief, Hume eventually comes to the disturbing conclusion that
+        no length is too great when protecting his family.","poster_path":"/xadVdhlkfrjqqSQWWmCVF8lEVIT.jpg","release_date":"2007-08-31","title":"Death
+        Sentence","video":false,"vote_average":6.5,"vote_count":688,"popularity":14.229},{"adult":false,"backdrop_path":"/sDiGcjWhSu42dCw0jQmBInAkDZ9.jpg","genre_ids":[28,53],"id":379149,"original_language":"en","original_title":"The
+        Foreigner","overview":"Quan is a humble London businessman whose long-buried
+        past erupts in a revenge-fueled vendetta when the only person left for him
+        to love – his teenage daughter – dies in a senseless act of politically-motivated
+        terrorism. His relentless search to find the terrorists leads to a cat-and-mouse
+        conflict with a British government official whose own past may hold the clues
+        to the identities of the elusive killers.","poster_path":"/rwM4hzrmc5HiWfQD9ls9DL4QgGl.jpg","release_date":"2017-09-28","title":"The
+        Foreigner","video":false,"vote_average":6.8,"vote_count":1562,"popularity":31.42},{"adult":false,"backdrop_path":"/nMfH0LMMFk2ovyURkYvyTI99nSo.jpg","genre_ids":[37,18,12],"id":281957,"original_language":"en","original_title":"The
+        Revenant","overview":"In the 1820s, a frontiersman, Hugh Glass, sets out on
+        a path of vengeance against those who left him for dead after a bear mauling.","poster_path":"/ji3ecJphATlVgWNY0B0RVXZizdf.jpg","release_date":"2015-12-25","title":"The
+        Revenant","video":false,"vote_average":7.5,"vote_count":13878,"popularity":34.331},{"adult":false,"backdrop_path":"/7rqpB7coXaNvTVMWb5vL8qU0pBp.jpg","genre_ids":[53,14],"id":448095,"original_language":"en","original_title":"I
+        Still See You","overview":"A spellbinding and romantic supernatural thriller.
+        Ten years after an apocalyptic event left the world haunted by ghosts, Roni
+        receives a threatening message from beyond the grave. Joining forces with
+        a mysterious classmate, Kirk, Roni descends into a shadow world that blurs
+        the bounds of the living and the dead-and begins a desperate race against
+        time to stop a cunning killer.","poster_path":"/9fqzZs922V8OmwgO11Eqclof2mQ.jpg","release_date":"2018-09-27","title":"I
+        Still See You","video":false,"vote_average":6.7,"vote_count":395,"popularity":14.845},{"adult":false,"backdrop_path":"/5dCJdPKIwbbqbSuKGvGrZcEuvyl.jpg","genre_ids":[10752,18,10749,28,12],"id":9093,"original_language":"en","original_title":"The
+        Four Feathers","overview":"The story, set in 1885, follows a British officer
+        (Heath Ledger) who resigns his post when he learns of his regiment''s plan
+        to ship out to the Sudan for the conflict with the Mahdi. His friends and
+        fiancée send him four white feathers which symbolize cowardice. To redeem
+        his honor he disguises himself as an Arab and secretly saves the lives of
+        those who branded him a coward.","poster_path":"/bfmpeRr9LTXzBC2dpC89FE5uavK.jpg","release_date":"2002-09-08","title":"The
+        Four Feathers","video":false,"vote_average":6.5,"vote_count":354,"popularity":10.809},{"adult":false,"backdrop_path":"/lGDPYuPKgGWTqMnpL88EiYonOG7.jpg","genre_ids":[28,12,80,53],"id":479,"original_language":"en","original_title":"Shaft","overview":"New
+        York police detective John Shaft arrests Walter Wade Jr. for a racially motivated
+        slaying. But the only eyewitness disappears, and Wade jumps bail for Switzerland.
+        Two years later Wade returns to face trial, confident his money and influence
+        will get him acquitted -- especially since he''s paid a drug kingpin to kill
+        the witness.","poster_path":"/uiXKlDtaDvrrOLy0XULcfc12flu.jpg","release_date":"2000-06-15","title":"Shaft","video":false,"vote_average":6.0,"vote_count":807,"popularity":14.193},{"id":570670,"vote_average":7.2,"overview":"When
+        Cecilia''s abusive ex takes his own life and leaves her his fortune, she suspects
+        his death was a hoax. As a series of coincidences turn lethal, Cecilia works
+        to prove that she is being hunted by someone nobody can see.","release_date":"2020-02-26","title":"The
+        Invisible Man","adult":false,"backdrop_path":"/uZMZyvarQuXLRqf3xdpdMqzdtjb.jpg","vote_count":3127,"genre_ids":[53,878,27],"video":false,"original_language":"en","original_title":"The
+        Invisible Man","poster_path":"/5EufsDwXdY2CVttYOk2WtYhgKpa.jpg","popularity":53.766},{"id":10590,"vote_average":7.0,"overview":"The
+        story of the first major battle of the American phase of the Vietnam War and
+        the soldiers on both sides that fought it.","release_date":"2002-03-01","title":"We
+        Were Soldiers","adult":false,"backdrop_path":"/98YHKGqgiRSnjkpOvht9DJEhYHe.jpg","vote_count":1300,"genre_ids":[28,36,10752],"video":false,"original_language":"en","original_title":"We
+        Were Soldiers","poster_path":"/d5uupBAORxnFNbkNQ2G0Bi2cpY8.jpg","popularity":18.474},{"original_title":"Clear
+        and Present Danger","poster_path":"/6xTM8FPxrLRYwz6I3fqtwh7xybs.jpg","video":false,"vote_average":6.6,"overview":"CIA
+        Analyst Jack Ryan is drawn into an illegal war fought by the US government
+        against a Colombian drug cartel.","release_date":"1994-08-03","vote_count":903,"adult":false,"backdrop_path":"/2oAAOax7IiNZKBVq8ACF2KYcSFR.jpg","title":"Clear
+        and Present Danger","genre_ids":[28,18,53],"id":9331,"original_language":"en","popularity":12.358},{"adult":false,"backdrop_path":"/wbk9VvJ8lkUF0ElpfRm3dFIzMJf.jpg","genre_ids":[53,27],"id":473149,"original_language":"en","original_title":"Traffik","overview":"A
+        couple off for a romantic weekend in the mountains are accosted by a biker
+        gang. Alone in the mountains, Brea and John must defend themselves against
+        the gang, who will stop at nothing to protect their secrets.","poster_path":"/jwsmeU8mYEP6GpxJ2sbCzc2MQmi.jpg","release_date":"2018-04-20","title":"Traffik","video":false,"vote_average":6.3,"vote_count":330,"popularity":32.289},{"adult":false,"backdrop_path":"/aWUuZqfPRz8sHUXixaUWa6NzOs0.jpg","genre_ids":[27,9648],"id":22804,"original_language":"en","original_title":"Saw
+        VI","overview":"Special Agent Strahm is dead, and Detective Hoffman has emerged
+        as the unchallenged successor to Jigsaw''s legacy. However, when the FBI draws
+        closer to Hoffman, he is forced to set a game into motion, and Jigsaw''s grand
+        scheme is finally understood.","poster_path":"/9fFI57FuE9X4pUCIiKZZZCB7caK.jpg","release_date":"2009-10-22","title":"Saw
+        VI","video":false,"vote_average":6.3,"vote_count":2051,"popularity":28.485},{"adult":false,"backdrop_path":"/cSgDucubHzMSoWhUoA2URo6bRlC.jpg","genre_ids":[27,53,9648],"original_language":"en","original_title":"Sinister","poster_path":"/cUXmPG5Dm3XdAeUjucL93KrtkAY.jpg","id":82507,"video":false,"title":"Sinister","vote_count":3738,"overview":"Found
+        footage helps a true-crime novelist realize how and why a family was murdered
+        in his new home, though his discoveries put his entire family in the path
+        of a supernatural entity.","release_date":"2012-03-29","vote_average":6.8,"popularity":35.854},{"adult":false,"backdrop_path":"/5kjNfOfiGr5D8OpwNPqvTPQ7pEQ.jpg","genre_ids":[53,18],"id":398181,"original_language":"en","original_title":"You
+        Were Never Really Here","overview":"A traumatised veteran, unafraid of violence,
+        tracks down missing girls for a living. When a job spins out of control, his
+        nightmares overtake him as a conspiracy is uncovered leading to what may be
+        his death trip or his awakening.","poster_path":"/ktPbjD6nYg5NxmeTt72Iqaw5GD0.jpg","release_date":"2017-12-12","title":"You
+        Were Never Really Here","video":false,"vote_average":6.6,"vote_count":1746,"popularity":16.93},{"overview":"The
+        true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is
+        adopted by neighbourhood gangsters at an early age and climbs the ranks of
+        a Mafia family under the guidance of Jimmy Conway.","release_date":"1990-09-12","adult":false,"backdrop_path":"/chrngg9mjM6tSU3BF9VHITgn1Ke.jpg","vote_count":8234,"genre_ids":[18,80],"id":769,"original_language":"en","original_title":"GoodFellas","poster_path":"/6QMSLvU5ziIL2T6VrkaKzN2YkxK.jpg","title":"GoodFellas","video":false,"vote_average":8.4,"popularity":26.791},{"id":499932,"video":false,"vote_count":1345,"vote_average":7.4,"title":"The
+        Devil All the Time","release_date":"2020-09-11","original_language":"en","original_title":"The
+        Devil All the Time","genre_ids":[80,18,53],"backdrop_path":"/rUeqBuNDR9zN6vZV9kpEFMtQm0E.jpg","adult":false,"overview":"In
+        Knockemstiff, Ohio and its neighboring backwoods, sinister characters converge
+        around young Arvin Russell as he fights the evil forces that threaten him
+        and his family.","poster_path":"/sdMZmKVvrnyYbl9Az4L6ehuIrFp.jpg","popularity":62.992}],"total_pages":42,"total_results":833}'
+  recorded_at: Wed, 09 Dec 2020 03:35:39 GMT
+recorded_with: VCR 6.0.0

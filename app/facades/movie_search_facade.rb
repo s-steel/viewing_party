@@ -19,7 +19,7 @@ class MovieSearchFacade
 
   def self.similar_movies(movie_id, limit = 100)
     json_response = TMDBInteraction.similar_movies(movie_id)
-    require 'pry', binding.pry
+    create_movie_data(json_response[:results]).take(limit)
   end
 
   private 
