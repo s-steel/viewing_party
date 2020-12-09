@@ -43,6 +43,9 @@
 </section>
 
 <section class='similar-movies'>
-  <h3>Similar Movies:</h3>
+  <h3><%= @similar_movies.length %> Similar Movies:</h3>
+  <% @similar_movies.each do |movie| %>
+    <div class='individual-similar-movies'><%= link_to movie.title, "/movies/#{movie.id}" %></div>
+  <% end %>
 </section>
 
