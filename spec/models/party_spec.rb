@@ -23,7 +23,7 @@ describe Party, type: :model do
       user = create(:user)
       party = Party.create!(
         host: user,
-        when: DateTime.new(2021, 01, 01, 11, 30),
+        when: DateTime.new(2021, 0o1, 0o1, 11, 30),
         duration: 270,
         movie_id: 400_160
       )

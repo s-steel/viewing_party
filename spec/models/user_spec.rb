@@ -6,8 +6,8 @@ RSpec.describe User, type: :model do
     it { should have_many(:followed).through(:followers_ref) }
     it { should have_many :followed_ref }
     it { should have_many(:followers).through(:followed_ref) }
-    it { should have_many(:party_guests)}
-    it { should have_many(:parties).through(:party_guests)}
+    it { should have_many(:party_guests) }
+    it { should have_many(:parties).through(:party_guests) }
     it { should have_many :hosted_parties }
   end
 

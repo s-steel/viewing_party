@@ -7,9 +7,9 @@ RSpec.describe 'As an authenticated user' do
         @user = create(:user)
         @user_2 = create(:user)
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
-        visit dashboard_path 
+        visit dashboard_path
       end
-      
+
       it 'I see a search field and button within the friend section' do
         within '.friends' do
           expect(page).to have_field(:friend_search)
@@ -18,16 +18,16 @@ RSpec.describe 'As an authenticated user' do
       end
 
       it 'I don\'t see any friends' do
-        within '.friends' do  
+        within '.friends' do
           expect(page).to have_content('You currently have no friends')
-        end 
+        end
       end
 
       it 'I can add a friend who exists in the system' do
-        within '.friends' do  
-          fill_in :friend_search, with: @user_2.user_name 
+        within '.friends' do
+          fill_in :friend_search, with: @user_2.user_name
           click_button 'Add Friend'
-        end 
+        end
         within '.friends' do
           expect(page).to_not have_content('You currently have no friends')
           expect(page).to have_content(@user_2.user_name)
@@ -35,10 +35,10 @@ RSpec.describe 'As an authenticated user' do
       end
 
       it 'I can add a friend who exists in the system using their email' do
-        within '.friends' do  
+        within '.friends' do
           fill_in :friend_search, with: @user_2.email
           click_button 'Add Friend'
-        end 
+        end
         within '.friends' do
           expect(page).to_not have_content('You currently have no friends')
           expect(page).to have_content(@user_2.user_name)
@@ -54,7 +54,7 @@ RSpec.describe 'As an authenticated user' do
         within '.friends' do
           expect(page).to have_content('You currently have no friends')
         end
-      end 
+      end
 
       it 'I cannot add a friend using an incorrect email' do
         within '.friends' do
@@ -95,7 +95,7 @@ RSpec.describe 'As an authenticated user' do
         @friend_2 = @user.followed.second
         @friend_3 = @user.followed.third
 
-        visit dashboard_path 
+        visit dashboard_path
 
         within '.friends' do
           expect(page).to_not have_content('You currently have no friends')
@@ -105,6 +105,5 @@ RSpec.describe 'As an authenticated user' do
         end
       end
     end
-
   end
 end
