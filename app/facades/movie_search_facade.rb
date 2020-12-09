@@ -22,22 +22,23 @@ class MovieSearchFacade
     create_movie_data(json_response[:results]).take(limit)
   end
 
-  private 
-    def self.create_movie_data(movies)
-      movies.map do |movie|
-        MovieData.new(movie)
-      end
-    end
+  private
 
-    def self.create_actors(actors)
-      actors.map do |actor|
-        Actor.new(actor)
-      end
+  def self.create_movie_data(movies)
+    movies.map do |movie|
+      MovieData.new(movie)
     end
+  end
 
-    def self.create_reviews(reviews)
-      reviews.map do |review|
-        Review.new(review)
-      end
+  def self.create_actors(actors)
+    actors.map do |actor|
+      Actor.new(actor)
     end
+  end
+
+  def self.create_reviews(reviews)
+    reviews.map do |review|
+      Review.new(review)
+    end
+  end
 end
