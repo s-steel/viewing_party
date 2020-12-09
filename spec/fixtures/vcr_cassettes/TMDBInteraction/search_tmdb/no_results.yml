@@ -24,6 +24,8 @@ http_interactions:
       - '57'
       Connection:
       - keep-alive
+      Date:
+      - Wed, 09 Dec 2020 14:01:52 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -33,24 +35,22 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
-      Date:
-      - Tue, 08 Dec 2020 21:15:37 GMT
       Etag:
       - a8d277d2d95f2ea20f792a48c43093dc
       Cache-Control:
       - public, max-age=600
       X-Cache:
-      - RefreshHit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 1e5c934b70471a41d2b61ae8c4abeb79.cloudfront.net (CloudFront)
+      - 1.1 6c02603f677dd5669f8ab3b41062340f.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - SSX8CEmpDdx9AzNcU5qUac9CPJDsdiXGJ_veQp_-5B1obVcamTl5Iw==
+      - ZnpOG9jTjXbKZhjrIC73oHFrOXKjj0KE0BNY_04m3VxGF12nMw_hiA==
     body:
       encoding: UTF-8
       string: '{"page":1,"results":[],"total_pages":0,"total_results":0}'
-  recorded_at: Tue, 08 Dec 2020 21:15:37 GMT
+  recorded_at: Wed, 09 Dec 2020 14:01:52 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<DONT_EXPOSE_MY_DATA>&page=2&query=adhfaosdjfaodihf%3Baldohfasdihfoidhfdj
@@ -75,6 +75,8 @@ http_interactions:
       - '57'
       Connection:
       - keep-alive
+      Date:
+      - Wed, 09 Dec 2020 14:01:53 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -84,22 +86,20 @@ http_interactions:
       Access-Control-Expose-Headers:
       - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
         Content-Length, Content-Range
-      Date:
-      - Tue, 08 Dec 2020 21:15:37 GMT
       Etag:
       - daeb628883c68203dc276731d4722f32
       Cache-Control:
       - public, max-age=600
       X-Cache:
-      - RefreshHit from cloudfront
+      - Miss from cloudfront
       Via:
-      - 1.1 cddde15c11afac53ac9fe7978dcfecd7.cloudfront.net (CloudFront)
+      - 1.1 788f6ff13e09a712f5227945fa34a519.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN50-C2
       X-Amz-Cf-Id:
-      - VC741OtuLZ4CaICPAzOk1skVJJRnlkCf8LPFq5UZduzQUhlzuY94WQ==
+      - sfQ30fUGCqiMz6Z83JZ2RWUhbdx6B_oGo2Z1p3X9UKvwk9vqY26Ptw==
     body:
       encoding: UTF-8
       string: '{"page":2,"results":[],"total_pages":0,"total_results":0}'
-  recorded_at: Tue, 08 Dec 2020 21:15:37 GMT
+  recorded_at: Wed, 09 Dec 2020 14:01:52 GMT
 recorded_with: VCR 6.0.0

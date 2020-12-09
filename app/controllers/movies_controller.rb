@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
     @movie = movie_details[:movie]
     @cast = movie_details[:cast]
     @reviews = movie_details[:reviews]
-    @similar_movies = MovieSearchFacade.similar_movies(params[:id], 5)
+    @similar_movies = MovieSearchFacade.movie_details(params[:id], 5)[:similar_movies]
   end
 
   def discover; end

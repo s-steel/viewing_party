@@ -9,17 +9,13 @@ class MovieSearchFacade
     create_movie_data(json_response)
   end
 
-  def self.movie_details(movie_id)
+  def self.movie_details(movie_id, similar_limit = 100)
     json_response = TMDBInteraction.movie_details(movie_id)
-    movie = MovieData.new(json_response.except(:reviews, :credits))
+    movie = MovieData.new(json_response.except(:reviews, :credits, :similar))
     actors = create_actors(json_response[:credits][:cast]).first(10)
     reviews = create_reviews(json_response[:reviews][:results])
-    { movie: movie, cast: actors, reviews: reviews }
-  end
-
-  def self.similar_movies(movie_id, limit = 100)
-    json_response = TMDBInteraction.similar_movies(movie_id)
-    create_movie_data(json_response[:results]).take(limit)
+    similar_movies = create_movie_data(json_response[:similar][:results]).take(similar_limit)
+    { movie: movie, cast: actors, reviews: reviews, similar_movies: similar_movies }
   end
 
   private

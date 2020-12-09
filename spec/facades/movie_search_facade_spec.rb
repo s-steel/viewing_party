@@ -49,16 +49,15 @@ describe 'movie_search_facade' do
 
     describe 'similar_movies' do
       it 'creates movie data object', :vcr do
-        result = MovieSearchFacade.similar_movies(121)
-
-        expect(result).to be_a(Array)
-        expect(result.first).to be_a(MovieData)
+        result = MovieSearchFacade.movie_details(121)
+        expect(result[:similar_movies]).to be_a(Array)
+        expect(result[:similar_movies].first).to be_a(MovieData)
       end
 
       it 'can limit the number of objects returned', :vcr do
-        result = MovieSearchFacade.similar_movies(121, 8)
+        result = MovieSearchFacade.movie_details(121, 8)
 
-        expect(result.length).to be(8)
+        expect(result[:similar_movies].length).to be(8)
       end
     end
 end

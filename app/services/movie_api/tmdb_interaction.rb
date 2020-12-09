@@ -16,15 +16,9 @@ class TMDBInteraction
   end
 
   def self.movie_details(id)
-    conn = create_connection("movie/#{id}", nil, 'reviews,credits')
+    conn = create_connection("movie/#{id}", nil, 'reviews,credits,similar')
     result = conn.get('')
     json = json_parse(result)
-  end
-
-  def self.similar_movies(id)
-    conn = create_connection("movie/#{id}/similar")
-    results = conn.get('')
-    json_parse(results)
   end
 
   private

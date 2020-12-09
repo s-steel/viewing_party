@@ -51,12 +51,12 @@ describe TMDBInteraction do
   describe 'similar_movies' do
     it 'returns a list of similar movies' do
       VCR.use_cassette('similar_movies') do
-        @result = TMDBInteraction.similar_movies(343_611)
+        result = TMDBInteraction.movie_details(343_611)
+        expect(result[:similar][:results].count).to eq(20)
+        expect(result[:similar][:results].first).to have_key(:title)
+        expect(result[:similar][:results].first).to have_key(:overview)
+        expect(result[:similar][:results].last).to have_key(:popularity)
       end
-      expect(@result[:results].count).to eq(20)
-      expect(@result[:results].first).to have_key(:title)
-      expect(@result[:results].first).to have_key(:overview)
-      expect(@result[:results].last).to have_key(:popularity)
     end
   end
 end
