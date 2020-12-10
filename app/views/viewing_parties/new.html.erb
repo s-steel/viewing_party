@@ -1,6 +1,6 @@
 <h1>New viewing party for <%= @movie.title %></h1>
 
-<%= form_with model: @party do |f| %>
+<%= form_with model: @party, local: true do |f| %>
   <%= f.hidden_field 'movie_id', value: @movie.id %>
   <%= f.datetime_field 'when' %> <br><br>
   <div class='tooltip'>

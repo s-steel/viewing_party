@@ -17,6 +17,11 @@ RSpec.describe 'As a registered user' do
       expect(page).to have_button('Find Movies')
     end
 
+    it 'has a button to return user to the dashboard' do
+      click_button 'Dashboard'
+      expect(current_path).to eq(dashboard_path)
+    end
+
     describe 'when I click on the Discover Top 40 Movies button' do
       before :each do
         VCR.use_cassette('top_movies') do

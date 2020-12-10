@@ -32,7 +32,6 @@ describe 'Movies show page' do
         title = find('.movie-title').text
         expect(title).to_not be_empty
         expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
-
         expect(page).to have_css('.movie-data', count: 1)
         data = find('.movie-data').text
         expect(data).to_not be_empty

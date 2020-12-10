@@ -21,5 +21,9 @@ describe 'Welcome Page' do
     it 'has link to registration' do
       expect(page).to have_link('New to Viewing Party? Register Here')
     end
+
+    it 'does not have a button to the dashboard' do
+      expect(page).to_not have_button('Dashboard')
+    end
   end
 end
