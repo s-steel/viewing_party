@@ -21,8 +21,6 @@ class TMDBInteraction
     json = json_parse(result)
   end
 
-  private
-
   def self.create_connection(api_call, query = nil, append = nil)
     Faraday.new("https://api.themoviedb.org/3/#{api_call}") do |req|
       req.params['api_key'] = ENV['TMDB_API_KEY']
@@ -38,7 +36,7 @@ class TMDBInteraction
     page2 = conn.get do |req|
       req.params['page'] = 2
     end
-    return [page1, page2]
+    [page1, page2]
   end
 
   def self.json_parse(data)

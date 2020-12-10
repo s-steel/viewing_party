@@ -47,7 +47,6 @@ describe 'New viewing party' do
         expect(party.duration).to eq(270)
         expect(party.start_date_time).to eq('Friday January 1, 2021 at 11:30 AM')
         expect(party.guests[0]).to eq(@user2)
-
       end
     end
 

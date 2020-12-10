@@ -3,7 +3,7 @@ require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 require 'webmock/rspec'
 # Add additional requires below this line. Rails is not loaded until this point!
@@ -80,4 +80,4 @@ VCR.configure do |config|
   end
   config.default_cassette_options = { record: :new_episodes }
   config.configure_rspec_metadata!
-end 
+end

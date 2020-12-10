@@ -28,14 +28,14 @@ describe 'movie_search_facade' do
 
     it 'creates actor objects', :vcr do
       result = MovieSearchFacade.movie_details(121)
-      
+
       expect(result[:cast]).to be_a(Array)
       expect(result[:cast].first).to be_a(Actor)
     end
 
     it 'creates review objects', :vcr do
       result = MovieSearchFacade.movie_details(121)
-      
+
       expect(result[:reviews]).to be_a(Array)
       expect(result[:reviews].first).to be_a(Review)
     end
@@ -47,17 +47,17 @@ describe 'movie_search_facade' do
     end
   end
 
-    describe 'similar_movies' do
-      it 'creates movie data object', :vcr do
-        result = MovieSearchFacade.movie_details(121)
-        expect(result[:similar_movies]).to be_a(Array)
-        expect(result[:similar_movies].first).to be_a(MovieData)
-      end
-
-      it 'can limit the number of objects returned', :vcr do
-        result = MovieSearchFacade.movie_details(121, 8)
-
-        expect(result[:similar_movies].length).to be(8)
-      end
+  describe 'similar_movies' do
+    it 'creates movie data object', :vcr do
+      result = MovieSearchFacade.movie_details(121)
+      expect(result[:similar_movies]).to be_a(Array)
+      expect(result[:similar_movies].first).to be_a(MovieData)
     end
+
+    it 'can limit the number of objects returned', :vcr do
+      result = MovieSearchFacade.movie_details(121, 8)
+
+      expect(result[:similar_movies].length).to be(8)
+    end
+  end
 end

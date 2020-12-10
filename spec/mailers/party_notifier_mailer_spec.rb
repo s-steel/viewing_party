@@ -1,27 +1,26 @@
 require 'rails_helper'
 
-RSpec.describe PartyNotifierMailer, type: :mailer do 
+RSpec.describe PartyNotifierMailer, type: :mailer do
   describe 'invite' do
     before :each do
       @party_host = create(:user)
       @guest = create(:user)
-      @event
       @email_info = {
-        user: @party_host, 
+        user: @party_host,
         friend: @guest.user_name,
-        friend_email: @guest.email, 
-        movie: 'The Lord of the Rings', 
+        friend_email: @guest.email,
+        movie: 'The Lord of the Rings',
         party_time: 'Friday, 13th 6:00 pm'
       }
       @message = "#{@party_host.user_name} has sent you a viewing party invitation for #{@email_info[:movie]} on #{@email_info[:party_time]}."
-      @mail = PartyNotifierMailer.invite(@email_info) 
+      @mail = PartyNotifierMailer.invite(@email_info)
     end
-    
+
     it 'renders the headers' do
       expect(@mail.subject).to eq("#{@party_host.user_name} has sent you a viewing party invitation")
-      expect(@mail.to).to eq(["#{@guest.email}"])
+      expect(@mail.to).to eq([@guest.email.to_s])
       expect(@mail.from).to eq(['no-reply@turing.io'])
-      expect(@mail.reply_to).to eq(["#{@party_host.email}"])
+      expect(@mail.reply_to).to eq([@party_host.email.to_s])
     end
 
     it 'render the message body' do
