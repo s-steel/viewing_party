@@ -72,6 +72,17 @@ footer {
   padding: 20px;
 }
 
+.header_buttons {
+  background-color: white;
+  color: #348faa;
+}
+
+.header_buttons:hover {
+  background-color: #0caf86;
+  cursor: pointer;
+  color: white;
+}
+
 .button_to {
   background-color: #348faa;
   color: white;
