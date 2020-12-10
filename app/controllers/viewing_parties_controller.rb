@@ -27,7 +27,14 @@ class ViewingPartiesController < ApplicationController
             movie: @movie.title,
             party_time: @party.start_date_time
           }
+
+          begin
+
           PartyNotifierMailer.invite(email_info).deliver_now
+
+          rescue Errno::ECONNREFUSED
+            flash[:error] = 'An invitation email was not sent to a recipient'
+          end
         end
       end
       redirect_to dashboard_path
