@@ -13,22 +13,24 @@ class ViewingPartiesController < ApplicationController
     begin
       @party = Party.create!(party_data)
 
-      params[:party][:guests].each do |guest_id, attending|
-        @party.guests << User.find(guest_id) if attending == '1'
-      end
-      flash[:success] = 'You created a new viewing party!'
+      if params[:party][:guests]
+        params[:party][:guests].each do |guest_id, attending|
+          @party.guests << User.find(guest_id) if attending == '1'
+        end
+        flash[:success] = 'You created a new viewing party!'
 
-      @party.guests.map do |guest|
-        email_info = {
-          user: current_user,
-          friend: guest.user_name,
-          friend_email: guest.email,
-          movie: @movie.title,
-          party_time: @party.start_date_time
-        }
-        PartyNotifierMailer.invite(email_info).deliver_now
-        redirect_to dashboard_path
+        @party.guests.map do |guest|
+          email_info = {
+            user: current_user,
+            friend: guest.user_name,
+            friend_email: guest.email,
+            movie: @movie.title,
+            party_time: @party.start_date_time
+          }
+          PartyNotifierMailer.invite(email_info).deliver_now
+        end
       end
+      redirect_to dashboard_path
     rescue ActiveRecord::RecordInvalid
       flash.now[:error] = 'Please fill out all fields with proper information'
       @user = current_user
