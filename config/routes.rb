@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy', as: :logout
 
 
-  get '/dashboard', to: 'users#show'
+  # get '/dashboard', to: 'users#show'
 
   resources :movies, only: [:index]
   get '/discover', to: 'movies#discover', as: :discover
