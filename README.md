@@ -69,7 +69,7 @@ Here is where the details are show for an individual movie.  The user will see t
 
 ## Viewing Parties
 
-From the page with the movie details the user can click the button to create a new viewing party.  They will then be taken to a new page to create a viewing party.  Here the user can fill in the form with the date and time for the party and they will see check boxes next to the names of any friends.  By checking a box they add that friend to the party.  After creating the party the user will be taken back to their dashboard will they will see the viewing party listed with the details along with if they are the host or if they are invited to the party.
+From the page with the movie details the user can click the button to create a new viewing party.  They will then be taken to a new page to create a viewing party.  Here the user can fill in the form with the date and time for the party and they will see check boxes next to the names of any friends.  By checking a box they add that friend to the party.  After creating the party the user will be taken back to their dashboard will they will see the viewing party listed with the details along with if they are the host or if they are invited to the party.  We also used `ActionMailer` to send an email to any friends that are invited to a viewing party with the date, time, movie title, and the name of their friend that is hosting.
 
 ## Next Time
 
