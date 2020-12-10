@@ -5,7 +5,6 @@ RSpec.describe PartyNotifierMailer, type: :mailer do
     before :each do
       @party_host = create(:user)
       @guest = create(:user)
-      @event
       @email_info = {
         user: @party_host,
         friend: @guest.user_name,
