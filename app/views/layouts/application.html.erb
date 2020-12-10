@@ -13,6 +13,7 @@
       <% if current_user%>
         <h1>Welcome <%= current_user.user_name %>!</h1>
         <div style='float:right'><%= button_to 'Logout', '/logout', method: :get %></div>
+        <div style='float:left'><%= button_to 'Dashboard', '/dashboard', method: :get %></div>
       <% end %>
     </div>
 
