@@ -64,7 +64,7 @@ RSpec.describe 'As an authenticated user' do
               expect(page).to have_content('Invited')
               expect(page).to have_content('The SpongeBob Movie: Sponge on the Run')
               expect(page).to have_content(@party1.start_date_time)
-              expect(page).to have_xpath('//img[@src="https://image.tmdb.org/t/p/original/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg"]')
+              expect(page).to have_xpath("//img[@src='https://image.tmdb.org/t/p/original/jlJ8nDhMhCYJuzOw3f52CP1W8MW.jpg?api_key=#{ENV['TMDB_API_KEY']}']")
             end
           end
         end
