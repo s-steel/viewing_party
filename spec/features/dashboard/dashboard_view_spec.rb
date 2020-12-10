@@ -18,9 +18,7 @@ RSpec.describe 'As an authenticated user' do
 
     it 'a button to discover movies' do
       visit dashboard_path
-      within '.discover' do
-        expect(page).to have_button('Discover Movies')
-      end
+      expect(page).to have_button('Discover Movies')
     end
 
     it 'a friends section with my listed friends' do
@@ -42,10 +40,8 @@ RSpec.describe 'As an authenticated user' do
     describe 'when I click on the Discover Movies button' do
       it 'I am taken to the discover page' do
         visit dashboard_path
-        within '.discover' do
-          click_button('Discover Movies')
-          expect(current_path).to eq(discover_path)
-        end
+        click_button('Discover Movies')
+        expect(current_path).to eq(discover_path)
       end
     end
 
