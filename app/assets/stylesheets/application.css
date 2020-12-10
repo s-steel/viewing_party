@@ -104,3 +104,19 @@ footer {
   top: -2px;
   left: 105%;
 }
+
+.error-flash {
+  padding: 10px;
+  background-color: red;
+  color: white;
+}
+.success-flash {
+  padding: 10px;
+  background-color: green;
+  color: white;
+}
+.notice-flash {
+  padding: 10px;
+  background-color: gray;
+  color: white;
+}
