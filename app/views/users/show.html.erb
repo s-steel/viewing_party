@@ -1,6 +1,5 @@
-
 <section class='discover'>
-<center><%= button_to 'Discover Movies', '/discover', method: :get %></center>
+  <center><%= button_to 'Discover Movies', '/discover', method: :get %></center>
 </section>
 
 <section class='friends'>
@@ -26,11 +25,15 @@
   </div>
 </section>
 
+  <h2>Viewing Parties</h2>
 <section class='parties'>
-<h2>Viewing Parties</h2>
-<% @movies.each do |party, movie| %>
-  <%= movie.title %>
-  <%= party.start_date_time %>
-  <%= @user.status(party) %>
-<% end %>
+
+  <% @movies.each do |party, movie| %>
+    <div class="viewing-party-block">
+      <h3 class="viewing-party-title"><%= movie.title %></h3> <br>
+      <img src="<%= movie.image_source %>" alt="<%= "#{movie.title} poster" %>%" class="party-poster"> <br>
+      <p class="viewing-party-content"><%= party.start_date_time %></p>
+      <p class="viewing-party-content"><%= @user.status(party) %></p>
+    </div>
+  <% end %>
 </section>
