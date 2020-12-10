@@ -23,14 +23,14 @@ RSpec.describe 'As an authenticated user' do
         end
       end
 
-      it 'I can add a friend who exists in the system' do
+      it 'I cannot add a friend who exists in the system using their name' do
         within '.friends' do
           fill_in :friend_search, with: @user_2.user_name
           click_button 'Add Friend'
         end
         within '.friends' do
-          expect(page).to_not have_content('You currently have no friends')
-          expect(page).to have_content(@user_2.user_name)
+          expect(page).to have_content('You currently have no friends')
+          expect(page).to_not have_content(@user_2.user_name)
         end
       end
 
@@ -66,7 +66,7 @@ RSpec.describe 'As an authenticated user' do
 
       it 'I cannot add myself as a friend' do
         within '.friends' do
-          fill_in :friend_search, with: @user.user_name
+          fill_in :friend_search, with: @user.email
           click_button 'Add Friend'
         end
         expect(page).to have_content('You cannot add yourself as a friend')
