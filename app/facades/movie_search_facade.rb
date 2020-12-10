@@ -18,8 +18,6 @@ class MovieSearchFacade
     { movie: movie, cast: actors, reviews: reviews, similar_movies: similar_movies }
   end
 
-  private
-
   def self.create_movie_data(movies)
     movies.map do |movie|
       MovieData.new(movie)

@@ -16,8 +16,8 @@ class User < ApplicationRecord
     email.split('@').first
   end
 
-  def self.find_user(user)
-    User.find_by('lower(email) like ?', "%#{user.downcase}%")
+  def self.find_user(user_email)
+    User.find_by('lower(email) like ?', "#{user_email.downcase}")
   end
 
   def status(party)

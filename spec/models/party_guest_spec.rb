@@ -12,7 +12,6 @@ describe PartyGuest, type: :model do
     it do
       should belong_to :party
       should belong_to :user
-
     end
   end
 end
