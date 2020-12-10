@@ -30,4 +30,8 @@ class MovieData
     mins = total_minutes % 60
     "#{hours} hr #{mins} min"
   end
+
+  def image_source
+    "https://image.tmdb.org/t/p/original#{poster_path}?api_key=#{ENV['TMDB_API_KEY']}"
+  end
 end

@@ -63,7 +63,7 @@ footer {
 }
 
 .top-movies-search {
-  display: inline-block; 
+  display: inline-block;
   padding: 20px;
 }
 
@@ -89,7 +89,7 @@ footer {
   border-radius: 8px;
 }
 
-.button_to:hover{
+.button_to:hover {
   background-color: #0caf86;
   cursor: pointer;
 }
@@ -108,6 +108,7 @@ footer {
   padding: 20px;
   border-bottom: 5px solid black;
 }
+
 /* Tooltip container */
 
 .tooltip {
@@ -142,16 +143,48 @@ footer {
   left: 105%;
 }
 
+.parties {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.party-poster {
+  width: 60%;
+}
+
+.viewing-party-block {
+  display: block;
+  width: fit-content;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+}
+
+.viewing-party-title {
+  display: block;
+  margin: 4px;
+}
+
+.viewing-party-content {
+  display: block;
+  margin: 4px;
+}
+
 .error-flash {
   padding: 10px;
   background-color: red;
   color: white;
 }
+
 .success-flash {
   padding: 10px;
   background-color: green;
   color: white;
 }
+
 .notice-flash {
   padding: 10px;
   background-color: gray;
