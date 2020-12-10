@@ -26,7 +26,7 @@
 
   <% @movies.each do |party, movie| %>
     <div class="viewing-party-block">
-      <h3 class="viewing-party-title"><%= movie.title %></h3> <br>
+      <h3 class="viewing-party-title"><a href="<%= movie_path(movie.id) %>"><%= movie.title %></a></h3> <br>
       <img src="<%= movie.image_source %>" alt="<%= "#{movie.title} poster" %>%" class="party-poster"> <br>
       <p class="viewing-party-content"><%= party.start_date_time %></p>
       <p class="viewing-party-content"><%= @user.status(party) %></p>
