@@ -1,8 +1,10 @@
-<section><%= button_to 'Discover Top 40 Movies', movies_path, method: :get %></section>
+<section class='search-content'>
+  <section class='top-movies-search'><%= button_to 'Discover Top 40 Movies', movies_path, method: :get, class:'button_to' %></section>
 
-<section>
-  <%= form_with url: movies_path, local: true, method: :get do |f| %>
-    <%= f.text_field(:query, placeholder: 'Search by movie title') %>
-    <%= f.submit 'Find Movies' %>
-  <% end %>
+  <section class='search-movies-query'>
+    <%= form_with url: movies_path, local: true, method: :get do |f| %>
+      <%= f.text_field(:query, placeholder: 'Search by movie title') %>
+      <%= f.submit 'Find Movies', class:'button_to' %>
+    <% end %>
+  </section>
 </section>
