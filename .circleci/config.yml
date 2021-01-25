@@ -6,6 +6,9 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5.3-stretch-node
+        environment:
+            RAILS_ENV: test
+            DB_HOST: 127.0.0.1
     executor: ruby/default
     steps:
       - checkout
@@ -14,8 +17,16 @@ jobs:
           command: gem install bundler:2.1.4
           
       - ruby/bundle-install
-      - run: bundle exec rails db:schema:load --trace
-      - run: bundle exec rspec
+      - run: |-
+          export RAILS_ENV="test"
+          export RACK_ENV="test"
+          bundle exec rake db:create db:schema:load ts:configure ts:index ts:start --trace
+      - run: bundle exec rake db:migrate
+      - run: bundle exec rspec spec
+
+
+      # - run: bundle exec rails db:schema:load --trace
+      # - run: bundle exec rspec
 
       
 
