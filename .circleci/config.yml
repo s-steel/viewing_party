@@ -15,13 +15,9 @@ jobs:
           
       - ruby/bundle-install
 
-  rspec:
-    parameters:
-      ruby:
-        type: string
-    docker:
-      - image: circleci/ruby:<<parameters.ruby>>
-    steps:
-      - checkout
-      - run: bundle install
-      - run: bundle exec rspec
+      - run:
+        name: Tests
+        command: |
+          TESTFILES=$(circleci tests glob "spec/{facades,features,fixtures,mailers,models,services,poros}/**/*.rb" | circleci tests split --split-by=timings)
+          bundle exec rspec -- ${TESTFILES}
+
