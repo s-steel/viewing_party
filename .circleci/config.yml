@@ -14,3 +14,14 @@ jobs:
           command: gem install bundler:2.1.4
           
       - ruby/bundle-install
+
+  rspec:
+    parameters:
+      ruby:
+        type: string
+    docker:
+      - image: circleci/ruby:<<parameters.ruby>>
+    steps:
+      - checkout
+      - run: bundle install
+      - run: bundle exec rspec
