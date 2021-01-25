@@ -1,0 +1,13 @@
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/json-2.3.1/ext/json
+/Users/seansteel/.rbenv/versions/2.5.3/bin/ruby -I /Users/seansteel/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210125-3503-1uks6je.rb extconf.rb
+creating Makefile
+
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/json-2.3.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/json-2.3.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/json-2.3.1/ext/json
+make "DESTDIR=" install

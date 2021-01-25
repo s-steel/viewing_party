@@ -1,0 +1,15 @@
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/seansteel/.rbenv/versions/2.5.3/bin/ruby -I /Users/seansteel/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210125-3503-uy41r4.rb extconf.rb
+creating Makefile
+
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/seansteel/turing/mod3/Projects/viewing_party/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210125-3503-19endgm/skiptrace/internal
