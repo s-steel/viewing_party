@@ -14,7 +14,7 @@ jobs:
           command: gem install bundler:2.1.4
           
       - ruby/bundle-install
-      - run: rails db:{create,migrate}
+      - run: rake db:{create,migrate}
       - run: bundle exec rspec
 
       
