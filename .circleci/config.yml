@@ -17,7 +17,7 @@ jobs:
 
       - run:
         name: Tests
-        command: |
+        command:
           TESTFILES=$(circleci tests glob "spec/{facades,features,fixtures,mailers,models,services,poros}/**/*.rb" | circleci tests split --split-by=timings)
           bundle exec rspec -- ${TESTFILES}
 
