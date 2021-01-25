@@ -14,10 +14,7 @@ jobs:
           command: gem install bundler:2.1.4
           
       - ruby/bundle-install
+      - run: bundle exec rspec
 
-      - run:
-        name: Tests
-        command:
-          TESTFILES=$(circleci tests glob "spec/{facades,features,fixtures,mailers,models,services,poros}/**/*.rb" | circleci tests split --split-by=timings)
-          bundle exec rspec -- ${TESTFILES}
+      
 
